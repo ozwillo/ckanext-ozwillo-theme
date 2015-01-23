@@ -1,0 +1,6 @@
+.authed ul li a[href^="/user/edit"],
+div a[href^="/user/edit"],
+.not-authed ul li a[href^="/user/login"],
+.not-authed ul li a[href^="/user/register"] {
+   display: none ;
+}
