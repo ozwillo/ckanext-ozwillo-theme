@@ -1,0 +1,60 @@
+{% set current_lang = request.environ.CKAN_LANG %}
+<nav id="t3-mainnav" class="wrap navbar navbar-default navbar-fixed-top t3-mainnav">
+	<div class="container">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		
+			
+							
+<button class="btn btn-primary visible-xs-inline-block off-canvas-toggle " type="button" data-pos="left" data-nav="#t3-off-canvas" data-effect="off-canvas-effect-4">
+  <i class="fa fa-bars"></i>
+</button>
+
+<!-- OFF-CANVAS SIDEBAR -->
+
+<!-- //OFF-CANVAS SIDEBAR -->
+			
+		</div>
+
+		
+		<div class="t3-navbar navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+			<li class="item-107 current active">				<a class="logo" href="/en/"><img src="https://www.ozwillo-preprod.eu/images/brand/logo-100.png" alt="{% trans %}Home{% endtrans %}"></a>
+				</li><li class="item-108">				<a class="nav-apps" href="https://portal.ozwillo-preprod.eu/en/store?ui_locales={{current_lang}}">{% trans %}Catalog{% endtrans %}</a>
+				</li>
+<li class="item-119 deeper dropdown parent">
+  <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="/{{current_lang}}/dataset">{% trans %}Datasets{% endtrans %}</a></li>
+    <li><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
+    <li><a href="/{{current_lang}}/group">{% trans %}Groups{% endtrans %}</a></li>
+    <li><a href="/{{current_lang}}/about">{% trans %}Terms of use{% endtrans %}</a></li>
+  </ul>
+</li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right navbar-lang">
+  <li class="dropdown">{% snippet "language_switcher.html" %}</li>
+</ul>
+</li>
+</ul>
+          
+                    	<!-- RIGHT NAV -->
+       	   	<ul class="nav navbar-nav navbar-right">
+<li class="item-123"><a class="btn navbar-btn" href="https://portal.ozwillo-preprod.eu/my?ui_locales={{current_lang}}">{% trans %}Log in{% endtrans %}</a></li>
+<li class="item-112 deeper dropdown parent"><a class="dropdown-toggle" href="/en/oz/discover" data-toggle="dropdown">{% trans %}Discover{% endtrans %}<b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="/en/oz/discover">{% trans %}Discovering the Platform{% endtrans %}</a></li>
+    <li><a href="/en/oz/news">{% trans %}News{% endtrans %}</a></li>
+    <li><a href="/en/oz/co-construct">{% trans %}Co-construct{% endtrans %}</a></li>
+    <li><a href="/en/oz/let-s-go">{% trans %}Let's go{% endtrans %}</a></li>
+    <li><a href="/en/oz/projects">{% trans %}Projects{% endtrans %}</a></li>
+</ul></li></ul>
+
+      	    <!-- //RIGHT NAV -->
+                    
+		</div>
+
+	</div>
+</nav>

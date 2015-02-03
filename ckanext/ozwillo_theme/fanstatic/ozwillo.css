@@ -1,6 +1,64 @@
+@font-face {
+  font-family: "DIN2";
+  src: url("DIN.woff") format("woff"), url("DIN.ttf") format("truetype");
+}
+
+body {
+  font-family: "DIN2" !important;
+}
+
 .authed ul li a[href^="/user/edit"],
 div a[href^="/user/edit"],
 .not-authed ul li a[href^="/user/login"],
 .not-authed ul li a[href^="/user/register"] {
    display: none ;
+}
+
+
+#t3-mainnav a.logo {
+  box-shadow: none;
+}
+
+.navbar .nav .btn {
+  background: transparent;
+}
+
+.navbar .nav > li > .navbar-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.navbar .nav > li > a {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+@media (min-width: 992px) {
+  #t3-mainnav .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #t3-mainnav .container {
+    width: 1170px;
+  }
+}
+
+.homepage [role="main"] {
+padding-top: 80px;
+}
+
+#t3-mainnav .nav>li>.dropdown-menu:before,
+#t3-mainnav .nav>li>.dropdown-menu:after {
+  display: none;
+}
+
+.nav a.nav-data:before {
+  display: block;
+  content: "";
+  margin-top: -3px;
+  width: 40px;
+  height: 30px;
+  float: left;
+  background: url('data-icon.png') no-repeat top left;
 }
