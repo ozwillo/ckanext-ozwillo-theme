@@ -1,2 +1,3 @@
 *.pyc
 ckanext_ozwillo_theme.egg-info
+*.pot
