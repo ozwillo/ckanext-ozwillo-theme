@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the
 # ckanext-ozwillo-theme project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-ozwillo-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-02-03 14:31+0100\n"
+"POT-Creation-Date: 2015-02-03 16:38+0100\n"
 "PO-Revision-Date: 2015-02-03 14:23+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 0.9.6\n"
 
 #: ckanext/ozwillo_theme/templates/footer.html:14
@@ -27,8 +27,16 @@ msgid "for a common good of data"
 msgstr "pour la création d'un bien commune de données"
 
 #: ckanext/ozwillo_theme/templates/footer.html:22
+msgid "/en/oz/discover"
+msgstr "/fr/decouvrir"
+
+#: ckanext/ozwillo_theme/templates/footer.html:22
 msgid "Discovering"
 msgstr "Découvrir"
+
+#: ckanext/ozwillo_theme/templates/footer.html:23
+msgid "/en/oz/news"
+msgstr "/fr/oz/news"
 
 #: ckanext/ozwillo_theme/templates/footer.html:23
 #: ckanext/ozwillo_theme/templates/header.html:49
@@ -36,9 +44,18 @@ msgid "News"
 msgstr "Actualités"
 
 #: ckanext/ozwillo_theme/templates/footer.html:24
+#: ckanext/ozwillo_theme/templates/footer.html:40
+msgid "/en/oz/co-construct"
+msgstr "/fr/gouvernance"
+
+#: ckanext/ozwillo_theme/templates/footer.html:24
 #: ckanext/ozwillo_theme/templates/header.html:50
 msgid "Co-construct"
 msgstr "Co-construire"
+
+#: ckanext/ozwillo_theme/templates/footer.html:25
+msgid "/en/oz/let-s-go"
+msgstr "/fr/se-lancer"
 
 #: ckanext/ozwillo_theme/templates/footer.html:25
 #: ckanext/ozwillo_theme/templates/header.html:51
@@ -46,12 +63,24 @@ msgid "Let's go"
 msgstr "Se lancer"
 
 #: ckanext/ozwillo_theme/templates/footer.html:30
+msgid "/en/contact"
+msgstr "/fr/contact"
+
+#: ckanext/ozwillo_theme/templates/footer.html:30
 msgid "Contact"
 msgstr "Contact"
 
 #: ckanext/ozwillo_theme/templates/footer.html:31
+msgid "/en/l-equipe-projet-oasis"
+msgstr "/fr/projets"
+
+#: ckanext/ozwillo_theme/templates/footer.html:31
 msgid "Project team"
 msgstr "Projets"
+
+#: ckanext/ozwillo_theme/templates/footer.html:32
+msgid "/en/oz/projects"
+msgstr "/fr/l-equipe-projet-oasis"
 
 #: ckanext/ozwillo_theme/templates/footer.html:32
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -59,12 +88,24 @@ msgid "Projects"
 msgstr "L'équipe projet"
 
 #: ckanext/ozwillo_theme/templates/footer.html:37
+msgid "/en/guide-utilisateur"
+msgstr "/fr/guide-utilisateur"
+
+#: ckanext/ozwillo_theme/templates/footer.html:37
 msgid "User guide"
 msgstr "Guide utilisateur"
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
+msgid "/en/terms"
+msgstr "/fr/cgu"
+
+#: ckanext/ozwillo_theme/templates/footer.html:38
 msgid "General terms of use"
 msgstr "CGU"
+
+#: ckanext/ozwillo_theme/templates/footer.html:39
+msgid "/en/legal-notices"
+msgstr "/fr/mentions-legales-confidentialite"
 
 #: ckanext/ozwillo_theme/templates/footer.html:39
 msgid "Legal Notices"
@@ -76,8 +117,8 @@ msgstr "Gouvernance"
 
 #: ckanext/ozwillo_theme/templates/footer.html:58
 msgid ""
-"OASIS is a project cofunded by the EU under the Program for Competitiveness "
-"and Innovation CIP ICT PSP- N°297210"
+"OASIS is a project cofunded by the EU under the Program for "
+"Competitiveness and Innovation CIP ICT PSP- N°297210"
 msgstr ""
 "OASIS est un projet financé par l'Union Européenne dans le cadre du "
 "programme pour la compétitivité et l'innovation CIP ICT PSP- N°297210"
@@ -121,3 +162,4 @@ msgstr "Découvrir"
 #: ckanext/ozwillo_theme/templates/header.html:48
 msgid "Discovering the Platform"
 msgstr "Découvrir la plateforme"
+

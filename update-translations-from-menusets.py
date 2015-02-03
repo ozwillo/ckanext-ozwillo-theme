@@ -32,6 +32,8 @@ for lang in os.listdir('i18n'):
         if entry.msgid in catalog:
             if entry.msgstr != catalog.get(entry.msgid):
                 entry.msgstr = catalog.get(entry.msgid)
+                if 'fuzzy' in entry.flags:
+                    entry.flags.remove('fuzzy')
                 changed = True
     if changed:
         pofile.save(path)
