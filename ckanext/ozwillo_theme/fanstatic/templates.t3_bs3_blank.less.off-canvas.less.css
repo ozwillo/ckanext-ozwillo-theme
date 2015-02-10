@@ -1,0 +1,65 @@
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.off-canvas-toggle:focus {
+  outline: none;
+}
+.t3-off-canvas {
+  background: #ffffff;
+  color: #636884;
+  z-index: 100;
+}
+.t3-off-canvas .t3-off-canvas-header {
+  background: #eeeeee;
+  color: #636884;
+  padding: 0 0 0 12px;
+  height: 35px;
+}
+.t3-off-canvas .t3-off-canvas-header h2 {
+  margin: 0;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.t3-off-canvas .close {
+  margin: 0;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  background: #bbbbbb;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.t3-off-canvas .t3-off-canvas-body {
+  padding: 24px 12px;
+}
+.t3-off-canvas .t3-off-canvas-body a {
+  color: #6e418e;
+  text-decoration: none;
+}
+.t3-off-canvas .t3-off-canvas-body a:hover,
+.t3-off-canvas .t3-off-canvas-body a:focus {
+  color: #45295a;
+  text-decoration: none;
+}
+.t3-off-canvas .t3-off-canvas-body a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.t3-off-canvas .t3-off-canvas-body .dropdown-menu .active a {
+  background: transparent;
+}
+.t3-off-canvas .t3-off-canvas-body .t3-module {
+  margin-bottom: 22px;
+}
+.t3-off-canvas .t3-off-canvas-body .module-title {
+  margin-bottom: 11px;
+}

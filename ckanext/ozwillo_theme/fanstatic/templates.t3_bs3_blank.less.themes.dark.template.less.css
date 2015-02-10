@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'Dunkin';
+  src: url('/fonts/Dunkin.eot?') format('eot'), url('/fonts/Dunkin.woff') format('woff'), url('/fonts/Dunkin.ttf') format('truetype'), url('/fonts/Dunkin.svg#Dunkin') format('svg');
+}
+@font-face {
+  font-family: 'DIN';
+  src: url('/fonts/DIN.eot?') format('eot'), url('/fonts/DIN.woff') format('woff'), url('/fonts/DIN.ttf') format('truetype'), url('/fonts/DIN.svg#DIN') format('svg');
+}
+@font-face {
+  font-family: 'DINAlternate-Light';
+  src: url('/fonts/DINAlternate-Light.eot?') format('eot'), url('/fonts/DINAlternate-Light.woff') format('woff'), url('/fonts/DINAlternate-Light.ttf') format('truetype'), url('/fonts/DINAlternate-Light.svg#DIN') format('svg');
+}
+.am-h {
+  margin: 6px;
+}
+.tm-h {
+  margin-top: 6px;
+}
+.rm {
+  margin-right: 12px;
+}
+.bm {
+  margin-bottom: 12px;
+}
+.bm-2 {
+  margin-bottom: 24px;
+}
+.text-left {
+  text-align: left;
+}
+blockquote p {
+  text-align: left;
+}
+blockquote small {
+  text-align: right;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.well-primary {
+  color: #fff;
+  background: #6e418e;
+  border: 0;
+}
+p.large {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.container.t3-mainbody {
+  margin-top: 50px;
+}
+.t3-mainnav {
+  border-width: 1px;
+  border-color: #ddd;
+  border-top: 0;
+}
+.navbar-nav.navbar-footer > li {
+  float: none;
+}
+.navbar-nav.navbar-footer > li > a {
+  padding: 0.2em;
+}
+.item-page {
+  margin-top: 49px;
+  text-align: justify;
+}
+.item-page h1,
+.item-page h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+.item-page h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.stripe-alt {
+  margin-bottom: -50px;
+}
+.btn-lg {
+  border-radius: 24px;
+}
+.nav select {
+  color: #636884;
+}
+.nav li a.logo {
+  padding: 3px 15px 4px;
+}
+.navbar,
+.navbar .btn {
+  font-size: 18px;
+}
+.navbar-nav > li > .navbar-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 6px;
+  border-color: #636884;
+}
+.navbar-default .navbar-nav > .open > a.navbar-btn {
+  background: #636884;
+  color: #fff;
+}
+.navbar-lang {
+  margin-left: 20px;
+}
+.nav a.nav-apps:before {
+  display: block;
+  content: "";
+  margin-top: -3px;
+  width: 40px;
+  height: 30px;
+  float: left;
+  background: url('/images/ui/apps-on.png') no-repeat top left;
+}
+.navbar-default .navbar-nav > .active > a.logo {
+  background: #fff;
+}
+.mod-calendar ul.mod-calendar:before {
+  display: block;
+  content: "";
+  height: 110px;
+  background: url('/images/ui/calendar.png') no-repeat top center;
+}
+.mod-calendar ul.mod-calendar li a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.mod-calendar ul.mod-calendar .mod-articles-category-readmore {
+  text-align: right;
+}
+.mod-calendar ul.mod-calendar .mod-articles-category-readmore a {
+  line-height: 40px;
+  color: #636884;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.mod-calendar ul.mod-calendar .mod-articles-category-readmore a:after {
+  vertical-align: -30%;
+  content: url('/images/ui/plus-40.png');
+}
+.blog .page-header {
+  border: 0;
+  text-align: center;
+}
+.blog h2.article-title {
+  display: inline;
+  font-size: 1em;
+  color: #636884;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.blog h2.article-title a:after {
+  content: ".";
+}
+.blog p {
+  display: inline;
+}
+.blog .article-intro img {
+  max-width: 120px;
+}
+.blog .readmore {
+  text-align: right;
+}
+.blog .readmore a {
+  line-height: 40px;
+  color: #636884;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.blog .readmore a:after {
+  vertical-align: -30%;
+  content: url('/images/ui/plus-40.png');
+}
+#article-home h1 {
+  font-family: "DINAlternate-Light";
+}
+#article-home h2 {
+  font-family: "Dunkin";
+  font-size: 26pt;
+}
+#article-home .stripe-main {
+  padding: 12px 0 0;
+  min-height: 680px;
+  color: #fff;
+  background: url('/images/home/sky.jpg');
+  background-color: #fff;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#article-home .stripe-main .input-search .input-group-addon {
+  background: #fff;
+  color: #636884;
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+}
+#article-home .stripe-main .input-search .input-group-btn button {
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+}
+#article-home .stripe-main .input-search input {
+  border-left: 0;
+  border-right: 0;
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+}
+#article-home .stripe-main #stripe-explore {
+  position: relative;
+}
+@media (min-width: 768px) {
+  #article-home .stripe-main #stripe-explore {
+    padding-top: 250px;
+  }
+}
+#article-home .stripe-main #stripe-explore #fg1 {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+}
+#article-home .stripe-main #stripe-explore #fg1 .actor {
+  position: absolute;
+  top: 0;
+  left: -320px;
+  width: 565px;
+  height: 540px;
+  background: url('/images/home/fg1.png') no-repeat;
+}
+#article-home h1 {
+  margin-bottom: 50px;
+}
+#article-home h3 {
+  font-size: 1.8em;
+}
+[class^="stripe-"] {
+  padding: 20px 0;
+  color: #000;
+}
+.stripe-main-1 {
+  background: #eb6e67;
+  color: #fff;
+}
+.stripe-main-2 {
+  background: #6e418e;
+  color: #fff;
+}
+.stripe-main-3 {
+  background: #f4ada3;
+}
+.stripe-main-4 {
+  background: #d8735f;
+  color: #fff;
+}
+.stripe-main-5 {
+  background: #999999;
+  color: #fff;
+}
+.stripe-main-6 {
+  background: #e7e8ef;
+}
+.stripe-pro-1 {
+  background: #ee8100;
+}
+.stripe-pro-2 {
+  background: #f8bb79;
+}
+.stripe-pro-3 {
+  background: #fbd6af;
+}
+.stripe-pro-4 {
+  background: #fde7cf;
+}
+.stripe-dev-1 {
+  background: #007fc4;
+  color: #fff;
+}
+.stripe-dev-2 {
+  background: #8cadd7;
+}
+.stripe-dev-3 {
+  background: #bdcde7;
+}
+.stripe-dev-4 {
+  background: #d8e1f0;
+}
+.stripe-user-1 {
+  background: #91b732;
+}
+.stripe-user-2 {
+  background: #c1d389;
+}
+.stripe-user-3 {
+  background: #dbe5bb;
+}
+.stripe-user-4 {
+  background: #eaefd7;
+}
+.stripe-light {
+  font-size: 1.4em;
+  padding: 20px 0;
+}
+.stripe-light p {
+  margin: 0;
+}
+.stripe-alt {
+  font-size: 1.4em;
+  background: #E1E3ED;
+}
+.t3-sitemap {
+  background: #DFCAE2;
+}
+.t3-copyright {
+  background: #6e418e;
+  color: #fff;
+}
