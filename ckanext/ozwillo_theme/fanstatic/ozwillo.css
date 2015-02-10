@@ -66,3 +66,28 @@ padding-top: 80px;
 .hero {
 	background: url(/img/stripe.jpg);
 }
+
+.homepage .module-search {
+	background: #E6E6E6;
+	color: #626580;
+}
+
+.homepage .module-search .module-content,
+.homepage .module-search .tags {
+	background: transparent;
+}
+
+.search-form .search-input.search-giant button {
+	margin: 0;
+	top: 0;
+	right: 0;
+	height: 100%;
+	padding: 0 1em;
+	background: #714090;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.search-form .search-input button i {
+	color: white !important;
+}
