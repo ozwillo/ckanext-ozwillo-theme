@@ -40,13 +40,15 @@
 </li>
 </ul>
           
-                    	<!-- RIGHT NAV -->
-       	   	<ul class="nav navbar-nav navbar-right">
-{% if c.userobj %}
-<li class="item-123"><a class="btn navbar-btn" href="{{ h.url_for('/user/_logout') }}">{% trans %}Log out{% endtrans %}</a></li>
-{% else %}
-<li class="item-123"><a class="btn navbar-btn" href="/user/login">{% trans %}Log in{% endtrans %}</a></li>
-{% endif %}
+<!-- RIGHT NAV -->
+<ul class="nav navbar-nav navbar-right">
+  <li class="item-123">
+  {% if c.userobj %}
+  <a class="btn navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
+  {% else %}
+  <a class="btn navbar-btn" href="https://portal.ozwillo-preprod.eu/my">{% trans %}Log in{% endtrans %}</a>
+  {% endif %}
+  </li>
 <li class="item-112 deeper dropdown parent"><a class="dropdown-toggle" href="/en/oz/discover" data-toggle="dropdown">{% trans %}Discover{% endtrans %}<b class="caret"></b></a>
   <ul class="dropdown-menu">
     <li><a href="/en/oz/discover">{% trans %}Discovering the Platform{% endtrans %}</a></li>
