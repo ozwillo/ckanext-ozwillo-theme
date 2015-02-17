@@ -91,3 +91,8 @@ padding-top: 80px;
 .search-form .search-input button i {
 	color: white !important;
 }
+
+
+.navbar-lang li a {
+    text-transform: capitalize;
+}
