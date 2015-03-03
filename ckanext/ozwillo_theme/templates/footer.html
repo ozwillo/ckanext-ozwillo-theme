@@ -1,3 +1,4 @@
+{% set current_lang = request.environ.CKAN_LANG %}
 <footer id="t3-footer" class="wrap t3-footer">
 
 	<section class="t3-sitemap">
@@ -23,25 +24,25 @@
 							</div>
 					<div class=" col-lg-2 col-md-2 col-sm-3 col-xs-4">
 								<div class="t3-module module " id="Mod141"><div class="module-inner"><div class="module-ct"><ul class="nav navbar-nav navbar-right navbar-footer">
-<li><a href="{% trans %}/en/oz/discover{% endtrans %}">{% trans %}Discovering{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/oz/news{% endtrans %}">{% trans %}News{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/oz/co-construct{% endtrans %}">{% trans %}Co-construct{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/oz/let-s-go{% endtrans %}">{% trans %}Let's go{% endtrans %}</a></li></ul>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/discover">{% trans %}Discovering{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/news">{% trans %}News{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/co-construct">{% trans %}Co-construct{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/let-s-go">{% trans %}Let's go{% endtrans %}</a></li></ul>
 </div></div></div>
 							</div>
 					<div class=" col-lg-2 col-md-2 col-sm-3 col-xs-4">
 								<div class="t3-module module " id="Mod142"><div class="module-inner"><div class="module-ct"><ul class="nav navbar-nav navbar-right navbar-footer">
-<li><a href="{% trans %}/en/contact{% endtrans %}">{% trans %}Contact{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/l-equipe-projet-oasis{% endtrans %}">{% trans %}Project team{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/oz/projects{% endtrans %}">{% trans %}Projects{% endtrans %}</a></li></ul>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/contact">{% trans %}Contact{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/l-equipe-projet-oasis">{% trans %}Project team{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects">{% trans %}Projects{% endtrans %}</a></li></ul>
 </div></div></div>
 							</div>
 					<div class=" col-lg-2 col-md-2 col-sm-3 col-xs-4">
 								<div class="t3-module module " id="Mod143"><div class="module-inner"><div class="module-ct"><ul class="nav navbar-nav navbar-right navbar-footer">
-<li><a href="{% trans %}/en/guide-utilisateur{% endtrans %}">{% trans %}User guide{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/terms{% endtrans %}">{% trans %}General terms of use{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/legal-notices{% endtrans %}">{% trans %}Legal Notices{% endtrans %}</a></li>
-<li><a href="{% trans %}/en/oz/co-construct{% endtrans %}">{% trans %}Governance{% endtrans %}</a></li></ul>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/guide-utilisateur">{% trans %}User guide{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/terms">{% trans %}General terms of use{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/legal-notices">{% trans %}Legal Notices{% endtrans %}</a></li>
+<li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/co-construct">{% trans %}Governance{% endtrans %}</a></li></ul>
 </div></div></div>
 							</div>
 			</div>
