@@ -47,6 +47,8 @@ extension works with.
 The configuration variable ``ckanext.ozwillo_theme.plugin.ozwillo_url`` must be
 set(for example to https://ozwillo-preprod.eu)
 
+The configuration variable ``ckanext.ozwillo_theme.plugin.ozwillo_portal_url``
+must be set(for example to https://portal.ozwillo-preprod.eu)
 
 ------------
 Installation

@@ -21,7 +21,7 @@
 		<div class="t3-navbar navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 			<li class="item-107 current">				<a class="logo" href="{{ g.ozwillo_url }}/{{current_lang}}"><img src="/img/logo-100.png" alt="{% trans %}Home{% endtrans %}"></a>
-				</li><li class="item-108">				<a class="nav-apps" href="{{ g.ozwillo_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{% trans %}Catalog{% endtrans %}</a>
+				</li><li class="item-108">				<a class="nav-apps" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{% trans %}Catalog{% endtrans %}</a>
 				</li>
 <li class="item-119 deeper dropdown parent">
   <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}<b class="caret"></b></a>
@@ -45,7 +45,7 @@
   {% if c.userobj %}
   <a class="btn navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
   {% else %}
-  <a class="btn navbar-btn" href="{{ g.ozwillo_url }}/{{current_lang}}/my">{% trans %}Log in{% endtrans %}</a>
+  <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/my">{% trans %}Log in{% endtrans %}</a>
   {% endif %}
   </li>
 <li class="item-112 deeper dropdown parent"><a class="dropdown-toggle" href="/en/oz/discover" data-toggle="dropdown">{% trans %}Discover{% endtrans %}<b class="caret"></b></a>

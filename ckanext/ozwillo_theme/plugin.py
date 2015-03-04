@@ -11,6 +11,8 @@ class OzwilloThemePlugin(plugins.SingletonPlugin):
     def update_config(self, config_):
         set_global('ckan.ozwillo_url',
                    pconfig.get('%s.ozwillo_url' % __name__))
+        set_global('ckan.ozwillo_portal_url',
+                   pconfig.get('%s.ozwillo_portal_url' % __name__))
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
