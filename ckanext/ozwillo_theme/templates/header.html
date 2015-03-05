@@ -45,7 +45,7 @@
   {% if c.userobj %}
   <a class="btn navbar-btn" href="{{ h.url_for('/logout') }}">{% trans %}Log out{% endtrans %}</a>
   {% else %}
-  <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/my">{% trans %}Log in{% endtrans %}</a>
+  <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans %}Log in{% endtrans %}</a>
   {% endif %}
   </li>
 <li class="item-112 deeper dropdown parent"><a class="dropdown-toggle" href="/en/oz/discover" data-toggle="dropdown">{% trans %}Discover{% endtrans %}<b class="caret"></b></a>
