@@ -96,3 +96,10 @@ padding-top: 80px;
 .navbar-lang li a {
     text-transform: capitalize;
 }
+
+.navbar li.item-112:hover .dropdown-menu,
+.navbar-lang li.dropdown:hover .dropdown-menu,
+.navbar-nav li.item-119:hover .dropdown-menu {
+    display: block;
+}
+
