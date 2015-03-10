@@ -1,4 +1,5 @@
 {% set current_lang = request.environ.CKAN_LANG %}
+{% set current_page = request.environ.CKAN_CURRENT_URL %}
 <nav id="t3-mainnav" class="wrap navbar navbar-default navbar-fixed-top t3-mainnav">
 	<div class="container">
 
@@ -27,12 +28,12 @@
 {% if c.userobj %}
   <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}<b class="caret"></b></a>
   <ul class="dropdown-menu">
-    <li><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
-    <li><a href="/{{current_lang}}/dataset">{% trans %}Datasets{% endtrans %}</a></li>
-    <li><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
-    <li><a href="/{{current_lang}}/group">{% trans %}Groups{% endtrans %}</a></li>
+    <li{% if current_page == '/' %} class='active'{% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
+    <li{% if current_page.startswith('/dataset') %} class='active'{% endif %}><a href="/{{current_lang}}/dataset">{% trans %}Datasets{% endtrans %}</a></li>
+    <li{% if current_page.startswith('/organization') %} class='active'{% endif %}><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
+    <li{% if current_page.startswith('/group') %} class='active'{% endif %}><a href="/{{current_lang}}/group">{% trans %}Groups{% endtrans %}</a></li>
     <li class="divider"></li>
-    <li><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
+    <li{% if current_page.startswith('/dashboard') %} class='active'{% endif %}><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
   </ul>
   {% else %}
     <a class="dropdown-toggle nav-data" href="/">{% trans %}Data{% endtrans %}</a>
