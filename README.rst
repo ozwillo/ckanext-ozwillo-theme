@@ -44,6 +44,8 @@ Requirements
 For example, you might want to mention here which versions of CKAN this
 extension works with.
 
+pip install -r dev-requirements.txt
+
 The configuration variable ``ckanext.ozwillo_theme.plugin.ozwillo_url`` must be
 set(for example to https://ozwillo-preprod.eu)
 
