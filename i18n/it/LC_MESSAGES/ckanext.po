@@ -19,12 +19,8 @@ msgstr ""
 "Generated-By: Babel 0.9.6\n"
 
 #: ckanext/ozwillo_theme/templates/footer.html:14
-msgid "A platform of interactive services"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/footer.html:15
-msgid "for a common good of data"
-msgstr ""
+msgid "Common goods factory"
+msgstr "Una fucina di beni comuni"
 
 #: ckanext/ozwillo_theme/templates/footer.html:22
 msgid "/en/oz/discover"
@@ -114,6 +110,10 @@ msgstr "Avvisi legali"
 #: ckanext/ozwillo_theme/templates/footer.html:40
 msgid "Governance"
 msgstr ""
+
+#: ckanext/ozwillo_theme/templates/footer.html
+msgid "Developers"
+msgstr "Sviluppatori"
 
 #: ckanext/ozwillo_theme/templates/footer.html:58
 msgid ""

@@ -121,6 +121,7 @@ footer .t3-footnav {
 
 footer #oz-footer-well {
   text-align: center;
+  color: #6f438e;
 }
 
 footer p {
@@ -128,6 +129,7 @@ footer p {
 }
 
 footer .navbar-nav.navbar-footer > li > a {
+  color: #555555;
   display: block;
   box-sizing: border-box;
   border-radius: 3px;
@@ -140,3 +142,11 @@ footer .navbar-nav.navbar-footer > li > a:hover {
   background: #efe4f0;
 }
 
+footer a.ext-twitter:after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  width: 22px;
+  height: 18px;
+  background: url('/img/twitter.png') no-repeat top 3px left 0;
+}
