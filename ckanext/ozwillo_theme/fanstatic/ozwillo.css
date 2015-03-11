@@ -114,3 +114,29 @@ padding-top: 80px;
     display: block;
 }
 
+/* footer */
+footer .t3-footnav {
+  padding: 16px 0 0;
+}
+
+footer #oz-footer-well {
+  text-align: center;
+}
+
+footer p {
+  margin: 16px 0;
+}
+
+footer .navbar-nav.navbar-footer > li > a {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 22px;
+  padding: 0.25em 0.4em;
+  text-decoration: none;
+}
+
+footer .navbar-nav.navbar-footer > li > a:hover {
+  background: #efe4f0;
+}
+
