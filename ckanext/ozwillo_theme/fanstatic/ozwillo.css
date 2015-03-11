@@ -97,6 +97,17 @@ padding-top: 80px;
     text-transform: capitalize;
 }
 
+.navbar .nav .dropdown-toggle .caret {
+  margin-top: 0;
+}
+
+.navbar .btn, .navbar .btn-group {
+  margin-top: 7px;
+}
+.navbar .navbar-lang {
+  margin-right: 0;
+}
+
 .navbar li.item-112:hover .dropdown-menu,
 .navbar-lang li.dropdown:hover .dropdown-menu,
 .navbar-nav li.item-119:hover .dropdown-menu {
