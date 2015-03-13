@@ -51,7 +51,7 @@
 <ul class="nav navbar-nav navbar-right">
   <li class="item-123">
   {% if c.userobj %}
-  <a class="btn navbar-btn" href="{{ h.url_for('/logout') }}">{% trans %}Log out{% endtrans %}</a>
+  <a class="btn navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
   {% else %}
   <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans %}Log in{% endtrans %}</a>
   {% endif %}
