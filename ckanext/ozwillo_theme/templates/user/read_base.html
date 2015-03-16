@@ -74,7 +74,7 @@
             <dd>{{ user.name|urlize(25) }}{# Be great if this just showed the domain #}</dd>
           {% else %}
             <dt>{{ _('Username') }}</dt>
-            <dd>{% if user.fullname }}{{ user.fullname }}{% endif %}</dd>
+            <dd>{% if user.fullname %}{{ user.fullname }}{% endif %}</dd>
           {% endif %}
         </dl>
         {% if c.is_myself %}
