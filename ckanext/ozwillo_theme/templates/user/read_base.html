@@ -28,7 +28,7 @@
       <div class="image">{{ h.linked_gravatar(user.email_hash, 190) }}</div>
       {% endblock %}
       {% block user_heading %}
-      <h1 class="heading">{% if user.fullname %}{{ user.fullname }}{% endif %}</h1>
+      <h1 class="heading">{% if user.fullname %}{{ user.fullname }}{% else %}{{ user.name }}{% endif %}</h1>
       {% endblock %}
       {% block user_about %}
       {% if c.about_formatted %}
@@ -74,7 +74,7 @@
             <dd>{{ user.name|urlize(25) }}{# Be great if this just showed the domain #}</dd>
           {% else %}
             <dt>{{ _('Username') }}</dt>
-            <dd>{% if user.fullname %}{{ user.fullname }}{% endif %}</dd>
+            <dd>{% if user.fullname %}{{ user.fullname }}{% else %}{{ user.name }}{% endif %}</dd>
           {% endif %}
         </dl>
         {% if c.is_myself %}
