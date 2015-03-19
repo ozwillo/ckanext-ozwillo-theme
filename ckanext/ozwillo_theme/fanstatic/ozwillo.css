@@ -60,7 +60,7 @@ padding-top: 80px;
   width: 40px;
   height: 30px;
   float: left;
-  background: url(/img/data-icon.png) no-repeat top left;
+  background: url('/images/ui/data-on.png') no-repeat top left;
 }
 
 .hero {
