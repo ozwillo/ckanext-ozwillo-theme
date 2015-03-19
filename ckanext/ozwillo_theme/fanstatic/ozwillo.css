@@ -160,6 +160,10 @@ footer .navbar-nav.navbar-footer > li > a {
   text-decoration: none;
 }
 
+footer .navbar-nav.navbar-footer {
+  margin-top: 16px;
+}
+
 footer .navbar-nav.navbar-footer > li > a:hover {
   background: #efe4f0;
 }
