@@ -44,8 +44,12 @@ div a[href^="/user/edit"],
   }
 }
 
-.homepage [role="main"] {
+.homepage [role="main"], body [role="main"] {
 padding-top: 80px;
+}
+
+.toolbar .breadcrumb > li + li:before {
+  content: none;
 }
 
 #t3-mainnav .nav>li>.dropdown-menu:before,
