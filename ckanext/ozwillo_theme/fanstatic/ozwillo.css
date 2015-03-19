@@ -114,6 +114,25 @@ padding-top: 80px;
     display: block;
 }
 
+.navbar .dropdown-menu .divider {
+  margin: 5px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar .nav li.dropdown.active>.dropdown-toggle {
+  background-color: #eeeeee;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:focus {
+  background: #eeeeee;
+}
+
+.navbar .dropdown-menu > .active > a, .navbar .dropdown-menu > .active > a:hover, .navbar .dropdown-menu > .active > a:focus {
+  background: #6e418e;
+}
+
 /* footer */
 footer .t3-footnav {
   padding: 16px 0 0;

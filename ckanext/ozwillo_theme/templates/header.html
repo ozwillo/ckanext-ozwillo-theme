@@ -2,72 +2,58 @@
 {% set current_page = request.environ.CKAN_CURRENT_URL %}
 <nav id="t3-mainnav" class="wrap navbar navbar-default navbar-fixed-top t3-mainnav">
 	<div class="container">
-
-		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-		
-			
-							
-<button class="btn btn-primary visible-xs-inline-block off-canvas-toggle " type="button" data-pos="left" data-nav="#t3-off-canvas" data-effect="off-canvas-effect-4">
-  <i class="fa fa-bars"></i>
-</button>
-
-<!-- OFF-CANVAS SIDEBAR -->
-
-<!-- //OFF-CANVAS SIDEBAR -->
-			
+      <button class="btn btn-primary visible-xs-inline-block off-canvas-toggle " type="button" data-pos="left" data-nav="#t3-off-canvas" data-effect="off-canvas-effect-4">
+        <i class="fa fa-bars"></i>
+      </button>
 		</div>
-
-		
 		<div class="t3-navbar navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-			<li class="item-107 current">				<a class="logo" href="{{ g.ozwillo_url }}/{{current_lang}}"><img src="/img/logo-h43.png" alt="{% trans %}Home{% endtrans %}"></a>
-				</li><li class="item-108">				<a class="nav-apps" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{% trans %}Catalog{% endtrans %}</a>
+			<ul class="nav navbar-nav">
+  			<li class="item-107 current">
+          <a class="logo" href="{{ g.ozwillo_url }}/{{current_lang}}"><img src="/img/logo-h43.png" alt="{% trans %}Home{% endtrans %}"></a>
 				</li>
-<li class="item-119 deeper dropdown parent">
-{% if c.userobj %}
-  <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}<b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    <li{% if current_page == '/' %} class='active'{% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
-    <li{% if current_page.startswith('/dataset') %} class='active'{% endif %}><a href="/{{current_lang}}/dataset">{% trans %}Datasets{% endtrans %}</a></li>
-    <li{% if current_page.startswith('/organization') %} class='active'{% endif %}><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
-    <li{% if current_page.startswith('/group') %} class='active'{% endif %}><a href="/{{current_lang}}/group">{% trans %}Groups{% endtrans %}</a></li>
-    <li class="divider"></li>
-    <li{% if current_page.startswith('/dashboard') %} class='active'{% endif %}><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
-  </ul>
-  {% else %}
-    <a class="dropdown-toggle nav-data" href="/">{% trans %}Data{% endtrans %}</a>
-{% endif %}
-</li>
-</ul>
+        <li class="item-108">
+          <a class="nav-apps" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{% trans %}Catalog{% endtrans %}</a>
+				</li>
+        {% if c.userobj %}
+        <li class="item-119 deeper dropdown parent">
+          <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %} <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li{% if current_page == '/' %} class='active'{% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
+            <li{% if current_page.startswith('/dataset') %} class='active'{% endif %}><a href="/{{current_lang}}/dataset">{% trans %}Datasets{% endtrans %}</a></li>
+            <li{% if current_page.startswith('/organization') %} class='active'{% endif %}><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
+            <li{% if current_page.startswith('/group') %} class='active'{% endif %}><a href="/{{current_lang}}/group">{% trans %}Groups{% endtrans %}</a></li>
+            <li class="divider"></li>
+            <li{% if current_page.startswith('/dashboard') %} class='active'{% endif %}><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
+          </ul>
+        {% else %}
+        <li class="active deeper dropdown parent">
+          <a class="dropdown-toggle nav-data" href="/">{% trans %}Data{% endtrans %}</a>
+        {% endif %}
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right navbar-lang">
+        <li class="dropdown">{% snippet "language_switcher.html" %}</li>
+      </ul>
 
-<ul class="nav navbar-nav navbar-right navbar-lang">
-  <li class="dropdown">{% snippet "language_switcher.html" %}</li>
-</ul>
-</li>
-</ul>
-          
-<!-- RIGHT NAV -->
-<ul class="nav navbar-nav navbar-right">
-  <li class="item-123">
-  {% if c.userobj %}
-  <a class="btn navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
-  {% else %}
-  <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans %}Log in{% endtrans %}</a>
-  {% endif %}
-  </li>
-<li class="item-112 deeper dropdown parent"><a class="dropdown-toggle" href="/en/oz/discover" data-toggle="dropdown">{% trans %}Discover{% endtrans %} <b class="caret"></b></a>
-  <ul class="dropdown-menu">
-    <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/discover">{% trans %}Discovering the Platform{% endtrans %}</a></li>
-    <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/news">{% trans %}News{% endtrans %}</a></li>
-    <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/co-construct">{% trans %}Co-construct{% endtrans %}</a></li>
-    <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/let-s-go">{% trans %}Let's go{% endtrans %}</a></li>
-    <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects">{% trans %}Projects{% endtrans %}</a></li>
-</ul></li></ul>
-
-      	    <!-- //RIGHT NAV -->
-                    
+      <ul class="nav navbar-nav navbar-right">
+        <li class="item-123">
+        {% if c.userobj %}
+        <a class="btn navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
+        {% else %}
+        <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans %}Log in{% endtrans %}</a>
+        {% endif %}
+        </li>
+        <li class="item-112 deeper dropdown parent"><a class="dropdown-toggle" href="/en/oz/discover" data-toggle="dropdown">{% trans %}Discover{% endtrans %} <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/discover">{% trans %}Discovering the Platform{% endtrans %}</a></li>
+            <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/news">{% trans %}News{% endtrans %}</a></li>
+            <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/co-construct">{% trans %}Co-construct{% endtrans %}</a></li>
+            <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/let-s-go">{% trans %}Let's go{% endtrans %}</a></li>
+            <li><a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects">{% trans %}Projects{% endtrans %}</a></li>
+          </ul>
+        </li>
+      </ul>
 		</div>
-
 	</div>
 </nav>
