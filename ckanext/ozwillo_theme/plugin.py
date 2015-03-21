@@ -42,7 +42,7 @@ class OzwilloThemePlugin(plugins.SingletonPlugin):
         set_global('ckan.ozwillo_portal_url',
                    pconfig.get('%s.ozwillo_portal_url' % __name__))
 
-        set_global('ckan.footer_links', footer_links())
+        set_global('ckan.localized_links', footer_links())
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
