@@ -184,3 +184,9 @@ footer a.ext-twitter:after {
 li.media-item {
     margin-bottom:10px;
 }
+
+@media screen and (max-width: 767px) {
+    div.toolbar {
+        display: none;
+    }
+}
