@@ -180,3 +180,7 @@ footer a.ext-twitter:after {
   height: 18px;
   background: url('/img/twitter.png') no-repeat top 3px left 0;
 }
+
+li.media-item {
+    margin-bottom:10px;
+}
