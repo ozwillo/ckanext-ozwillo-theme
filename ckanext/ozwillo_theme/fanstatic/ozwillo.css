@@ -186,9 +186,6 @@ li.media-item {
 }
 
 @media screen and (max-width: 767px) {
-    div.toolbar {
-        display: none;
-    }
     .form-horizontal .control-group .control-label {
         display: block;
         width: auto;
