@@ -197,4 +197,8 @@ li.media-item {
         float: right;
         margin-top: 5px;
     }
+
+    .stages li .highlight {
+        text-indent: 0;
+    }
 }
