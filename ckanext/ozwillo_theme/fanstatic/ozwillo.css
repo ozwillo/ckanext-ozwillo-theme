@@ -198,4 +198,19 @@ li.media-item {
     .stages li .highlight {
         text-indent: 0;
     }
+    .navbar .container {
+        padding: 0 15px;
+        margin-left: 20px;
+    }
+    #t3-mainnav .off-canvas-current {
+        display: block;
+        overflow: visible;
+    }
+    #t3-mainnav ul.nav li, #t3-mainnav ul.nav li .dropdown-menu {
+        display: block;
+        float: none;
+    }
+    #t3-mainnav ul.navbar-right {
+        display: none;
+    }
 }
