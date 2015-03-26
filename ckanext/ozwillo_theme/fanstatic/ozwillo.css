@@ -189,4 +189,12 @@ li.media-item {
     div.toolbar {
         display: none;
     }
+    .form-horizontal .control-group .control-label {
+        display: block;
+        width: auto;
+    }
+    .form-actions .btn {
+        float: right;
+        margin-top: 5px;
+    }
 }
