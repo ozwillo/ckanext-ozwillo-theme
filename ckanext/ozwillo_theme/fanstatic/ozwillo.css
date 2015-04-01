@@ -14,6 +14,9 @@ div a[href^="/user/edit"],
    display: none ;
 }
 
+#t3-mainnav {
+  border-bottom: 1px solid #ddd;
+}
 
 #t3-mainnav a.logo {
   box-shadow: none;
@@ -98,7 +101,6 @@ padding-top: 80px;
 .search-form .search-input button i {
 	color: white !important;
 }
-
 
 .navbar-lang li a {
     text-transform: capitalize;
@@ -202,10 +204,6 @@ li.media-item {
         padding: 0 15px;
         margin-left: 20px;
     }
-    #t3-mainnav .off-canvas-current {
-        display: block;
-        overflow: visible;
-    }
     #t3-mainnav ul.nav li, #t3-mainnav ul.nav li .dropdown-menu {
         display: block;
         float: none;
@@ -213,6 +211,92 @@ li.media-item {
     #t3-mainnav ul.navbar-right {
         display: none;
     }
+}
+
+/* reponsive menu */
+
+#toggle-toc {
+  position: absolute;
+  margin-top: 0;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+#toggle-toc:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .container > .navbar-header {
+    margin: 0 !important;
+  }
+}
+
+#toggle-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  transition: left 0.2s ease-out;
+}
+
+#off-nav {
+  display: none;
+  margin-bottom: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  bottom: 0;
+  margin-left: -230px;
+  width: 230px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-right: 1px solid #aaa;
+  background: #fff;
+  transition: left 0.2s ease-out;
+}
+
+#off-nav i {
+  margin: 0 15px 0 8px;
+}
+
+#off-nav a.logo {
+  padding-bottom: 12px;
+}
+
+#off-nav ul ul.nav a {
+  padding: 4px 4px 4px 56px;
+}
+
+#off-nav li.divider {
+  margin: 12px 0;
+  border-bottom: 2px solid #eee;
+}
+
+#off-nav li.divider.first {
+  margin-top: 0;
+}
+
+body.toc-open #toggle-container, body.toc-open #off-nav {
+  left: 230px;
+}
+@media (max-width: 768px) {
+  #t3-mainnav {
+    display: none;
+  }
+  #toggle-container, #off-nav {
+    display: block;
+  }
 }
 
 /* fix CKAN responsive issues */
