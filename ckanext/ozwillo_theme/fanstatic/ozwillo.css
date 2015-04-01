@@ -214,3 +214,54 @@ li.media-item {
         display: none;
     }
 }
+
+/* fix CKAN responsive issues */
+
+.homepage.layout-1 .row1 .col2, .homepage.layout-1 .row2 .col2 {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .homepage.layout-1 .row1 .col2, .homepage.layout-1 .row2 .col2 {
+    float: right;
+  }
+}
+
+@media (max-width: 830px) {
+  .hidden-menu-table {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .module-content, .module-content:first-child, .module-content:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 980px) and (min-width: 1199px) {
+  .primary.span12 {
+    width: 940px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .primary.span12 {
+    width: 724px;
+  }
+}
+
+@media (max-width: 767px) {
+  .primary.span12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 979px) {
+  aside.secondary {
+    display :none;
+  }
+  .row.wrapper {
+    background: #fff;
+  }
+}
