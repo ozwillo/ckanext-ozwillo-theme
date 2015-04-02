@@ -30,7 +30,10 @@
     </li>
     <li class="divider"></li>
     <li>
-      <a class="dropdown-toggle" href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['discovering'] }}"><i class="fa fa-search"></i> {% trans %}Discover{% endtrans %}</a>
+      <a class="dropdown-toggle" href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['discovering'] }}"><i class="fa fa-eye"></i> {% trans %}Discover{% endtrans %}</a>
+    </li>
+    <li>
+      <a class="dropdown-toggle" href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['news'] }}"><i class="fa fa-calendar"></i> {% trans %}News{% endtrans %}</a>
     </li>
     <li>
       {% if c.userobj %}
