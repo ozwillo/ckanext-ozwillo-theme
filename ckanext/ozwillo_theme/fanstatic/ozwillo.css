@@ -306,7 +306,8 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
 }
 
 h1.page-heading {
-  font-family: DIN, Arial, sans-serif;
+  font-family: DIN2, Arial, sans-serif;
+  color: #714090;
 }
 
 /* fix CKAN responsive issues */
