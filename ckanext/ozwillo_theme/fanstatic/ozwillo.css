@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "DIN2";
-  src: url("DIN.woff") format("woff"), url("DIN.ttf") format("truetype");
-}
-
 body {
-  font-family: "DIN2" !important;
+  font-family: "DIN" !important;
 }
 
 .authed ul li a[href^="/user/edit"],
@@ -306,7 +301,7 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
 }
 
 h1.page-heading {
-  font-family: DIN2, Arial, sans-serif;
+  font-family: Dunkin, Arial, sans-serif;
   color: #714090;
 }
 

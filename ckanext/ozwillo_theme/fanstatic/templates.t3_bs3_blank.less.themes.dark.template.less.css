@@ -59,6 +59,11 @@ p.large {
 .nav li a.logo {
   padding: 3px 15px 4px;
 }
+@media (min-width: 980px) {
+  .nav li a.logo {
+    padding-left: 0;
+  }
+}
 .navbar,
 .navbar .btn {
   font-size: 18px;
