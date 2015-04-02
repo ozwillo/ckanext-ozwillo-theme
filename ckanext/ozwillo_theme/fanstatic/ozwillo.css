@@ -305,6 +305,10 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
   }
 }
 
+h1.page-heading {
+  font-family: DIN, Arial, sans-serif;
+}
+
 /* fix CKAN responsive issues */
 
 .homepage.layout-1 .row1 .col2, .homepage.layout-1 .row2 .col2 {
