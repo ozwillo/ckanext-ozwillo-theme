@@ -88,6 +88,13 @@ padding-top: 80px;
 	background: transparent;
 }
 
+.homepage p.step {
+  padding-left: 12px;
+}
+.homepage h5 {
+  font-style: italic;
+}
+
 .search-form .search-input.search-giant button {
 	margin: 0;
 	top: 0;
@@ -312,7 +319,13 @@ h1.page-heading {
 }
 
 .homepage.layout-1 .row1 .col1 {
-  margin-top: 30px;
+  margin-top: 48px;
+}
+
+@media (max-width: 767px) {
+  .homepage.layout-1 .row1 .col1 {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 830px) {
