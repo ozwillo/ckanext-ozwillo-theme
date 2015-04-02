@@ -55,6 +55,12 @@ padding-top: 80px;
   content: none;
 }
 
+@media (max-width: 767px) {
+  .toolbar {
+    padding-left: 20px;
+  }
+}
+
 #t3-mainnav .nav>li>.dropdown-menu:before,
 #t3-mainnav .nav>li>.dropdown-menu:after {
   display: none;
