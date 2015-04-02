@@ -1,0 +1,19 @@
+{% set current_lang = request.environ.CKAN_LANG %}
+
+<div class="module-content box">
+  <header>
+    <h1 class="page-heading">Open Data</h1>
+    <h5>
+    	{% trans %}Searching for data?{% endtrans %}
+    </h5>
+    <p class="step">
+      {% trans %}Explore datasets published on Ozwillo by local authorities and public bodies.{% endtrans %}
+    </p>
+    <h5>
+ 		  {% trans %}You have data to share?{% endtrans %}
+ 		</h5>
+    <p class="step">
+    	{% trans %}If you search a place to host them, subscribe to our service{% endtrans %} <a href="{{g.ozwillo_portal_url}}/{{current_lang}}/store/application/{{g.ozwillo_ckan_app_id}}"><i class="fa fa-hand-o-right"></i> Open Data</a>{% trans %}: click Install and steer by it. An Ozwillo account is required.{% endtrans %}
+    </p>
+  </header>
+</div>
