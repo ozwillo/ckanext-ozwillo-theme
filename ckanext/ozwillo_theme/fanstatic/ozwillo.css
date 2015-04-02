@@ -151,6 +151,14 @@ padding-top: 80px;
 }
 
 /* footer */
+
+#content {
+  margin-bottom: 40px;
+}
+
+footer {
+  position: relative;
+}
 footer .t3-footnav {
   padding: 16px 0 0;
 }
@@ -189,6 +197,19 @@ footer a.ext-twitter:after {
   width: 22px;
   height: 18px;
   background: url('/img/twitter.png') no-repeat top 3px left 0;
+}
+
+@media (min-width: 992px) {
+  html, body {
+    height: 100%;
+  }
+  body > .homepage, body > [role="main"] {
+    min-height: 100%;
+    height: auto;
+    margin-bottom: -205px;
+    padding-bottom: 205px;
+    background: #eeeeee url("../../../base/images/bg.png");
+  }
 }
 
 li.media-item {
