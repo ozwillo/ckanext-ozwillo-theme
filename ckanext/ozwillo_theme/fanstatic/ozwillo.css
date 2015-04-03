@@ -204,16 +204,36 @@ footer a.ext-twitter:after {
   background: url('/img/twitter.png') no-repeat top 3px left 0;
 }
 
-@media (min-width: 992px) {
-  html, body {
-    height: 100%;
-  }
+html, body {
+  height: 100%;
+}
+
+body > .homepage, body > [role="main"] {
+  min-height: 100%;
+  height: auto;
+  background: #eeeeee url("../../../base/images/bg.png");
+}
+
+
+@media (min-width: 980px) {
+  
   body > .homepage, body > [role="main"] {
-    min-height: 100%;
-    height: auto;
     margin-bottom: -205px;
     padding-bottom: 205px;
-    background: #eeeeee url("../../../base/images/bg.png");
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  body > .homepage, body > [role="main"] {
+    margin-bottom: -267px;
+    padding-bottom: 267px;
+  }
+}
+
+@media (max-width: 767px) {
+  body > .homepage, body > [role="main"] {
+    margin-bottom: -349px;
+    padding-bottom: 349px;
   }
 }
 
