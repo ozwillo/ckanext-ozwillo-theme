@@ -93,6 +93,7 @@ padding-top: 80px;
 }
 .homepage h5 {
   font-style: italic;
+  font-size: 1.1em;
 }
 
 .search-form .search-input.search-giant button {
@@ -148,6 +149,10 @@ padding-top: 80px;
 
 .navbar .dropdown-menu > .active > a, .navbar .dropdown-menu > .active > a:hover, .navbar .dropdown-menu > .active > a:focus {
   background: #6e418e;
+}
+
+.navbar .nav li.dropdown:hover, .navbar .nav li.dropdown.open>.dropdown-toggle {
+  background-color: #eeeeee;
 }
 
 /* footer */
