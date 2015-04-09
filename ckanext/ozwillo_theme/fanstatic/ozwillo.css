@@ -43,7 +43,11 @@ div a[href^="/user/edit"],
 }
 
 .homepage [role="main"], body [role="main"] {
-padding-top: 80px;
+  padding-top: 80px;
+}
+
+body [role="main"].second {
+  padding-top: 40px;
 }
 
 .toolbar .breadcrumb > li + li:before {
@@ -360,6 +364,21 @@ h1.page-heading {
 
 /* fix CKAN responsive issues */
 
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .toolbar .breadcrumb, .toolbar .breadcrumb a {
+    color: #505050;
+    text-shadow: 0 1px 0 #ffffff;
+  }
+  .toolbar .breadcrumb .home {
+    display: inline-block;
+  }
+
+}
+
 .homepage.layout-1 .row1 .col2, .homepage.layout-1 .row2 .col2 {
   position: relative;
 }
@@ -381,7 +400,7 @@ h1.page-heading {
 }
 
 @media (max-width: 767px) {
-  .row1 .col1 {
+  .row1 .col1, .row2 .col1  {
     margin-bottom: 20px;
   }
 }
@@ -410,11 +429,17 @@ h1.page-heading {
   }
 }
 
+@media (min-width: 1199px) {
+  .row.wrapper {
+    background-position: 50px top;
+  }
+}
+
 @media (max-width: 979px) {
-  aside.secondary {
+  /*aside.secondary {
     display :none;
   }
   .row.wrapper {
     background: #fff;
-  }
+  }*/
 }
