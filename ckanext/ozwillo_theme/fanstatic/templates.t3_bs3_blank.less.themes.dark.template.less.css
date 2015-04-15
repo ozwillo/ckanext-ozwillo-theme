@@ -56,7 +56,7 @@ p.large {
 .nav select {
   color: #636884;
 }
-.nav li a.logo {
+.nav li a.logo, .navbar .nav > li > a.logo {
   padding: 3px 15px 4px;
 }
 @media (min-width: 980px) {
