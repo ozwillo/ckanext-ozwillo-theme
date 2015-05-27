@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-ozwillo-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-04-02 15:14+0200\n"
+"POT-Creation-Date: 2015-05-27 16:03+0200\n"
 "PO-Revision-Date: 2015-02-03 14:30+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -20,113 +20,108 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Common goods factory"
-msgstr "Ortak fayda üretim merkezi"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:20
-#: ckanext/ozwillo_theme/templates/header.html:36
-#: ckanext/ozwillo_theme/templates/header.html:90
+#: ckanext/ozwillo_theme/templates/header.html:35
+#: ckanext/ozwillo_theme/templates/header.html:88
 msgid "News"
-msgstr "Haberler"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:21
 msgid "Discovering"
-msgstr "Eşfetmek"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:22
-#: ckanext/ozwillo_theme/templates/header.html:91
+#: ckanext/ozwillo_theme/templates/header.html:89
 msgid "Co-construct"
-msgstr "Birlikte inşa etmek"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:23
-#: ckanext/ozwillo_theme/templates/header.html:92
+#: ckanext/ozwillo_theme/templates/header.html:90
 msgid "Let's go"
-msgstr "Başlatmak"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:27
 msgid "Contact"
-msgstr "İletişm"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:28
 msgid "Project team"
-msgstr "Proje Ekibi"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:29
-#: ckanext/ozwillo_theme/templates/header.html:93
+#: ckanext/ozwillo_theme/templates/header.html:91
 msgid "Projects"
-msgstr "Projeler"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:35
 msgid "User guide"
-msgstr "Kulanıcı Kılavuzu"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:36
 msgid "Developers"
-msgstr "Geliştiriciler"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:37
 msgid "Legal Notices"
-msgstr "Yasal Uyarılar"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
 msgid "General terms of use"
-msgstr "Kullanım Şartları"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:11
-#: ckanext/ozwillo_theme/templates/header.html:53
-#: ckanext/ozwillo_theme/templates/header.html:62
+#: ckanext/ozwillo_theme/templates/header.html:52
+#: ckanext/ozwillo_theme/templates/header.html:61
 msgid "Home"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:15
-#: ckanext/ozwillo_theme/templates/header.html:56
+#: ckanext/ozwillo_theme/templates/header.html:55
 msgid "Catalog"
-msgstr "Catalog"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:19
-#: ckanext/ozwillo_theme/templates/header.html:28
-#: ckanext/ozwillo_theme/templates/header.html:60
-#: ckanext/ozwillo_theme/templates/header.html:71
+#: ckanext/ozwillo_theme/templates/header.html:27
+#: ckanext/ozwillo_theme/templates/header.html:59
+#: ckanext/ozwillo_theme/templates/header.html:69
 msgid "Data"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:21
-#: ckanext/ozwillo_theme/templates/header.html:63
+#: ckanext/ozwillo_theme/templates/header.html:62
 #: ckanext/ozwillo_theme/templates/user/read_base.html:19
 #: ckanext/ozwillo_theme/templates/user/read_base.html:53
 msgid "Datasets"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:22
-#: ckanext/ozwillo_theme/templates/header.html:64
+#: ckanext/ozwillo_theme/templates/header.html:63
 msgid "Organizations"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:23
 #: ckanext/ozwillo_theme/templates/header.html:65
-msgid "Groups"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/header.html:24
-#: ckanext/ozwillo_theme/templates/header.html:67
 msgid "Dashboard"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:33
-#: ckanext/ozwillo_theme/templates/header.html:87
+#: ckanext/ozwillo_theme/templates/header.html:32
+#: ckanext/ozwillo_theme/templates/header.html:85
 msgid "Discover"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:40
-#: ckanext/ozwillo_theme/templates/header.html:82
+#: ckanext/ozwillo_theme/templates/header.html:39
+#: ckanext/ozwillo_theme/templates/header.html:80
 msgid "Log out"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:42
-#: ckanext/ozwillo_theme/templates/header.html:84
+#: ckanext/ozwillo_theme/templates/header.html:41
+#: ckanext/ozwillo_theme/templates/header.html:82
 msgid "Log in"
-msgstr "Giriş"
+msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:89
+#: ckanext/ozwillo_theme/templates/header.html:87
 msgid "Discovering the Platform"
 msgstr ""
 
@@ -134,27 +129,39 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:5
+msgid "Open Data"
+msgstr "Açık Veri"
+
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:7
 msgid "Searching for data?"
-msgstr ""
+msgstr "Veri mi arıyorsunuz?"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:10
-msgid ""
-"Explore datasets published on Ozwillo by local authorities and public "
-"bodies."
+msgid "Explore"
+msgstr "Keşfetmek,"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:10
+msgid "datasets published on Ozwillo by local authorities and public bodies."
 msgstr ""
+"Yerel Yönetimler ve Kamu Kurumları tarafından Ozwillo'da yayınlanmış olan"
+" veri setlerini keşfet."
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:13
 msgid "You have data to share?"
-msgstr ""
+msgstr "Aylaşıma açacak verileriniz mi var?"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid "If you search a place to host them, subscribe to our service"
 msgstr ""
+"Eğer onları bir sunucuda barındırmak istiyorsanız, servislerimize abone "
+"olun"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid ": click Install and steer by it. An Ozwillo account is required."
 msgstr ""
+": Kur butonuna tıklayın ve oradan yönlendirme yapın. Bir Ozwillo hesabı "
+"gerektirmektedir."
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:2
 msgid "eg. Gold Prices"
