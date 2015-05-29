@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-ozwillo-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-05-27 16:03+0200\n"
+"POT-Creation-Date: 2015-05-29 17:14+0200\n"
 "PO-Revision-Date: 2015-02-03 14:30+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ca <LL@li.org>\n"
@@ -20,56 +20,56 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Common goods factory"
-msgstr ""
+msgstr "La fàbrica del bé comú digital"
 
 #: ckanext/ozwillo_theme/templates/footer.html:20
 #: ckanext/ozwillo_theme/templates/header.html:35
 #: ckanext/ozwillo_theme/templates/header.html:88
 msgid "News"
-msgstr ""
+msgstr "Noticies"
 
 #: ckanext/ozwillo_theme/templates/footer.html:21
 msgid "Discovering"
-msgstr ""
+msgstr "Descobrint"
 
 #: ckanext/ozwillo_theme/templates/footer.html:22
 #: ckanext/ozwillo_theme/templates/header.html:89
 msgid "Co-construct"
-msgstr ""
+msgstr "Co-construcció"
 
 #: ckanext/ozwillo_theme/templates/footer.html:23
 #: ckanext/ozwillo_theme/templates/header.html:90
 msgid "Let's go"
-msgstr ""
+msgstr "Posada en marxa"
 
 #: ckanext/ozwillo_theme/templates/footer.html:27
 msgid "Contact"
-msgstr ""
+msgstr "Contactes"
 
 #: ckanext/ozwillo_theme/templates/footer.html:28
 msgid "Project team"
-msgstr ""
+msgstr "L'equip del Projecte"
 
 #: ckanext/ozwillo_theme/templates/footer.html:29
 #: ckanext/ozwillo_theme/templates/header.html:91
 msgid "Projects"
-msgstr ""
+msgstr "Projectes"
 
 #: ckanext/ozwillo_theme/templates/footer.html:35
 msgid "User guide"
-msgstr ""
+msgstr "Manuals d'usuari"
 
 #: ckanext/ozwillo_theme/templates/footer.html:36
 msgid "Developers"
-msgstr ""
+msgstr "Desenvolupadors"
 
 #: ckanext/ozwillo_theme/templates/footer.html:37
 msgid "Legal Notices"
-msgstr ""
+msgstr "Notes Legals"
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
 msgid "General terms of use"
-msgstr ""
+msgstr "Condicions d'ús"
 
 #: ckanext/ozwillo_theme/templates/header.html:11
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -80,14 +80,14 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/header.html:15
 #: ckanext/ozwillo_theme/templates/header.html:55
 msgid "Catalog"
-msgstr ""
+msgstr "Botiga"
 
 #: ckanext/ozwillo_theme/templates/header.html:19
 #: ckanext/ozwillo_theme/templates/header.html:27
 #: ckanext/ozwillo_theme/templates/header.html:59
 #: ckanext/ozwillo_theme/templates/header.html:69
 msgid "Data"
-msgstr ""
+msgstr "Dades"
 
 #: ckanext/ozwillo_theme/templates/header.html:21
 #: ckanext/ozwillo_theme/templates/header.html:62
@@ -109,7 +109,7 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/header.html:32
 #: ckanext/ozwillo_theme/templates/header.html:85
 msgid "Discover"
-msgstr ""
+msgstr "Descobrint"
 
 #: ckanext/ozwillo_theme/templates/header.html:39
 #: ckanext/ozwillo_theme/templates/header.html:80
@@ -119,11 +119,11 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/header.html:41
 #: ckanext/ozwillo_theme/templates/header.html:82
 msgid "Log in"
-msgstr ""
+msgstr "Entrar"
 
 #: ckanext/ozwillo_theme/templates/header.html:87
 msgid "Discovering the Platform"
-msgstr ""
+msgstr "Descobrint la plataforma"
 
 #: ckanext/ozwillo_theme/templates/page.html:6
 msgid "Skip to content"
