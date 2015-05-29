@@ -48,7 +48,7 @@ msgstr "Contact"
 
 #: ckanext/ozwillo_theme/templates/footer.html:28
 msgid "Project team"
-msgstr "Projets"
+msgstr "L'équipe projet"
 
 #: ckanext/ozwillo_theme/templates/footer.html:29
 #: ckanext/ozwillo_theme/templates/header.html:91
