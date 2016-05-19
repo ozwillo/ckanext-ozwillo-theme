@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+
 body {
-  font-family: "DIN" !important;
+  font-family: "Roboto" sans-serif !important;
+  font-weight: 300 !important;
 }
 
 .authed ul li a[href^="/user/edit"],
@@ -358,7 +361,6 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
 }
 
 h1.page-heading {
-  font-family: Dunkin, Arial, sans-serif;
   color: #714090;
 }
 
