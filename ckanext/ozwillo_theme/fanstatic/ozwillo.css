@@ -186,8 +186,7 @@ footer .t3-footnav {
 }
 
 footer #oz-footer-well {
-  text-align: center;
-  color: #6f438e;
+  color: #dfcae2;
 }
 
 footer p {
@@ -195,7 +194,8 @@ footer p {
 }
 
 footer .navbar-nav.navbar-footer > li > a {
-  color: #555555;
+  color: #454446;
+  font-size: 0.8em;
   display: block;
   box-sizing: border-box;
   border-radius: 3px;
