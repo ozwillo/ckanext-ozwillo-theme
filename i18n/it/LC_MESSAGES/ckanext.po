@@ -38,10 +38,6 @@ msgstr "Community"
 msgid "Team"
 msgstr "Team"
 
-#: ckanext/ozwillo_theme/templates/footer.html:29
-msgid "Data"
-msgstr "Data"
-
 #: ckanext/ozwillo_theme/templates/footer.html:30
 msgid "Portal"
 msgstr "Portal"
@@ -71,11 +67,11 @@ msgstr "Contact"
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
 msgid "Developers"
-msgstr "Développeurs"
+msgstr "Developers"
 
 #: ckanext/ozwillo_theme/templates/footer.html:46
-msgid "Legal Notices"
-msgstr "Mentions légales"
+msgid "Legal notices"
+msgstr "Legal notices"
 
 #: ckanext/ozwillo_theme/templates/header.html:11
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -88,12 +84,13 @@ msgstr ""
 msgid "Catalog"
 msgstr "Catalogo"
 
+#: ckanext/ozwillo_theme/templates/footer.html:29
 #: ckanext/ozwillo_theme/templates/header.html:19
 #: ckanext/ozwillo_theme/templates/header.html:27
 #: ckanext/ozwillo_theme/templates/header.html:59
 #: ckanext/ozwillo_theme/templates/header.html:69
 msgid "Data"
-msgstr "Data"
+msgstr "Dati"
 
 #: ckanext/ozwillo_theme/templates/header.html:21
 #: ckanext/ozwillo_theme/templates/header.html:62

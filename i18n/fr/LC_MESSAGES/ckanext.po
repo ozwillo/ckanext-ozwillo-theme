@@ -38,10 +38,6 @@ msgstr "Communauté"
 msgid "Team"
 msgstr "Équipe"
 
-#: ckanext/ozwillo_theme/templates/footer.html:29
-msgid "Data"
-msgstr "Données"
-
 #: ckanext/ozwillo_theme/templates/footer.html:30
 msgid "Portal"
 msgstr "Portail"
@@ -88,6 +84,7 @@ msgstr "Accueil"
 msgid "Catalog"
 msgstr "Catalogue"
 
+#: ckanext/ozwillo_theme/templates/footer.html:29
 #: ckanext/ozwillo_theme/templates/header.html:19
 #: ckanext/ozwillo_theme/templates/header.html:27
 #: ckanext/ozwillo_theme/templates/header.html:59
