@@ -8,7 +8,7 @@ from pylons import config as pconfig
 
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
-from ckan.lib.app_globals import set_global
+from ckan.lib.app_globals import set_app_global
 
 def footer_links():
     url = 'https://www.ozwillo.com/footer.xml'
@@ -37,14 +37,14 @@ class OzwilloThemePlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
 
     def update_config(self, config_):
-        set_global('ckan.ozwillo_url',
+        set_app_global('ckan.ozwillo_url',
                    pconfig.get('%s.ozwillo_url' % __name__))
-        set_global('ckan.ozwillo_portal_url',
+        set_app_global('ckan.ozwillo_portal_url',
                    pconfig.get('%s.ozwillo_portal_url' % __name__))
-        set_global('ckan.ozwillo_ckan_app_id',
+        set_app_global('ckan.ozwillo_ckan_app_id',
                    pconfig.get('%s.ozwillo_ckan_app_id' % __name__))
 
-        set_global('ckan.localized_links', footer_links())
+        set_app_global('ckan.localized_links', footer_links())
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
