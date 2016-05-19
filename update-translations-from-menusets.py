@@ -5,7 +5,7 @@ import requests
 import xml.etree.ElementTree as ET
 import polib
 
-urls = ['https://www.oasis-eu.org/footer.xml', 'https://www.oasis-eu.org/header.xml']
+urls = ['https://www.ozwillo.com/footer.xml', 'https://www.ozwillo.com/header.xml']
 langs = {}
 for url in urls:
     response = requests.get(url)

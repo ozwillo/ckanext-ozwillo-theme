@@ -12,64 +12,70 @@ msgstr ""
 "PO-Revision-Date: 2015-02-03 14:23+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 0.9.6\n"
 
 #: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Common goods factory"
 msgstr "Fabrique de biens communs"
 
-#: ckanext/ozwillo_theme/templates/footer.html:20
+#: ckanext/ozwillo_theme/templates/footer.html:22
+msgid "Association"
+msgstr "Association"
+
+#: ckanext/ozwillo_theme/templates/footer.html:23
+msgid "Governance"
+msgstr "Gouvernance"
+
+#: ckanext/ozwillo_theme/templates/footer.html:24
+msgid "Community"
+msgstr "Communauté"
+
+#: ckanext/ozwillo_theme/templates/footer.html:25
+msgid "Team"
+msgstr "Équipe"
+
+#: ckanext/ozwillo_theme/templates/footer.html:29
+msgid "Data"
+msgstr "Données"
+
+#: ckanext/ozwillo_theme/templates/footer.html:30
+msgid "Portal"
+msgstr "Portail"
+
+#: ckanext/ozwillo_theme/templates/footer.html:31
+#: ckanext/ozwillo_theme/templates/header.html:91
+msgid "Projects"
+msgstr "Projets"
+
+#: ckanext/ozwillo_theme/templates/footer.html:36
+msgid "Genesis"
+msgstr "Genèse"
+
+#: ckanext/ozwillo_theme/templates/footer.html:37
+msgid "Contributions"
+msgstr "Contributions"
+
+#: ckanext/ozwillo_theme/templates/footer.html:44
 #: ckanext/ozwillo_theme/templates/header.html:35
 #: ckanext/ozwillo_theme/templates/header.html:88
 msgid "News"
 msgstr "Actualités"
 
-#: ckanext/ozwillo_theme/templates/footer.html:21
-msgid "Discovering"
-msgstr "Découvrir"
-
-#: ckanext/ozwillo_theme/templates/footer.html:22
-#: ckanext/ozwillo_theme/templates/header.html:89
-msgid "Co-construct"
-msgstr "Co-construire"
-
-#: ckanext/ozwillo_theme/templates/footer.html:23
-#: ckanext/ozwillo_theme/templates/header.html:90
-msgid "Let's go"
-msgstr "Se lancer"
-
-#: ckanext/ozwillo_theme/templates/footer.html:27
+#: ckanext/ozwillo_theme/templates/footer.html:45
 msgid "Contact"
 msgstr "Contact"
 
-#: ckanext/ozwillo_theme/templates/footer.html:28
-msgid "Project team"
-msgstr "L'équipe projet"
-
-#: ckanext/ozwillo_theme/templates/footer.html:29
-#: ckanext/ozwillo_theme/templates/header.html:91
-msgid "Projects"
-msgstr "Projets"
-
-#: ckanext/ozwillo_theme/templates/footer.html:35
-msgid "User guide"
-msgstr "Guide utilisateur"
-
-#: ckanext/ozwillo_theme/templates/footer.html:36
+#: ckanext/ozwillo_theme/templates/footer.html:38
 msgid "Developers"
 msgstr "Développeurs"
 
-#: ckanext/ozwillo_theme/templates/footer.html:37
+#: ckanext/ozwillo_theme/templates/footer.html:46
 msgid "Legal Notices"
 msgstr "Mentions légales"
-
-#: ckanext/ozwillo_theme/templates/footer.html:38
-msgid "General terms of use"
-msgstr "CGU"
 
 #: ckanext/ozwillo_theme/templates/header.html:11
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -239,4 +245,3 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "API Key"
 msgstr ""
-

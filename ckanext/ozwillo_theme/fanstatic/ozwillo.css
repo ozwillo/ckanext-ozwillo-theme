@@ -5,6 +5,16 @@ body {
   font-weight: 300 !important;
 }
 
+.flex-row.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-row.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
 .authed ul li a[href^="/user/edit"],
 div a[href^="/user/edit"],
 .not-authed ul li a[href^="/user/login"],

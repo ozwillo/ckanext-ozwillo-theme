@@ -12,64 +12,70 @@ msgstr ""
 "PO-Revision-Date: 2015-02-03 14:30+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: tr <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "Generated-By: Babel 0.9.6\n"
 
 #: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Common goods factory"
 msgstr "Ortak fayda üretim merkezi"
 
-#: ckanext/ozwillo_theme/templates/footer.html:20
+#: ckanext/ozwillo_theme/templates/footer.html:22
+msgid "Association"
+msgstr "Association"
+
+#: ckanext/ozwillo_theme/templates/footer.html:23
+msgid "Governance"
+msgstr "Governance"
+
+#: ckanext/ozwillo_theme/templates/footer.html:24
+msgid "Community"
+msgstr "Community"
+
+#: ckanext/ozwillo_theme/templates/footer.html:25
+msgid "Team"
+msgstr "Team"
+
+#: ckanext/ozwillo_theme/templates/footer.html:29
+msgid "Data"
+msgstr "Data"
+
+#: ckanext/ozwillo_theme/templates/footer.html:30
+msgid "Portal"
+msgstr "Portal"
+
+#: ckanext/ozwillo_theme/templates/footer.html:31
+#: ckanext/ozwillo_theme/templates/header.html:91
+msgid "Projects"
+msgstr "Projects"
+
+#: ckanext/ozwillo_theme/templates/footer.html:36
+msgid "Genesis"
+msgstr "Genesis"
+
+#: ckanext/ozwillo_theme/templates/footer.html:37
+msgid "Contributions"
+msgstr "Contributions"
+
+#: ckanext/ozwillo_theme/templates/footer.html:44
 #: ckanext/ozwillo_theme/templates/header.html:35
 #: ckanext/ozwillo_theme/templates/header.html:88
 msgid "News"
-msgstr "Haberler"
+msgstr "News"
 
-#: ckanext/ozwillo_theme/templates/footer.html:21
-msgid "Discovering"
-msgstr "Eşfetmek"
-
-#: ckanext/ozwillo_theme/templates/footer.html:22
-#: ckanext/ozwillo_theme/templates/header.html:89
-msgid "Co-construct"
-msgstr "Birlikte inşa etmek"
-
-#: ckanext/ozwillo_theme/templates/footer.html:23
-#: ckanext/ozwillo_theme/templates/header.html:90
-msgid "Let's go"
-msgstr "Başlatmak"
-
-#: ckanext/ozwillo_theme/templates/footer.html:27
+#: ckanext/ozwillo_theme/templates/footer.html:45
 msgid "Contact"
-msgstr "İletişm"
-
-#: ckanext/ozwillo_theme/templates/footer.html:28
-msgid "Project team"
-msgstr "Proje Ekibi"
-
-#: ckanext/ozwillo_theme/templates/footer.html:29
-#: ckanext/ozwillo_theme/templates/header.html:91
-msgid "Projects"
-msgstr "Projeler"
-
-#: ckanext/ozwillo_theme/templates/footer.html:35
-msgid "User guide"
-msgstr "Kulanıcı Kılavuzu"
-
-#: ckanext/ozwillo_theme/templates/footer.html:36
-msgid "Developers"
-msgstr "Geliştiriciler"
-
-#: ckanext/ozwillo_theme/templates/footer.html:37
-msgid "Legal Notices"
-msgstr "Yasal Uyarılar"
+msgstr "Contact"
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
-msgid "General terms of use"
-msgstr "Kullanım Şartları"
+msgid "Developers"
+msgstr "Développeurs"
+
+#: ckanext/ozwillo_theme/templates/footer.html:46
+msgid "Legal Notices"
+msgstr "Mentions légales"
 
 #: ckanext/ozwillo_theme/templates/header.html:11
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -87,7 +93,7 @@ msgstr "Katalog"
 #: ckanext/ozwillo_theme/templates/header.html:59
 #: ckanext/ozwillo_theme/templates/header.html:69
 msgid "Data"
-msgstr "Veri"
+msgstr "Data"
 
 #: ckanext/ozwillo_theme/templates/header.html:21
 #: ckanext/ozwillo_theme/templates/header.html:62
@@ -144,8 +150,8 @@ msgstr "Keşfetmek,"
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:10
 msgid "datasets published on Ozwillo by local authorities and public bodies."
 msgstr ""
-"Yerel Yönetimler ve Kamu Kurumları tarafından Ozwillo'da yayınlanmış olan"
-" veri setlerini keşfet."
+"Yerel Yönetimler ve Kamu Kurumları tarafından Ozwillo'da yayınlanmış olan "
+"veri setlerini keşfet."
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:13
 msgid "You have data to share?"
@@ -154,8 +160,7 @@ msgstr "Aylaşıma açacak verileriniz mi var?"
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid "If you search a place to host them, subscribe to our service"
 msgstr ""
-"Eğer onları bir sunucuda barındırmak istiyorsanız, servislerimize abone "
-"olun"
+"Eğer onları bir sunucuda barındırmak istiyorsanız, servislerimize abone olun"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid ": click Install and steer by it. An Ozwillo account is required."
@@ -241,4 +246,3 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "API Key"
 msgstr ""
-

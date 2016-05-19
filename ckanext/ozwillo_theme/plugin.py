@@ -1,5 +1,3 @@
-import json
-import os
 import requests
 import xml.etree.ElementTree as ET
 from slugify import slugify
@@ -17,9 +15,9 @@ def footer_links():
     response = requests.get(url)
     menuset = ET.fromstring(response.text.encode('utf-8'))
 
-    items = ('News', 'Discovering', 'Co-construct', 'Let\'s go', 'Contact',
-             'Projects', 'Project team', 'Ozwillo', 'User guide', 'Developers',
-             'Legal Notices', 'General terms of use')
+    items = ('Association', 'Governance', 'Community', 'Team', 'Data',
+             'Portal', 'Projects', 'Genesis', 'Contributions', 'News',
+             'Contact', 'Legal Notices')
 
 
     for menu in menuset.findall('menu'):

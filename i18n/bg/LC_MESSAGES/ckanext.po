@@ -12,64 +12,70 @@ msgstr ""
 "PO-Revision-Date: 2015-02-03 14:30+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bg <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "Generated-By: Babel 0.9.6\n"
 
 #: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Common goods factory"
 msgstr "Създател на общи ползи"
 
-#: ckanext/ozwillo_theme/templates/footer.html:20
+#: ckanext/ozwillo_theme/templates/footer.html:22
+msgid "Association"
+msgstr "Association"
+
+#: ckanext/ozwillo_theme/templates/footer.html:23
+msgid "Governance"
+msgstr "Governance"
+
+#: ckanext/ozwillo_theme/templates/footer.html:24
+msgid "Community"
+msgstr "Community"
+
+#: ckanext/ozwillo_theme/templates/footer.html:25
+msgid "Team"
+msgstr "Team"
+
+#: ckanext/ozwillo_theme/templates/footer.html:29
+msgid "Data"
+msgstr "Data"
+
+#: ckanext/ozwillo_theme/templates/footer.html:30
+msgid "Portal"
+msgstr "Portal"
+
+#: ckanext/ozwillo_theme/templates/footer.html:31
+#: ckanext/ozwillo_theme/templates/header.html:91
+msgid "Projects"
+msgstr "Projects"
+
+#: ckanext/ozwillo_theme/templates/footer.html:36
+msgid "Genesis"
+msgstr "Genesis"
+
+#: ckanext/ozwillo_theme/templates/footer.html:37
+msgid "Contributions"
+msgstr "Contributions"
+
+#: ckanext/ozwillo_theme/templates/footer.html:44
 #: ckanext/ozwillo_theme/templates/header.html:35
 #: ckanext/ozwillo_theme/templates/header.html:88
 msgid "News"
-msgstr "Новини"
+msgstr "News"
 
-#: ckanext/ozwillo_theme/templates/footer.html:21
-msgid "Discovering"
-msgstr "Изучаване"
-
-#: ckanext/ozwillo_theme/templates/footer.html:22
-#: ckanext/ozwillo_theme/templates/header.html:89
-msgid "Co-construct"
-msgstr "Съвместно изграждане "
-
-#: ckanext/ozwillo_theme/templates/footer.html:23
-#: ckanext/ozwillo_theme/templates/header.html:90
-msgid "Let's go"
-msgstr "Стартиране "
-
-#: ckanext/ozwillo_theme/templates/footer.html:27
+#: ckanext/ozwillo_theme/templates/footer.html:45
 msgid "Contact"
-msgstr "Връзки"
-
-#: ckanext/ozwillo_theme/templates/footer.html:28
-msgid "Project team"
-msgstr "Екипът на проекта "
-
-#: ckanext/ozwillo_theme/templates/footer.html:29
-#: ckanext/ozwillo_theme/templates/header.html:91
-msgid "Projects"
-msgstr "Проекти"
-
-#: ckanext/ozwillo_theme/templates/footer.html:35
-msgid "User guide"
-msgstr "Ръководство на потребителя"
-
-#: ckanext/ozwillo_theme/templates/footer.html:36
-msgid "Developers"
-msgstr "Pазработчиците"
-
-#: ckanext/ozwillo_theme/templates/footer.html:37
-msgid "Legal Notices"
-msgstr "Правни бележки"
+msgstr "Contact"
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
-msgid "General terms of use"
-msgstr "Условия за ползване "
+msgid "Developers"
+msgstr "Développeurs"
+
+#: ckanext/ozwillo_theme/templates/footer.html:46
+msgid "Legal Notices"
+msgstr "Mentions légales"
 
 #: ckanext/ozwillo_theme/templates/header.html:11
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -87,7 +93,7 @@ msgstr "Каталог"
 #: ckanext/ozwillo_theme/templates/header.html:59
 #: ckanext/ozwillo_theme/templates/header.html:69
 msgid "Data"
-msgstr "данни"
+msgstr "Data"
 
 #: ckanext/ozwillo_theme/templates/header.html:21
 #: ckanext/ozwillo_theme/templates/header.html:62
@@ -154,14 +160,13 @@ msgstr "Имате данни за споделяне?"
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid "If you search a place to host them, subscribe to our service"
 msgstr ""
-"Ако търсите място, на което да ги съхранявате, запишете се за нашата "
-"услуга"
+"Ако търсите място, на което да ги съхранявате, запишете се за нашата услуга"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid ": click Install and steer by it. An Ozwillo account is required."
 msgstr ""
-": напитснете Инсталация и следвайте инструкциите. Изисква се регистрация "
-"в Ozwillo."
+": напитснете Инсталация и следвайте инструкциите. Изисква се регистрация в "
+"Ozwillo."
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:2
 msgid "eg. Gold Prices"
@@ -241,4 +246,3 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "API Key"
 msgstr ""
-

@@ -12,64 +12,70 @@ msgstr ""
 "PO-Revision-Date: 2015-02-03 14:30+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ca <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "Generated-By: Babel 0.9.6\n"
 
 #: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Common goods factory"
 msgstr "La fàbrica del bé comú digital"
 
-#: ckanext/ozwillo_theme/templates/footer.html:20
+#: ckanext/ozwillo_theme/templates/footer.html:22
+msgid "Association"
+msgstr "Association"
+
+#: ckanext/ozwillo_theme/templates/footer.html:23
+msgid "Governance"
+msgstr "Governance"
+
+#: ckanext/ozwillo_theme/templates/footer.html:24
+msgid "Community"
+msgstr "Community"
+
+#: ckanext/ozwillo_theme/templates/footer.html:25
+msgid "Team"
+msgstr "Team"
+
+#: ckanext/ozwillo_theme/templates/footer.html:29
+msgid "Data"
+msgstr "Data"
+
+#: ckanext/ozwillo_theme/templates/footer.html:30
+msgid "Portal"
+msgstr "Portal"
+
+#: ckanext/ozwillo_theme/templates/footer.html:31
+#: ckanext/ozwillo_theme/templates/header.html:91
+msgid "Projects"
+msgstr "Projects"
+
+#: ckanext/ozwillo_theme/templates/footer.html:36
+msgid "Genesis"
+msgstr "Genesis"
+
+#: ckanext/ozwillo_theme/templates/footer.html:37
+msgid "Contributions"
+msgstr "Contributions"
+
+#: ckanext/ozwillo_theme/templates/footer.html:44
 #: ckanext/ozwillo_theme/templates/header.html:35
 #: ckanext/ozwillo_theme/templates/header.html:88
 msgid "News"
-msgstr "Noticies"
+msgstr "News"
 
-#: ckanext/ozwillo_theme/templates/footer.html:21
-msgid "Discovering"
-msgstr "Descobrint"
-
-#: ckanext/ozwillo_theme/templates/footer.html:22
-#: ckanext/ozwillo_theme/templates/header.html:89
-msgid "Co-construct"
-msgstr "Co-construcció"
-
-#: ckanext/ozwillo_theme/templates/footer.html:23
-#: ckanext/ozwillo_theme/templates/header.html:90
-msgid "Let's go"
-msgstr "Posada en marxa"
-
-#: ckanext/ozwillo_theme/templates/footer.html:27
+#: ckanext/ozwillo_theme/templates/footer.html:45
 msgid "Contact"
-msgstr "Contactes"
-
-#: ckanext/ozwillo_theme/templates/footer.html:28
-msgid "Project team"
-msgstr "L'equip del Projecte"
-
-#: ckanext/ozwillo_theme/templates/footer.html:29
-#: ckanext/ozwillo_theme/templates/header.html:91
-msgid "Projects"
-msgstr "Projectes"
-
-#: ckanext/ozwillo_theme/templates/footer.html:35
-msgid "User guide"
-msgstr "Manuals d'usuari"
-
-#: ckanext/ozwillo_theme/templates/footer.html:36
-msgid "Developers"
-msgstr "Desenvolupadors"
-
-#: ckanext/ozwillo_theme/templates/footer.html:37
-msgid "Legal Notices"
-msgstr "Notes Legals"
+msgstr "Contact"
 
 #: ckanext/ozwillo_theme/templates/footer.html:38
-msgid "General terms of use"
-msgstr "Condicions d'ús"
+msgid "Developers"
+msgstr "Développeurs"
+
+#: ckanext/ozwillo_theme/templates/footer.html:46
+msgid "Legal Notices"
+msgstr "Mentions légales"
 
 #: ckanext/ozwillo_theme/templates/header.html:11
 #: ckanext/ozwillo_theme/templates/header.html:52
@@ -87,7 +93,7 @@ msgstr "Botiga"
 #: ckanext/ozwillo_theme/templates/header.html:59
 #: ckanext/ozwillo_theme/templates/header.html:69
 msgid "Data"
-msgstr "Dades"
+msgstr "Data"
 
 #: ckanext/ozwillo_theme/templates/header.html:21
 #: ckanext/ozwillo_theme/templates/header.html:62
@@ -154,14 +160,14 @@ msgstr "Vostè té dades per compartir?"
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid "If you search a place to host them, subscribe to our service"
 msgstr ""
-"Si vostè està buscant un lloc on guardar-les, subscriguis al nostre "
-"servei de"
+"Si vostè està buscant un lloc on guardar-les, subscriguis al nostre servei "
+"de"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
 msgid ": click Install and steer by it. An Ozwillo account is required."
 msgstr ""
-": faci clic a instal·lar i guiïs per aquest. És necessari tenir un compte"
-" de usuari a Ozwillo."
+": faci clic a instal·lar i guiïs per aquest. És necessari tenir un compte de"
+" usuari a Ozwillo."
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:2
 msgid "eg. Gold Prices"
@@ -241,4 +247,3 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "API Key"
 msgstr ""
-

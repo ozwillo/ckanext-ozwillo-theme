@@ -3,42 +3,51 @@
 	<section class="t3-sitemap">
 		<div class="container">
 			<div class="t3-spotlight t3-footnav row">
-				<div class=" col-lg-6 col-md-6 col-sm-3 col-xs-12">
+				<div class=" col-md-6 col-xs-12">
 					<div id="oz-footer-well">
 					  <img src="/img/logo.png">
 					  <p>{% trans %}Common goods factory{% endtrans %}</p>
 					  <p>
-						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects"><img src="/img/CIP.png" alt="CIP"/></a>
-						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects"><img src="/img/EU.png" alt="EU"/></a>
-						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects"><img src="/img/PIA.png" alt="PIA"/></a>
-						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/oz/projects"><img src="/img/FR.png" alt="FR"/></a>
+						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/genesis"><img src="/img/CIP.png" alt="CIP"/></a>
+						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/genesis"><img src="/img/EU.png" alt="EU"/></a>
+						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/genesis"><img src="/img/PIA.png" alt="PIA"/></a>
+						  <a href="{{ g.ozwillo_url }}/{{current_lang}}/genesis"><img src="/img/FR.png" alt="FR"/></a>
 						</p>
 					</div>
 				</div>
-				<div class=" col-lg-2 col-md-2 col-sm-3 col-xs-4">
-					<ul class="nav navbar-nav navbar-footer">
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['news'] }}">{% trans %}News{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['discovering'] }}">{% trans %}Discovering{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['co-construct'] }}">{% trans %}Co-construct{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['lets-go'] }}">{% trans %}Let's go{% endtrans %}</a></li></ul>
+				<div class="col-md-6 col-xs-12">
+					<div class="row flex-row">
+						<div class="col-xs-6 col-md-3 text-center">
+							<ul class="nav navbar-nav navbar-footer">
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['association'] }}">{% trans %}Association{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['governance'] }}">{% trans %}Governance{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['community'] }}">{% trans %}Community{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['team'] }}">{% trans %}Team{% endtrans %}</a></li></ul>
+						</div>
+						<div class="col-xs-6 col-md-3 text-center">
+							<ul class="nav navbar-nav navbar-footer">
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['data'] }}">{% trans %}Data{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['portal'] }}">{% trans %}Portal{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['projects'] }}">{% trans %}Projects{% endtrans %}</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-6 col-md-3 text-center">
+							<ul class="nav navbar-nav navbar-footer">
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['genesis'] }}">{% trans %}Genesis{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['contributions'] }}">{% trans %}Contributions{% endtrans %}</a></li>
+								<li><a href="http://doc.ozwillo.com/">{% trans %}Developers{% endtrans %}</a></li>
+								<li><a class="ext-twitter" href="https://twitter.com/ozwillo">@Ozwillo</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-6 col-md-3 text-center">
+							<ul class="nav navbar-nav navbar-footer">
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['news'] }}">{% trans %}News{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['contact'] }}">{% trans %}Contact{% endtrans %}</a></li>
+								<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['legal-notices'] }}">{% trans %}Legal Notices{% endtrans %}</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class=" col-lg-2 col-md-2 col-sm-3 col-xs-4">
-					<ul class="nav navbar-nav navbar-footer">
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['contact'] }}">{% trans %}Contact{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['project-team'] }}">{% trans %}Project team{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['projects'] }}">{% trans %}Projects{% endtrans %}</a></li>
-						<li><a class="ext-twitter" href="https://twitter.com/ozwillo">@Ozwillo</a></li>
-					</ul>
-				</div>
-				<div class=" col-lg-2 col-md-2 col-sm-3 col-xs-4">
-					<ul class="nav navbar-nav navbar-footer">
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['user-guide'] }}">{% trans %}User guide{% endtrans %}</a></li>
-						<li><a href="http://doc.ozwillo.com/">{% trans %}Developers{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['legal-notices'] }}">{% trans %}Legal Notices{% endtrans %}</a></li>
-						<li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['general-terms-of-use'] }}">{% trans %}General terms of use{% endtrans %}</a></li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</section>
 </footer>
