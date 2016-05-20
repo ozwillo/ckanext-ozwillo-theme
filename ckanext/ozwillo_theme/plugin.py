@@ -7,6 +7,7 @@ from pylons import config as pconfig
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from ckan.lib.app_globals import set_app_global
+from ckan.lib.plugins import DefaultTranslation
 
 def footer_links():
     url = 'https://www.ozwillo.com/footer.xml'
@@ -31,7 +32,8 @@ def footer_links():
     return langs
 
 
-class OzwilloThemePlugin(plugins.SingletonPlugin):
+class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
+    plugins.implements(plugins.ITranslation)
     plugins.implements(plugins.IConfigurer)
 
     def update_config(self, config_):
