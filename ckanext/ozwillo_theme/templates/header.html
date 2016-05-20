@@ -29,12 +29,6 @@
     </li>
     <li class="divider"></li>
     <li>
-      <a class="dropdown-toggle" href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['discovering'] }}"><i class="fa fa-eye"></i> {% trans %}Discover{% endtrans %}</a>
-    </li>
-    <li>
-      <a class="dropdown-toggle" href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['news'] }}"><i class="fa fa-calendar"></i> {% trans %}News{% endtrans %}</a>
-    </li>
-    <li>
       {% if c.userobj %}
       <a href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i> {% trans %}Log out{% endtrans %}</a>
       {% else %}
@@ -81,15 +75,6 @@
         {% else %}
         <a class="btn navbar-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans %}Log in{% endtrans %}</a>
         {% endif %}
-        </li>
-        <li class="item-112 deeper dropdown parent hidden-menu-table"><a class="dropdown-toggle" href="#" data-toggle="dropdown">{% trans %}Discover{% endtrans %} <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['discovering'] }}">{% trans %}Discovering the Platform{% endtrans %}</a></li>
-            <li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['news'] }}">{% trans %}News{% endtrans %}</a></li>
-            <li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['co-construct'] }}">{% trans %}Co-construct{% endtrans %}</a></li>
-            <li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['lets-go'] }}">{% trans %}Let's go{% endtrans %}</a></li>
-            <li><a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['projects'] }}">{% trans %}Projects{% endtrans %}</a></li>
-          </ul>
         </li>
       </ul>
 		</div>
