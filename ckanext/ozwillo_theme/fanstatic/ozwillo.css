@@ -212,15 +212,6 @@ footer .navbar-nav.navbar-footer > li > a:hover {
   background: #efe4f0;
 }
 
-footer a.ext-twitter:after {
-  content: "";
-  display: inline-block;
-  margin-left: 4px;
-  width: 22px;
-  height: 18px;
-  background: url('/img/twitter.png') no-repeat top 3px left 0;
-}
-
 html, body {
   height: 100%;
 }
