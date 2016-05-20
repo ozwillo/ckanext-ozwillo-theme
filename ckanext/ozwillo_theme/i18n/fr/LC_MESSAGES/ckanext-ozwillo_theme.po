@@ -98,17 +98,17 @@ msgstr "Données"
 #: ckanext/ozwillo_theme/templates/user/read_base.html:19
 #: ckanext/ozwillo_theme/templates/user/read_base.html:53
 msgid "Datasets"
-msgstr ""
+msgstr "Jeux de données"
 
 #: ckanext/ozwillo_theme/templates/header.html:22
 #: ckanext/ozwillo_theme/templates/header.html:63
 msgid "Organizations"
-msgstr ""
+msgstr "Organisations"
 
 #: ckanext/ozwillo_theme/templates/header.html:23
 #: ckanext/ozwillo_theme/templates/header.html:65
 msgid "Dashboard"
-msgstr ""
+msgstr "Tableau de bord"
 
 #: ckanext/ozwillo_theme/templates/header.html:32
 #: ckanext/ozwillo_theme/templates/header.html:85
@@ -118,7 +118,7 @@ msgstr "Découvrir"
 #: ckanext/ozwillo_theme/templates/header.html:39
 #: ckanext/ozwillo_theme/templates/header.html:80
 msgid "Log out"
-msgstr ""
+msgstr "Déconnexion"
 
 #: ckanext/ozwillo_theme/templates/header.html:41
 #: ckanext/ozwillo_theme/templates/header.html:82
@@ -131,7 +131,7 @@ msgstr "Découvrir la plateforme"
 
 #: ckanext/ozwillo_theme/templates/page.html:6
 msgid "Skip to content"
-msgstr ""
+msgstr "Aller au contenu"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:5
 msgid "Open Data"
@@ -171,36 +171,36 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:7
 msgid "Search Your Data"
-msgstr ""
+msgstr "Chercher des données"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:10
 msgid "Search"
-msgstr ""
+msgstr "Chercher"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:15
 msgid "Popular Tags"
-msgstr ""
+msgstr "Tags populaires"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:5
 #: ckanext/ozwillo_theme/templates/user/read_base.html:8
 msgid "Users"
-msgstr ""
+msgstr "Utilisateurs"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:14
 msgid "Manage"
-msgstr ""
+msgstr "Gérer"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:20
 msgid "Activity Stream"
-msgstr ""
+msgstr "Flux d'activités"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:39
 msgid "You have not provided a biography."
-msgstr ""
+msgstr "Vous n'avez pas renseigné de biographie"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:41
 msgid "This user has no biography."
-msgstr ""
+msgstr "Cet utilisateur n'a pas de biographie"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:49
 msgid "Followers"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:57
 msgid "Edits"
-msgstr ""
+msgstr "Modifications"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:73
 msgid "Open ID"
@@ -216,30 +216,30 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:76
 msgid "Username"
-msgstr ""
+msgstr "Nom d'utilisateur"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:82
 msgid "Email"
-msgstr ""
+msgstr "Courriel"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:82
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "This means only you can see this"
-msgstr ""
+msgstr "Cela signifie que seul vous pouvez voir ça"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:82
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "Private"
-msgstr ""
+msgstr "Privé"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:87
 msgid "Member Since"
-msgstr ""
+msgstr "Membre depuis"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:91
 msgid "State"
-msgstr ""
+msgstr "État"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "API Key"
-msgstr ""
+msgstr "Clé d'API"
