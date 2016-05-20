@@ -22,7 +22,7 @@ for url in urls:
                 langs[locale].append('')
 
 for lang in os.listdir('ckanext/ozwillo_theme/i18n'):
-    path = os.path.join('ckanext/ozwillo_theme/i18n', lang, 'LC_MESSAGES', 'ckanext-ozwillo-theme.po')
+    path = os.path.join('ckanext/ozwillo_theme/i18n', lang, 'LC_MESSAGES', 'ckanext-ozwillo_theme.po')
     if not os.path.exists(path):
         continue
     catalog = dict(zip(langs['en'], langs[lang]))
