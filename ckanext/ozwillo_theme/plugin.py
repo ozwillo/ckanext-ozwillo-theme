@@ -16,10 +16,10 @@ def footer_links():
     response = requests.get(url)
     menuset = ET.fromstring(response.text.encode('utf-8'))
 
-    items = ('Association', 'Governance', 'Community', 'Team', 'Data',
-             'Portal', 'Projects', 'Genesis', 'Contributions', 'News',
-             'Contact', 'Legal Notices')
-
+    items = ('Association', 'Governance', 'Community', 'Team',
+             'Data', 'Portal', 'Projects',
+             'Genesis', 'Contributions', 'Developers',
+             'News', 'Contact', 'Legal Notices')
 
     for menu in menuset.findall('menu'):
         locale = menu.find('locale').text
