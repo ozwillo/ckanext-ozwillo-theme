@@ -98,6 +98,7 @@ body [role="main"].second {
 .homepage .module-search {
 	background: #E6E6E6;
 	color: #626580;
+	margin-top: 0;
 }
 
 .homepage .module-search .module-content,
