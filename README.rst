@@ -103,6 +103,14 @@ do::
     pip install -r dev-requirements.txt
 
 
+------------
+Translations
+------------
+
+To generate .mo files after having added a new translation, do :
+
+    python setup.py compile_catalog
+
 -----------------
 Running the Tests
 -----------------
