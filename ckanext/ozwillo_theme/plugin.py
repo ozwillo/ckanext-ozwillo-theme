@@ -19,7 +19,7 @@ def footer_links():
     items = ('Association', 'Governance', 'Community', 'Team',
              'Data', 'Portal', 'Projects',
              'Genesis', 'Contributions', 'Developers',
-             'News', 'Contact', 'Legal Notices')
+             'News', 'Contact', 'Legal Notices', 'Terms')
 
     for menu in menuset.findall('menu'):
         locale = menu.find('locale').text
