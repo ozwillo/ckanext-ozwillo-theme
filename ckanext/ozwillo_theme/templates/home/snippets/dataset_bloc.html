@@ -1,0 +1,28 @@
+{% set truncate = truncate or 180 %}
+{% set truncate_title = truncate_title or 80 %}
+{% set title = package.title or package.name %}
+{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
+{% set date = h.ozwillo_theme_display_date(package.metadata_created) %}
+
+<div class="span3 col4 resource-bloc">
+  <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read', id=package.name)) }}</h4>
+  <p>
+    <small>
+      {% if notes %}
+        <div class=description">{{ notes|urlize }}</div>
+      {% endif %}
+    </small>
+  </p>
+  <div class="resource-type">
+    <ul class="dataset-resources unstyled">
+      {% for resource in h.dict_list_reduce(package.resources, 'format') %}
+      <li>
+        <a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" class="label" data-format="{{ resource.lower() }}">{{ resource }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="bottom">
+    <p class="published"><small>{{ _("PUBLISHED ON") }} {{ date }} {{ _("BY") }} <a href={{ url }}>{{ package.organization.title.upper() or package.organization.name.upper() }}</a></small></p>
+  </div>
+</div>

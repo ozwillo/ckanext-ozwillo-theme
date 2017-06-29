@@ -1,0 +1,11 @@
+{% set tags = h.get_facet_items_dict('tags', limit=5) %}
+<div class="row row1 tags">
+    {% for tag in tags %}
+        <div class="span2 col4 tag-icon">
+            <i class="icon-rss icon-tag"></i><br/>
+            <a href="{% url_for controller='package', action='search', tags=tag.name %}">
+                {{ h.truncate(tag.display_name, 22) }}
+            </a>
+        </div>
+    {% endfor %}
+</div>

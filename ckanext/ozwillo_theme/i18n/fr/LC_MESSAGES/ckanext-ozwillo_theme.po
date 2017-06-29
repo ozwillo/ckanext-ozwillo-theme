@@ -169,9 +169,13 @@ msgstr ""
 msgid "eg. Gold Prices"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/snippets/search.html:7
+#: ckanext/ozwillo_theme/templates/home/snippets/search.html:15
 msgid "Search Your Data"
 msgstr "Chercher des données"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/search.html:9
+msgid "WHAT DATA ARE YOU LOOKING FOR ?"
+msgstr "QUELLES DONNÉES RECHERCHEZ-VOUS ?"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:10
 msgid "Search"
@@ -180,6 +184,36 @@ msgstr "Chercher"
 #: ckanext/ozwillo_theme/templates/home/snippets/search.html:15
 msgid "Popular Tags"
 msgstr "Tags populaires"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/datasets.html:4
+msgid "Data news"
+msgstr "L'actualité des données"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/dataset_bloc.html:28
+#: ckanext/ozwillo_theme/templates/home/snippets/dataset_small.html:16
+msgid "PUBLISHED ON"
+msgstr "PUBLIÉ LE"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/dataset_bloc.html:28
+#: ckanext/ozwillo_theme/templates/home/snippets/dataset_small.html:16
+msgid "BY"
+msgstr "PAR"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/blocs.html:9
+msgid "Most viewed"
+msgstr "Les plus vues"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/blocs.html:19
+msgid "Some numbers"
+msgstr "Quelques chiffres"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/blocs.html:24
+msgid "The data producers"
+msgstr "Les producteurs de données"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/bloc_some_numbers.html:12
+msgid "resources"
+msgstr "ressources"
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:5
 #: ckanext/ozwillo_theme/templates/user/read_base.html:8
