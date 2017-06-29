@@ -1,0 +1,16 @@
+{% set packages = h.ozwillo_theme_get_last_datasets() %}
+
+<div class="content-bloc">
+  <h3><i class="icon-chevron-right"></i> {{ _('Data news') }}</h3>
+
+  {% for package in packages %}
+    {% if loop.index % 4 == 1 %}
+      <div class="resource-blocs row row1">
+    {% endif %}
+    {% snippet 'home/snippets/dataset_bloc.html', package=package %}
+    {% if loop.index % 4 == 0 %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</div>

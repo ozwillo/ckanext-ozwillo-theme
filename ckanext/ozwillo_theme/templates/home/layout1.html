@@ -1,19 +1,12 @@
 <div role="main" class="hero">
   <div class="container">
-    <div class="row row1">
-      <div class="span6 col1">
-        {% block search %}
-          {% snippet 'home/snippets/search.html' %}
-        {% endblock %}
-        {% block stats %}
-          {% snippet 'home/snippets/stats.html' %}
-        {% endblock %}
-      </div>
-      <div class="span5 offset1 col2">
-        {% block promoted %}
-          {% snippet 'home/snippets/promoted.html' %}
-        {% endblock %}
-      </div>
-    </div>
+  
+    {% block search %} {% snippet 'home/snippets/search.html' %} {% endblock %}
+
+    {% block datasets %} {% snippet 'home/snippets/datasets.html' %} {% endblock %}
+
+    {% block map %} {% snippet 'home/snippets/map.html' %} {% endblock %}
+
+    {% block blocs %} {% snippet 'home/snippets/blocs.html' %} {% endblock %}
   </div>
 </div>
