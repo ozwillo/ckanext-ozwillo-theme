@@ -97,6 +97,15 @@ header .content_action a.btn {
   color: #7b5199;
 }
 
+.icon-chevron-right {
+    background: none;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  vertical-align: middle;
+}
+
 .module-content .dataset-list .dataset-item {
   border: 1px solid #c1c1c1;
   padding: 1em;
@@ -132,6 +141,21 @@ header .content_action a.btn {
 
 .homepage .hero .container {
   padding: 0;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.homepage h3 {
+  font-size: 24px;
 }
 
 .homepage h4 {
