@@ -71,7 +71,7 @@ def ozwillo_theme_display_date(strDate):
 
 
 def ozwillo_theme_get_resource_number():
-    return logic.get_action('resource_search')({}, {'fields': {'name': ''}})['count']
+    return logic.get_action('resource_search')({}, {'query': {'name:': ''}})['count']
 
 
 def ozwillo_theme_get_map(view_id, resource_id, package_id):
