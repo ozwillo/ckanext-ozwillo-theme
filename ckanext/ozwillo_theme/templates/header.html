@@ -48,20 +48,17 @@
         <li class="item-108">
           <a class="nav-apps" href="{{ g.ozwillo_portal_url }}/{{current_lang}}/store?ui_locales={{current_lang}}">{% trans %}Catalog{% endtrans %}</a>
 				</li>
-        {% if c.userobj %}
         <li class="item-119 deeper dropdown parent">
           <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %} <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li{% if current_page == '/' %} class='active'{% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
             <li{% if current_page.startswith('/dataset') %} class='active'{% endif %}><a href="/{{current_lang}}/dataset">{% trans %}Datasets{% endtrans %}</a></li>
             <li{% if current_page.startswith('/organization') %} class='active'{% endif %}><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
-            <li class="divider"></li>
-            <li{% if current_page.startswith('/dashboard') %} class='active'{% endif %}><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
+            {% if c.userobj %}
+              <li class="divider"></li>
+              <li{% if current_page.startswith('/dashboard') %} class='active'{% endif %}><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
+            {% endif %}
           </ul>
-        {% else %}
-        <li class="active deeper dropdown parent">
-          <a class="dropdown-toggle nav-data" href="/">{% trans %}Data{% endtrans %}</a>
-        {% endif %}
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right navbar-lang">
