@@ -1,5 +1,7 @@
 {% set stats = h.get_site_statistics() %}
 {% set resource_number = h.ozwillo_theme_get_resource_number() %}
+{% set terminal_number = h.ozwillo_theme_get_terminal_number() %}
+{% set member_number = h.ozwillo_theme_get_member_number() %}
 
 <table class="some-numbers" border="1" frame="void" rules="all" >
   <tr>
@@ -14,12 +16,12 @@
   </tr>
   <tr>
     <td>
-      <b>{{ h.SI_number_span(stats.dataset_count) }}</b><br/>
-      <small>{{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}</small>
+      <b>{{ terminal_number }}</b><br/>
+      <small>{{ _('bornes Cigales') }}</small>
     </td>
     <td>
-      <b>{{ resource_number }}</b><br/>
-      <small>{{ _('resources') }}</small>
+      <b>{{ member_number }}</b><br/>
+      <small>{{ _('adhérents SICTIAM') }}</small>
     </td>
   </tr>
 </table>

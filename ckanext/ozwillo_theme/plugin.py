@@ -1,4 +1,5 @@
 import requests
+import urllib
 import xml.etree.ElementTree as ET
 from slugify import slugify
 
@@ -60,11 +61,40 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
         return {
             'ozwillo_theme_get_last_datasets': lambda: logic.get_action('package_search')({}, {"rows": 8})['results'],
             'ozwillo_theme_get_resource_number': ozwillo_theme_get_resource_number,
-            'ozwillo_theme_get_popular_datasets': lambda: logic.get_action('package_search')({}, {"rows": 4, 'sort': 'views_total desc'})['results'],
+            'ozwillo_theme_get_terminal_number': ozwillo_theme_number_terminal,
+            'ozwillo_theme_get_member_number': ozwillo_theme_number_member,
+            'ozwillo_theme_get_popular_datasets': lambda: logic.get_action('package_search')({}, {"rows": 3, 'sort': 'views_total desc'})['results'],
+            'ozwillo_theme_get_popular_organizations': ozwillo_theme_popular_organizations,
             'ozwillo_theme_display_date': ozwillo_theme_display_date,
             'ozwillo_theme_get_map': ozwillo_theme_get_map
         }
 
+def ozwillo_theme_popular_organizations():
+    '''Return a sorted list of the organizations with the most datasets.'''
+
+    # Get a list of all the site's organizations from CKAN, sorted by number of
+    # datasets.
+    organizations = toolkit.get_action('organization_list')(
+        data_dict={'sort': 'package_count desc', 'all_fields': True})
+
+    # Truncate the list to the 5 most popular organizations only.
+    organizations = organizations[:5]
+
+    return organizations
+
+def ozwillo_theme_number_terminal():
+    '''Return the number of wifi cigale terminals stored in the file'''
+
+    file_url = 'https://opendata.ozwillo.com/dataset/ae8058fe-af53-4e0a-8c2b-ad699c93bb42/resource/dd1fef8c-0283-42c2-9879-b01af6236252/download/points-dacces-wifi-cigale.csv'
+    data = list(urllib.urlopen(file_url))
+    return len(data) - 1
+
+def ozwillo_theme_number_member():
+    '''Return the number of sictiam members in the file'''
+
+    file_url = 'https://opendata.ozwillo.com/dataset/37698f90-e166-4de0-8bb8-08ff50ca8006/resource/2383533c-7ee6-47ab-aa77-42200f5c5c27/download/adherentssictiam06032017.csv'
+    data = list(urllib.urlopen(file_url))
+    return len(data) - 1
 
 def ozwillo_theme_display_date(strDate):
     return datetime.strptime(strDate, "%Y-%m-%dT%H:%M:%S.%f").strftime('%d/%m/%Y')
