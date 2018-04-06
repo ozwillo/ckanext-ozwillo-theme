@@ -56,7 +56,7 @@
             <li{% if current_page.startswith('/organization') %} class='active'{% endif %}><a href="/{{current_lang}}/organization">{% trans %}Organizations{% endtrans %}</a></li>
             <li{% if current_page.startswith('/group') %} class='active'{% endif %}><a href="/{{current_lang}}/group">{% trans %}Groups{% endtrans %}</a></li>
             <li{% if current_page.startswith('/datarequest') %} class='active'{% endif %}><a href="/{{current_lang}}/datarequest">{% trans %}Data Request{% endtrans %}</a></li>
-            <li{% if current_page.startswith('/showcase') %} class='active'{% endif %}><a href="/{{current_lang}}/showcase">{% trans %}Showcase{% endtrans %}</a></li>
+            <li{% if current_page.startswith('/showcase') %} class='active'{% endif %}><a href="/{{current_lang}}/showcase">{% trans %}Showcases{% endtrans %}</a></li>
             {% if c.userobj %}
               <li class="divider"></li>
               <li{% if current_page.startswith('/dashboard') %} class='active'{% endif %}><a href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
