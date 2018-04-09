@@ -90,6 +90,37 @@ Document any optional config settings here. For example::
     ckanext.ozwillo_theme.some_setting = some_default_value
 
 
+You can customize the homepage with these parameters:
+
+For example::
+
+    # The url of the csv file containings the numbers of line you want to appear in the 3rd "some numbers" section
+    # Default value is Cigale terminals
+    ckan.ozwillo_theme.file_url_number_terminal = https://opendata.ozwillo.com/dataset/ae8058fe-af53-4e0a-8c2b-ad699c93bb42/resource/dd1fef8c-0283-42c2-9879-b01af6236252/download/points-dacces-wifi-cigale.csv
+    # The text that comes with it, default value is 'bornes Cigales'
+    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
+    ckan.ozwillo_theme.text_number_terminal = Bornes
+
+    # The url of the csv file containings the numbers of line you want to appear in the 4th "some numbers" section
+    # Default value is Sictiam members
+    ckan.ozwillo_theme.file_url_number_member = https://opendata.ozwillo.com/dataset/37698f90-e166-4de0-8bb8-08ff50ca8006/resource/2383533c-7ee6-47ab-aa77-42200f5c5c27/download/adherentssictiam06032017.csv
+    # The text that comes with it, default value is 'adherents SICTIAM'
+    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
+    ckan.ozwillo_theme.text_number_member = Adherents
+
+    # The parameters of the map display on the page (here are production parameters)
+    ckan.ozwillo_theme.view_id = 038a8703-6031-4386-a962-7d55029724df
+    ckan.ozwillo_theme.resource_id = c39c4c65-ffba-4a30-a164-bb29fa0e6fc1
+    ckan.ozwillo_theme.package_id = syn
+    ckan.ozwillo_theme.map_title =  Synthèse globale des relevés d'amiante
+
+    # Preprod parameters :
+    # ckan.ozwillo_theme.view_id = 3f9a858c-763d-4b80-b3a1-55aac2a6a518
+    # ckan.ozwillo_theme.resource_id = 5cad2604-da1e-4d56-a0f9-e3a2a5072c69
+    # ckan.ozwillo_theme.package_id = liste-des-bornes-cigale
+    # ckan.ozwillo_theme.map_title = Points d'Accès des hotspots Wifi Cigale
+
+
 ------------------------
 Development Installation
 ------------------------

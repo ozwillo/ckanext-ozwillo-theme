@@ -1,7 +1,9 @@
 {% set stats = h.get_site_statistics() %}
 {% set resource_number = h.ozwillo_theme_get_resource_number() %}
 {% set terminal_number = h.ozwillo_theme_get_terminal_number() %}
+{% set terminal_text = h.ozwillo_theme_get_terminal_text() %}
 {% set member_number = h.ozwillo_theme_get_member_number() %}
+{% set member_text = h.ozwillo_theme_get_member_text() %}
 
 <table class="some-numbers" border="1" frame="void" rules="all" >
   <tr>
@@ -17,11 +19,11 @@
   <tr>
     <td>
       <b>{{ terminal_number }}</b><br/>
-      <small>{{ _('bornes Cigales') }}</small>
+      <small>{{ terminal_text }}</small>
     </td>
     <td>
       <b>{{ member_number }}</b><br/>
-      <small>{{ _('adhérents SICTIAM') }}</small>
+      <small>{{ member_text }}</small>
     </td>
   </tr>
 </table>

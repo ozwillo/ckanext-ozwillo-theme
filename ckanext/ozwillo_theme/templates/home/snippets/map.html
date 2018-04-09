@@ -1,6 +1,7 @@
-{% set view = h.ozwillo_theme_get_map('98913e52-d188-4203-92b7-efbc573a3c67', '7ec88e9e-6624-4dcc-850c-8beccb109457', 'donnees-des-hotspots-wifi-cigale') %}
+{% set view = h.ozwillo_theme_get_map() %}
+{% set title = h.ozwillo_theme_get_title() %}
 
 <div class="content-bloc">
-  <h3><i class="icon-chevron-right"></i> Points d'Accès des hotspots Wifi Cigale</h3>
+  <h3><i class="icon-chevron-right"></i>{{ title }}</h3>
   {{ view }}
 </div>
