@@ -112,13 +112,15 @@ For example::
     ckan.ozwillo_theme.view_id = 038a8703-6031-4386-a962-7d55029724df
     ckan.ozwillo_theme.resource_id = c39c4c65-ffba-4a30-a164-bb29fa0e6fc1
     ckan.ozwillo_theme.package_id = syn
-    ckan.ozwillo_theme.map_title =  Synthèse globale des relevés d'amiante
+    ckan.ozwillo_theme.map_title =  Synthese globale des releves d'amiante
+    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
 
     # Preprod parameters :
     # ckan.ozwillo_theme.view_id = 3f9a858c-763d-4b80-b3a1-55aac2a6a518
     # ckan.ozwillo_theme.resource_id = 5cad2604-da1e-4d56-a0f9-e3a2a5072c69
     # ckan.ozwillo_theme.package_id = liste-des-bornes-cigale
-    # ckan.ozwillo_theme.map_title = Points d'Accès des hotspots Wifi Cigale
+    # ckan.ozwillo_theme.map_title = Points d'Acces des hotspots Wifi Cigale
+    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
 
 
 ------------------------
