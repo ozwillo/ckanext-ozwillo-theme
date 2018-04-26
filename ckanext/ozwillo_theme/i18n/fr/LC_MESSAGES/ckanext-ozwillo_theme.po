@@ -277,3 +277,19 @@ msgstr "État"
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
 msgid "API Key"
 msgstr "Clé d'API"
+
+#: ckanext/ozwillo_theme/templates/user/package/snippets.html:10
+msgid "Please enter a location for your dataset"
+msgstr "Veuillez entrer un lieu pour votre dataset"
+
+#: ckanext/ozwillo_theme/templates/user/package/snippets.html:11
+msgid "Unknown location, please use the suggestions"
+msgstr "Lieu inconnu, veuillez utiliser les suggestions"
+
+#: ckanext/ozwillo_theme/templates/user/package/snippets.html:15
+msgid "Location"
+msgstr "Lieu"
+
+#: ckanext/ozwillo_theme/templates/user/package/snippets.html:15
+msgid "eg. Nice"
+msgstr "ex. Nice"

@@ -1,0 +1,8 @@
+{% ckan_extends %}
+
+{% block custom_fields %}
+<div id="custom_fields">
+  {% snippet 'snippets/custom_form_fields.html', extras=data.extras, errors=errors, limit=4 %}
+</div>
+{% endblock %}
+
