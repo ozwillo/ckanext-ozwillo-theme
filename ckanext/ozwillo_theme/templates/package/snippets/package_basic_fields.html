@@ -5,12 +5,13 @@
   {% resource 'theme/theme_location.js' %}
   {% set spatial = h.ozwillo_theme_spatial_installed() %}
   {% set osmkey = h.ozwillo_theme_osmnames_key() %}
+  {% set spatial_city = h.get_pkg_dict_extra(c.pkg_dict, 'spatial-name', '') %}
   {% set attrs = {'data-module': 'theme_location',
                   'data-module-osmkey': osmkey,
                   'data-module-errorvalue': _('Unknown location, please use the suggestions')}
   %}
 
   {% if spatial %}
-      {{ form.input('spatial_name', error=errors.spatial, id='field-spatial-name', label=_('Location'), placeholder=_('eg. Nice'), value=data.spatial_name, attrs=attrs, is_required=true)}}
+      {{ form.input('spatial_name', error=errors.spatial, id='field-spatial-name', label=_('Location'), placeholder=_('eg. Nice'), value=spatial_city, attrs=attrs, is_required=true)}}
   {% endif %}
 {% endblock %}

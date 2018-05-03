@@ -3,27 +3,56 @@
 /* theme_location
  *
  * This JavaScript module gets a geojson from osm given a location name
- *
- * TODO: Find how to manage the required field without the popup (ckan builtin)
- *
+ * *
  */
 
 ckan.module('theme_location', function ($) {
   return {
     initialize : function () {
-      var setAlert= true;
       var val = document.getElementById("field-spatial-name");
+      val.style.width = "100%";
       var osmkey = this.options.osmkey;
-      var errorvalue = this.options.errorvalue;
       var element = document.getElementById('custom_fields');
-      element.firstElementChild.firstElementChild.style.display = 'none';
+      var fields = element.children[0].children;
+      var spatial_key = '';
+      var spatial_value = '';
+      var spatial_name_key = '';
+      var spatial_name_value = '';
+
+      // Check extras fields to see witch one are spatial fields or choose empty ones and hide them
+      $.each(fields, function(index, value) {
+        if (value.children[1].children[0].children[1].value === 'spatial') {
+          spatial_key = value.children[1].children[0].children[1].id;
+          spatial_value = value.children[1].children[0].children[3].id;
+          value.style.display = 'none';
+        } else if (value.children[1].children[0].children[1].value === 'spatial-name') {
+          spatial_name_key = value.children[1].children[0].children[1].id;
+          spatial_name_value = value.children[1].children[0].children[3].id;
+          value.style.display = 'none';
+        }
+      });
+      if (spatial_key === '') {
+        $.each(fields, function(index, value) {
+          if (value.children[1].children[0].children[1].value === '') {
+            if (spatial_key === '') {
+                spatial_key = value.children[1].children[0].children[1].id;
+                spatial_value = value.children[1].children[0].children[3].id;
+                value.style.display = 'none';
+            } else if (spatial_name_key === '') {
+                spatial_name_key = value.children[1].children[0].children[1].id;
+                spatial_name_value = value.children[1].children[0].children[3].id;
+                value.style.display = 'none';
+            }
+          }
+        })
+      }
 
       // Wait for the user to finish typing before getting the geojson
       $(document).on('input', '#field-spatial-name', function(){
         var origin_val = val.value;
         setTimeout(function(){
           if (origin_val === val.value && val.value !== '') {
-            nominatim(val.value)
+            nominatim(val.value);
           }
         } , 2000);
       });
@@ -64,13 +93,12 @@ ckan.module('theme_location', function ($) {
         })
         .done(function(data) {
           try {
-            document.getElementById("field-extras-0-key").value = 'spatial';
-            document.getElementById("field-extras-0-value").value = JSON.stringify(data[0]['geojson']);
+            document.getElementById(spatial_key).value = 'spatial';
+            document.getElementById(spatial_value).value = JSON.stringify(data[0]['geojson']);
+            document.getElementById(spatial_name_key).value = 'spatial-name';
+            document.getElementById(spatial_name_value).value = val.value;
           } catch (TypeError) {
-            if (setAlert) {
-              alert(errorvalue);
-              setAlert = false;
-            }
+            console.log("Error: no result found for the location you entered");
           }
         })
         .fail(function(jqXhr, textStatus, error) {
