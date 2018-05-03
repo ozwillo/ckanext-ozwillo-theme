@@ -12,39 +12,57 @@ ckan.module('theme_location', function ($) {
       var val = document.getElementById("field-spatial-name");
       val.style.width = "100%";
       var osmkey = this.options.osmkey;
-      var element = document.getElementById('custom_fields');
-      var fields = element.children[0].children;
+      var key_id = '';
+      var value_id = '';
       var spatial_key = '';
       var spatial_value = '';
       var spatial_name_key = '';
       var spatial_name_value = '';
 
       // Check extras fields to see witch one are spatial fields or choose empty ones and hide them
-      $.each(fields, function(index, value) {
-        if (value.children[1].children[0].children[1].value === 'spatial') {
-          spatial_key = value.children[1].children[0].children[1].id;
-          spatial_value = value.children[1].children[0].children[3].id;
-          value.style.display = 'none';
-        } else if (value.children[1].children[0].children[1].value === 'spatial-name') {
-          spatial_name_key = value.children[1].children[0].children[1].id;
-          spatial_name_value = value.children[1].children[0].children[3].id;
-          value.style.display = 'none';
+      for (var i = 0; i < 5; i++) {
+        key_id = 'field-extras-' + i + '-key';
+        value_id = 'field-extras-' + i + '-value';
+        try {
+          var myField = $('#' + key_id)[0];
+          var fieldValue = myField.value;
+        } catch(err) {
+          console.log(key_id);
+          continue
         }
-      });
-      if (spatial_key === '') {
-        $.each(fields, function(index, value) {
-          if (value.children[1].children[0].children[1].value === '') {
+        if (fieldValue === 'spatial') {
+          spatial_key = key_id;
+          spatial_value = value_id;
+          myField.parentElement.parentElement.parentElement.style.display = 'none';
+        } else if (fieldValue === 'spatial-name') {
+          spatial_name_key = key_id;
+          spatial_name_value = value_id;
+          myField.parentElement.parentElement.parentElement.style.display = 'none';
+        }
+      }
+      if (spatial_key === '' || spatial_name_key === '') {
+        for (var i = 0; i < 5; i++) {
+          key_id = 'field-extras-' + i + '-key';
+          value_id = 'field-extras-' + i + '-value';
+          try {
+            var myField = $('#' + key_id)[0];
+            var fieldValue = myField.value;
+          } catch(err) {
+            console.log(key_id);
+            continue
+          }
+          if (fieldValue === '') {
             if (spatial_key === '') {
-                spatial_key = value.children[1].children[0].children[1].id;
-                spatial_value = value.children[1].children[0].children[3].id;
-                value.style.display = 'none';
+              spatial_key = key_id;
+              spatial_value = value_id;
+              myField.parentElement.parentElement.parentElement.style.display = 'none';
             } else if (spatial_name_key === '') {
-                spatial_name_key = value.children[1].children[0].children[1].id;
-                spatial_name_value = value.children[1].children[0].children[3].id;
-                value.style.display = 'none';
+              spatial_name_key = key_id;
+              spatial_name_value = value_id;
+              myField.parentElement.parentElement.parentElement.style.display = 'none';
             }
           }
-        })
+        }
       }
 
       // Wait for the user to finish typing before getting the geojson
