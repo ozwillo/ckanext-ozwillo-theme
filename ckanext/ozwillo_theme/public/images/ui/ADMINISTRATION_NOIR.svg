@@ -1,0 +1,24 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.45 50.11">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px;}</style>
+    </defs>
+    <title>ADMINISTRATION NOIR</title>
+    <g id="Calque_2" data-name="Calque 2">
+        <g id="Calque_1-2" data-name="Calque 1">
+            <rect class="cls-1" x="5.98" y="22.57" width="6.64" height="19.91"/>
+            <path class="cls-1" d="M45.79,45.79H2.66c-1.21,0-1.66.5-1.66,1.66v1.66H47.45V47.45C47.45,46.29,47,45.79,45.79,45.79Z"/>
+            <path class="cls-1" d="M14.27,45.79H4.32V44.13A1.66,1.66,0,0,1,6,42.47h6.63a1.66,1.66,0,0,1,1.66,1.66Z"/>
+            <rect class="cls-1" x="20.91" y="22.57" width="6.64" height="19.91"/>
+            <path class="cls-1" d="M29.2,45.79H19.25V44.13c0-.92.6-1.69.83-1.66h7.46c1.61,0,1.66.74,1.66,1.66Z"/>
+            <rect class="cls-1" x="35.84" y="22.57" width="6.64" height="19.91"/>
+            <path class="cls-1" d="M44.13,45.79h-10V44.13a1.66,1.66,0,0,1,1.66-1.66h6.63a1.66,1.66,0,0,1,1.66,1.66Z"/>
+            <path class="cls-1" d="M34.18,19.25h10v1.66a1.66,1.66,0,0,1-1.66,1.66H35.84a1.66,1.66,0,0,1-1.66-1.66Z"/>
+            <path class="cls-1" d="M19.25,19.25h10v1.66a1.66,1.66,0,0,1-1.66,1.66H20.91a1.66,1.66,0,0,1-1.66-1.66Z"/>
+            <path class="cls-1" d="M4.32,19.25h10v1.66a1.66,1.66,0,0,1-1.66,1.66H6.81c-.92,0-2.49-.75-2.49-1.66Z"/>
+            <polygon class="cls-1" points="24.22 1 1 15.93 47.45 15.93 24.22 1"/>
+            <rect class="cls-1" x="2.66" y="15.93" width="43.13" height="3.32"/>
+            <polygon class="cls-1" points="24.22 7.64 17.59 12.61 30.86 12.61 24.22 7.64"/>
+        </g>
+    </g>
+</svg>

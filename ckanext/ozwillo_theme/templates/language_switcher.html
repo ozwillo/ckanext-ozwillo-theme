@@ -8,8 +8,7 @@
 {% endfor %}
 <b class="caret"></b>
 </a>
-
-<ul class="dropdown-menu ">
+<ul class="dropdown-menu">
   {% for locale in h.get_available_locales() %}
   {% if locale != current_lang %}
   <li><a href="{% url_for current_url, locale=locale %}">{{ locale.display_name or locale.english_name }}</a></li>

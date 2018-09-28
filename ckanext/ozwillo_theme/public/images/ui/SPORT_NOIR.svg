@@ -1,0 +1,16 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.62 43.62">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
+    </defs>
+    <title>SPORT_NOIR</title>
+    <g id="Calque_2" data-name="Calque 2">
+        <g id="Calque_1-2" data-name="Calque 1">
+            <path class="cls-1" d="M1.74,16.61c4.11-6.43,27.11-14.94,40.13.74"/>
+            <path class="cls-1" d="M4.72,33c0-4.42,15.6-16.2,15.6-23.79s-5.94-6.68-5.94-6.68"/>
+            <path class="cls-1" d="M18.09,41.87C23.74,32,24.78,27,24.78,1.74"/>
+            <path class="cls-1" d="M35.19,37.41c5-8-4.46-17.37-4.46-26.19,0-5.27,3.71-5.76,3.71-5.76"/>
+            <circle class="cls-1" cx="21.81" cy="21.81" r="20.81"/>
+        </g>
+    </g>
+</svg>

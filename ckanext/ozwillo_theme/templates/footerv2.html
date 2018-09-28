@@ -1,0 +1,23 @@
+{% set current_lang = request.environ.CKAN_LANG %}
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                <a href="/" class="footer-brand">Ozwillo</a>
+            </div>
+            <div class="col-md-4 col-sm-4 footer-links">
+                <a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['contact'] }}">{% trans %}Contact{% endtrans %}</a>
+                <a href="{{ g.ozwillo_url }}{{ g.localized_links[current_lang]['legal-notices'] }}">{% trans %}Legal Notices{% endtrans %}</a>
+                <a href="/">Open Source.</a>
+            </div>
+            <div class="col-md-3 col-sm-3 social-media-box">
+                <a href="https://www.youtube.com/user/sictiam" class="social-media-logo youtube-logo"></a>
+                <a href="https://twitter.com/ozwillo" class="social-media-logo twitter-logo"></a>
+                <a href="https://fr.linkedin.com/company/sictiam" class="social-media-logo linkedin-logo"></a>
+            </div>
+            <div class="col-md-3 col-sm-5">
+                <a href="/">{% trans %}Created by Ozwillo with{% endtrans %} <i class="fa fa-heart"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>

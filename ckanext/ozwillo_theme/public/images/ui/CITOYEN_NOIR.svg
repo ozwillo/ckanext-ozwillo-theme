@@ -1,0 +1,17 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.47 45.46">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px;}</style>
+    </defs>
+    <title>PERSO NOIR</title>
+    <g id="Calque_2" data-name="Calque 2">
+        <g id="Calque_1-2" data-name="Calque 1">
+            <ellipse class="cls-1" cx="7.75" cy="6.25" rx="3.72" ry="3.78"/>
+            <circle class="cls-1" cx="34.72" cy="6.25" r="3.75"/>
+            <circle class="cls-1" cx="21.23" cy="4.75" r="3.75"/>
+            <path class="cls-1" d="M10.79,14.62a2.68,2.68,0,0,0-.8-.13H5.6a3.61,3.61,0,0,0-3.47,3.32L1,27.54a1.58,1.58,0,0,0,1.59,1.93h.64L4,43h7.24l.25-3.75"/>
+            <path class="cls-1" d="M31,39.17,31.22,43h7.25l.86-13.49H40c1.05,0,1.61-.8,1.48-1.93l-1.12-9.73a3.59,3.59,0,0,0-3.46-3.32h-4.4a3.27,3.27,0,0,0-1.16.22"/>
+            <path class="cls-1" d="M29.1,35.47,27.6,27.7a2.07,2.07,0,0,0,1.49-2.26l-1.24-8.78A4,4,0,0,0,24,13H18.46a4,4,0,0,0-3.84,3.67L13,25.44a2.38,2.38,0,0,0,1.86,2.26l-1.5,7.77h4l1.65,9h4.5l1.65-9Z"/>
+        </g>
+    </g>
+</svg>

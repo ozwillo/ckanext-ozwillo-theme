@@ -1,12 +1,18 @@
-<div role="main" class="hero">
-  <div class="container">
+
+{% block search %} {% snippet 'home/snippets/search.html' %} {% endblock %}
   
-    {% block search %} {% snippet 'home/snippets/search.html' %} {% endblock %}
+{% block categories %} {% snippet 'home/snippets/categories.html' %} {% endblock %}
+  
+{% block some_numbers %} {% snippet 'home/snippets/some_numbers.html' %} {% endblock %}
+  
+{% block datasets %} {% snippet 'home/snippets/datasets.html' %} {% endblock %}
 
-    {% block datasets %} {% snippet 'home/snippets/datasets.html' %} {% endblock %}
 
-    {% block map %} {% snippet 'home/snippets/map.html' %} {% endblock %}
 
-    {% block blocs %} {% snippet 'home/snippets/blocs.html' %} {% endblock %}
+<!-- <div role="main" class="hero"> -->
+  <div class="container-fluid">
+    {# {% block map %} {% snippet 'home/snippets/map.html' %} {% endblock %} #}
+
+    {# {% block blocs %} {% snippet 'home/snippets/blocs.html' %} {% endblock %} #}
   </div>
-</div>
+<!-- </div>  -->

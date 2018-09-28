@@ -1,0 +1,18 @@
+{% set tags = h.get_facet_items_dict('tags', limit=3) %} {% set placeholder = _('eg. Gold Prices') %}
+<div class="search-conteiner">
+  <div class="row row1">
+    <div class="span8 offset2 col4">
+      <div class="module module-search module-narrow module-shallow box">
+        <h2>{{ _('WHAT DATA ARE YOU LOOKING FOR ?') }}</h2>
+        <form class="module-content search-form" method="get" action="{% url_for controller='package', action='search' %}">
+          <div class="search-input control-group">
+            <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="{{ _('Search Your Data') }}" />
+          </div>
+          <button type="submit" class="submit">
+            <span>{{ _('Search') }}</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> 

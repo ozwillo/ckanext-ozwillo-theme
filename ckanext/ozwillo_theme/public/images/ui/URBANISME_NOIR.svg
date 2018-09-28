@@ -1,0 +1,23 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.29 47.29">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px;}</style>
+    </defs>
+    <title>URBANISME_NOIR</title>
+    <g id="Calque_2" data-name="Calque 2">
+        <g id="Calque_1-2" data-name="Calque 1">
+            <rect class="cls-1" x="35.36" y="10.37" width="6.25" height="7.81"/>
+            <rect class="cls-1" x="25.99" y="10.37" width="6.25" height="7.81"/>
+            <rect class="cls-1" x="35.36" y="22.86" width="6.25" height="7.81"/>
+            <rect class="cls-1" x="25.99" y="22.86" width="6.25" height="7.81"/>
+            <rect class="cls-1" x="35.36" y="35.36" width="6.25" height="7.81"/>
+            <rect class="cls-1" x="25.99" y="35.36" width="6.25" height="7.81"/>
+            <rect class="cls-1" x="5.68" y="22.86" width="4.68" height="7.81"/>
+            <rect class="cls-1" x="13.49" y="22.86" width="4.68" height="7.81"/>
+            <rect class="cls-1" x="5.68" y="35.36" width="4.68" height="7.81"/>
+            <rect class="cls-1" x="13.49" y="35.36" width="4.68" height="7.81"/>
+            <polygon class="cls-1" points="19.74 1 19.74 12.71 22.86 11.93 22.86 46.29 46.29 46.29 46.29 8.88 19.74 1"/>
+            <polygon class="cls-1" points="1 46.29 22.86 46.29 22.86 11.93 1 20.52 1 46.29"/>
+        </g>
+    </g>
+</svg>

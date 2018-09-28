@@ -18,7 +18,8 @@
   {# The content block allows you to replace the content of the page if needed #}
   {%- block content %}
     {% block maintag %}<div role="main">{% endblock %}
-      <div id="content" class="container">
+      <!-- <div id="content" class="container"> -->
+        <div id="content" class="container-fluid">
         {% block main_content %}
           {% block flash %}
             <div class="flash-messages">
@@ -44,14 +45,14 @@
               {% endblock %}
             </div>
           {% endblock %}
-
+          
           <div class="row wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' %} no-nav{% endif %}">
-
+            
             {#
-            The pre_primary block can be used to add content to before the
-            rendering of the main content columns of the page.
-            #}
-            {% block pre_primary %}
+              The pre_primary block can be used to add content to before the
+              rendering of the main content columns of the page.
+              #}
+            {% block pre_primary %}            
             {% endblock %}
 
             {% block primary %}
@@ -124,7 +125,7 @@
   file.
   #}
   {%- block footer %}
-    {% include "footer.html" %}
+    {% include "footerv2.html" %}
   {% endblock -%}
 {%- endblock -%}
 

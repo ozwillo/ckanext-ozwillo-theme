@@ -90,44 +90,6 @@ Document any optional config settings here. For example::
     ckanext.ozwillo_theme.some_setting = some_default_value
 
 
-You can customize the homepage with these parameters:
-
-For example::
-
-    # The url of the csv file containings the numbers of line you want to appear in the 3rd "some numbers" section
-    # Default value is Cigale terminals
-    ckanext.ozwillo_theme.file_url_number_terminal = https://opendata.ozwillo.com/dataset/ae8058fe-af53-4e0a-8c2b-ad699c93bb42/resource/dd1fef8c-0283-42c2-9879-b01af6236252/download/points-dacces-wifi-cigale.csv
-    # The text that comes with it, default value is 'bornes Cigales'
-    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
-    ckanext.ozwillo_theme.text_number_terminal = Bornes
-
-    # The url of the csv file containings the numbers of line you want to appear in the 4th "some numbers" section
-    # Default value is Sictiam members
-    ckanext.ozwillo_theme.file_url_number_member = https://opendata.ozwillo.com/dataset/37698f90-e166-4de0-8bb8-08ff50ca8006/resource/2383533c-7ee6-47ab-aa77-42200f5c5c27/download/adherentssictiam06032017.csv
-    # The text that comes with it, default value is 'adherents SICTIAM'
-    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
-    ckanext.ozwillo_theme.text_number_member = Adherents
-
-    # The parameters of the map display on the page (here are production parameters)
-    ckanext.ozwillo_theme.view_id = 038a8703-6031-4386-a962-7d55029724df
-    ckanext.ozwillo_theme.resource_id = c39c4c65-ffba-4a30-a164-bb29fa0e6fc1
-    ckanext.ozwillo_theme.package_id = syn
-    ckanext.ozwillo_theme.map_title =  Synthese globale des releves d'amiante
-    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
-
-    # Preprod parameters :
-    # ckanext.ozwillo_theme.view_id = 3f9a858c-763d-4b80-b3a1-55aac2a6a518
-    # ckanext.ozwillo_theme.resource_id = 5cad2604-da1e-4d56-a0f9-e3a2a5072c69
-    # ckanext.ozwillo_theme.package_id = liste-des-bornes-cigale
-    # ckanext.ozwillo_theme.map_title = Points d'Acces des hotspots Wifi Cigale
-    # If you want to use non ASCII characters you have to hardcode them directly in the template bloc_some_numbers.html
-
-    # To activation the location field, install ckanext-spatial and then set
-    # ckanext.ozwillo_theme.spatial_installed = true
-
-    # To use OSM names typeahead suggestions, register and get a key, then complete the parameter
-    # ckanext.ozwillo_theme.osmnames_key = [your key]
-
 ------------------------
 Development Installation
 ------------------------

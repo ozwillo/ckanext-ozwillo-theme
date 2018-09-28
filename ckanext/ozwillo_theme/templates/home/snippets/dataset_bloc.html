@@ -4,25 +4,40 @@
 {% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
 {% set date = h.ozwillo_theme_display_date(package.metadata_created) %}
 
-<div class="span3 col4 resource-bloc">
-  <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read', id=package.name)) }}</h4>
-  <p>
-    <small>
-      {% if notes %}
-        <div class=description">{{ notes|urlize }}</div>
-      {% endif %}
-    </small>
-  </p>
-  <div class="resource-type">
-    <ul class="dataset-resources unstyled">
-      {% for resource in h.dict_list_reduce(package.resources, 'format') %}
-      <li>
-        <a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" class="label" data-format="{{ resource.lower() }}">{{ resource }}</a>
-      </li>
-      {% endfor %}
+<div class="span3 col4 dataset__block">
+    <ul class="dataset__block-header">
+        <li class="dataset__block-header-item">
+            <a href=""><img class="dataset__block-header-icon" src="/images/ui/ENVIRONNEMENT_NOIR.svg" alt="environnement"></a>
+        </li>
+        <li class="dataset__block-header-item">
+            <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read',
+                id=package.name)) }}
+            </h4>
+        </li>
     </ul>
-  </div>
-  <div class="bottom">
-    <p class="published"><small>{{ _("PUBLISHED ON") }} {{ date }} {{ _("BY") }} <a href={{ url }}>{{ package.organization.title.upper() or package.organization.name.upper() }}</a></small></p>
-  </div>
+
+    <!-- <a href=""><img src="/images/ui/ENVIRONNEMENT_NOIR.svg" width="50px" height="50px" alt=""></a>
+    <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read',
+        id=package.name)) }}
+    </h4> -->
+    {% if notes %}
+    <h5>Description:</h5>
+    <p>
+        <small>
+            <div class="description">{{ notes|urlize }}</div>
+            {% endif %}
+        </small>
+    </p>
+    <div class="resource-type">
+        <ul class="dataset-resources unstyled">
+            {% for resource in h.dict_list_reduce(package.resources, 'format') %}
+            <li>
+                <a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" class="label"
+                    data-format="{{ resource.lower() }}">{{ resource }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="bottom">
+    </div>
 </div>
