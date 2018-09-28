@@ -70,6 +70,11 @@ span.caret {
   margin-left: 10px !important;
 }
 
+.btn-pink {
+  background-color: #E4115B;
+  color: #FFF;
+}
+
 /* TABLE */
 
 thead tr {
@@ -215,6 +220,16 @@ body > [role="main"] {
 @media (min-width: 768px) {
   .span9 .page-header {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 1067px) {
+  .span9 {
+    width: 88vw;
+  }
+
+  .span3 {
+    width: 88vw  !important;
   }
 }
 
