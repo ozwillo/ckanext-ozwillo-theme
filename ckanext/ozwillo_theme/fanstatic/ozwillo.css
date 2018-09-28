@@ -40,6 +40,7 @@ div a[href^="/user/edit"],
    display: none ;
 }
 
+
 /* MODIFIERS */
 
 /* BUTTONS */
@@ -534,14 +535,13 @@ div.categories__row {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin-top: 60px;
   margin-bottom: 120px;
-  padding-top: 20px;
-  padding-bottom: 8px;
 }
 
 div.categories__card {
-  padding: 0;
-  height: 115px;
+  height: 130px;
   display: block;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .categories__card-img {
@@ -560,6 +560,11 @@ div.categories__card {
   height: 40%;
   font-size: 0.90vw;
 }
+
+.categories__card:hover {
+  background-color: #ccc;
+}
+
 
 /* CATEGORIES CONTAINER END */
 
