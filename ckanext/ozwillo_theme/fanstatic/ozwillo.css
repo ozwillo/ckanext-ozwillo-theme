@@ -364,12 +364,12 @@ a.btn.navbar-btn.pink-btn {
   padding-bottom: 15px;
 }
 
-.col-xs-6.text-center ul.nav.navbar-nav {
+#t3-mainnav ul.nav.navbar-nav {
   font-size: 1.7vw;
   margin: 0 auto;
 }
 
-.col-xs-6.text-center {
+#t3-mainnav div.menu {
   padding: 0px 36px;
 }
 /* NAVBAR END */
