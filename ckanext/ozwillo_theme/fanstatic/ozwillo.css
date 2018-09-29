@@ -644,13 +644,13 @@ div.resource-blocs {
 
 ul.dataset-list.unstyled {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 ul.dataset-list.unstyled > li {
   height: 200px;
-  flex: 1 1 100%;
+  flex: 0 1 48%;
 }
 
 ul.dataset-list.unstyled > li:nth-child(odd) {
