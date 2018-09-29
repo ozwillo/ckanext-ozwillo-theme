@@ -84,17 +84,14 @@
         <div class="t3-navbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-3"></div>
-                    <div class="col-xs-6 text-center">
+                    <div class="col-xs-2"></div>
+                    <div class="col-xs-7 text-center">
                         <ul class="nav navbar-nav">
-                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{%
-                                    trans %}Home{%
-                                    endtrans %}</a></li>
+                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
                             <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">
-                                {% trans %}The project{%endtrans %}</a></li>
+                                {% trans %}The project{% endtrans %}</a></li>
                             <li class="item-119 deeper dropdown parent">
-                                <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{%
-                                    endtrans %}
+                                <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}
                                     <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
@@ -116,9 +113,7 @@
                                     {% endif %}
                                 </ul>
                             </li>
-                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{%
-                                    trans %}Help{%
-                                    endtrans %}</a></li>
+                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Help{% endtrans %}</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-3">
