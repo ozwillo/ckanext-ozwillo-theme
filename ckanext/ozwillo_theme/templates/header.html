@@ -126,7 +126,7 @@
                                 <a class="btn navbar-btn pink-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log
                                     out{% endtrans %}</a>
                                 {% else %}
-                                <a class="btn navbar-btn pink-btn" href="/user/login">{% trans
+                                <a class="btn navbar-btn pink-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans
                                     %}Log in{% endtrans %}</a>
                                 {% endif %}
                             </li>
