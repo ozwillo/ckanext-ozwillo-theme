@@ -1,14 +1,17 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.33 43.36">
-    <defs>
-        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px;}</style>
-    </defs>
-    <title>SANTE_NOIR</title>
-    <g id="Calque_2" data-name="Calque 2">
-        <g id="Calque_1-2" data-name="Calque 1">
-            <polyline class="cls-1" points="1 20.85 7.62 20.85 15.89 10.93 24.16 32.44 25.82 22.51 27.47 22.51 32.44 10.93 40.71 32.44 44.02 20.85 47.33 20.85"/>
-            <path class="cls-1" d="M45.67,17.54a14.27,14.27,0,0,0,1.66-5.79C47.33,5.47,42,1,35.74,1A11.73,11.73,0,0,0,24.16,12.58,11.73,11.73,0,0,0,12.58,1C6.3,1,1,5.47,1,11.75a10.2,10.2,0,0,0,.83,5"/>
-            <polyline class="cls-1" points="9.27 25.82 24.16 42.36 35.74 29.13"/>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#010101;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Calque_2_7_">
+	<g id="Calque_1-2_6_">
+		<polyline class="st0" points="14.2,41.5 22.3,41.5 32.4,29.4 42.5,55.7 44.6,43.5 46.6,43.5 52.7,29.4 62.8,55.7 66.8,41.5 
+			70.9,41.5 		"/>
+		<path class="st0" d="M68.8,37.5c1.2-2.2,1.9-4.6,2-7.1c0-7.7-6.5-13.1-14.2-13.1c-7.8,0.1-14.1,6.4-14.2,14.2
+			c-0.1-7.8-6.4-14.1-14.2-14.2c-7.7,0-14.2,5.5-14.2,13.1c-0.2,2.1,0.2,4.2,1,6.1"/>
+		<polyline class="st0" points="24.3,47.6 42.5,67.8 56.7,51.6 		"/>
+	</g>
+</g>
 </svg>

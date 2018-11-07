@@ -1,16 +1,17 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.62 43.62">
-    <defs>
-        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style>
-    </defs>
-    <title>SPORT_NOIR</title>
-    <g id="Calque_2" data-name="Calque 2">
-        <g id="Calque_1-2" data-name="Calque 1">
-            <path class="cls-1" d="M1.74,16.61c4.11-6.43,27.11-14.94,40.13.74"/>
-            <path class="cls-1" d="M4.72,33c0-4.42,15.6-16.2,15.6-23.79s-5.94-6.68-5.94-6.68"/>
-            <path class="cls-1" d="M18.09,41.87C23.74,32,24.78,27,24.78,1.74"/>
-            <path class="cls-1" d="M35.19,37.41c5-8-4.46-17.37-4.46-26.19,0-5.27,3.71-5.76,3.71-5.76"/>
-            <circle class="cls-1" cx="21.81" cy="21.81" r="20.81"/>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#010101;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Calque_2_8_">
+	<g id="Calque_1-2_7_">
+		<path class="st0" d="M15.2,35.4c5.6-8.8,36.9-20.4,54.7,1"/>
+		<path class="st0" d="M19.2,57.8c0-6,21.2-22.1,21.2-32.4s-8.1-9.1-8.1-9.1"/>
+		<path class="st0" d="M37.5,69.8c7.7-13.4,9.1-20.3,9.1-54.7"/>
+		<path class="st0" d="M60.7,63.8c6.8-10.9-6.1-23.7-6.1-35.7c0-7.2,5.1-7.8,5.1-7.8"/>
+		<circle class="st0" cx="42.5" cy="42.5" r="28.3"/>
+	</g>
+</g>
 </svg>

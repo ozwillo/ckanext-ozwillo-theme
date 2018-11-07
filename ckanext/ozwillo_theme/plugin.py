@@ -6,6 +6,7 @@ from pylons import config as pconfig
 
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
+from ckan.common import config
 from ckan.lib.app_globals import set_app_global
 from ckan.lib.plugins import DefaultTranslation
 import ckan.logic as logic
@@ -62,7 +63,10 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
             'ozwillo_theme_get_resource_number': ozwillo_theme_get_resource_number,
             'ozwillo_theme_get_popular_datasets': lambda: logic.get_action('package_search')({}, {"rows": 4, 'sort': 'views_total desc'})['results'],
             'ozwillo_theme_display_date': ozwillo_theme_display_date,
-            'ozwillo_theme_get_map': ozwillo_theme_get_map
+            'ozwillo_theme_get_map': ozwillo_theme_get_map,
+            'ozwillo_theme_get_groups': lambda: logic.get_action('group_list')({}, {"all_fields": True}),
+            'ozwillo_theme_spatial_installed': lambda: config.get('ckanext.ozwillo_theme.spatial_installed', 'False'),
+            'ozwillo_theme_osmnames_key': lambda: config.get('ckanext.ozwillo_theme.osmnames_key', '')
         }
 
 

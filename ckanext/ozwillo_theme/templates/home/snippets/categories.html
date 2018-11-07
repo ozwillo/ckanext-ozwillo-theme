@@ -1,80 +1,86 @@
 {% set current_lang = request.environ.CKAN_LANG %}
 {% set current_page = request.environ.CKAN_CURRENT_URL %}
+{# % set categories = h.ozwillo_theme_get_groups() % #}
 
-<div class="categories container-fluid">
-        <div class="row categories__row">
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/administration-electronique">
+<div class="categories container-fluid categories__row">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/administration-electronique">
                         <img src="/images/ui/ADMINISTRATION_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-orange">{% trans %}Administration{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/">
                         <img src="/images/ui/AGRICULTURE_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-pink">{% trans %}Agriculture<br />& Food{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/citoyennete">
-                        <img src="/images/ui/CITOYEN_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-purple">{% trans %}Citizenship<br /> & Solidarity{% endtrans %}</span>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/amenagement-du-territoire">
+                        <img src="/images/ui/URBANISME_NOIR.svg" alt="" class="responsive categories__card-img">
+                        <span class="categories__card-title text-purple">{% trans %}Town&nbsp;Planning<br />Housing<br />Equipment{% endtrans %}</span>
                     </a>
-                </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/culture">
+                </div> 
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/culture">
                         <img src="/images/ui/CULTURE_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-orange">{% trans %}Culture<br />& Tourism{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/economie">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/economie">
                         <img src="/images/ui/ECONOMIE_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-pink">{% trans %}Economy<br />& Employment{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/enfance-et-education">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/enfance-et-education">
                         <img src="/images/ui/EDUCATION_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-purple">{% trans %}Childhood<br />Education<br />& Formation{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/environnement">
+            </div>
+            <div class="row ">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/environnement">
                         <img src="/images/ui/ENVIRONNEMENT_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-orange">{% trans %}Environment{% endtrans%}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group">
                         <img src="/images/ui/SANTE_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-pink">{% trans%}Healthcare{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/">
                         <img src="/images/ui/SPORT_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-purple">{% trans %}Sport{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/amenagement-du-territoire">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/amenagement-du-territoire">
                         <img src="/images/ui/TERRITOIRE_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-orange">{% trans%}Territory{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/transport-et-mobilite">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/transport-et-mobilite">
                         <img src="/images/ui/TRANSPORT_NOIR.svg" alt="" class="responsive categories__card-img">
                         <span class="categories__card-title text-pink">{% trans %}Transport<br />& Mobility{% endtrans %}</span>
                     </a>
                 </div>
-                <div class="col-md-1 col-sm-3 categories__card">
-                    <a href="{{ g.ozwillo_url }}/{{current_lang}}/group/amenagement-du-territoire">
-                        <img src="/images/ui/URBANISME_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-purple">{% trans %}Town&nbsp;Planning<br />Housing<br />Equipment{% endtrans %}</span>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <a class="categories__card" href="{{ g.ozwillo_url }}/{{current_lang}}/group/citoyennete">
+                        <img src="/images/ui/CITOYEN_NOIR.svg" alt="" class="responsive categories__card-img">
+                        <span class="categories__card-title text-purple">{% trans %}Citizenship<br /> & Solidarity{% endtrans %}</span>
                     </a>
-                </div>            
+                </div>
+            </div>           
         </div>
     </div>
     

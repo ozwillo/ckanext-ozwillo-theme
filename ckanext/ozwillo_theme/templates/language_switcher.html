@@ -2,7 +2,7 @@
 {% set current_url = request.environ.CKAN_CURRENT_URL %}
 <!-- LANGUAGE SWITCHER -->
 
-<a class="dropdown-toggle" href="/" data-toggle="dropdown">
+<a class="dropdown-toggle" href="/" data-toggle="dropdown">{{current_lang}}
 {% for locale in h.get_available_locales() %}
 {% if locale == current_lang %}{{ locale.display_name or locale.english_name }}{% endif %}
 {% endfor %}
@@ -13,7 +13,7 @@
   {% if locale != current_lang %}
   <li><a href="{% url_for current_url, locale=locale %}">{{ locale.display_name or locale.english_name }}</a></li>
   {% endif %}
-{% endfor %}
+  {% endfor %}
 </li>
 </ul>
 <!-- //LANGUAGE SWITCHER -->

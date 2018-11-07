@@ -2,22 +2,30 @@
 {% set resource_number = h.ozwillo_theme_get_resource_number() %}
 
 <div class="stats container-fluid">
-    <div class="row stats__row">
-        <div class="col-md-3 text-center">
-            <h2 class="text-purple text-big">{{ h.SI_number_span(stats.dataset_count) }}</h2>
-            <h2 class="text-medgrey titlecase numbers__title">{{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}</h2>
+    <div class="container stats__row">
+        <div class="col-md-3 col-xs-6 text-center">
+            <div class="stats__card bg-purple">
+                <span class="text-big numbers">{{ h.SI_number_span(stats.dataset_count) }}</span>
+                <h2 class="titlecase numbers__title">{{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}</h2>
+            </div>
         </div>
-        <div class="col-md-3 text-center">
-            <h2 class="text-pink text-big">{% if ressource_numer %}{{ ressource_number }}{% else %} {{ 0}} {% endif%}</h2>
-            <h2 class="text-medgrey titlecase numbers__title">{{ _('resources') }}</h2>
+        <div class="col-md-3 col-xs-6 text-center">
+            <div class="stats__card bg-pink">
+                <span class="text-big numbers">{% if ressource_numer %}{{ ressource_number }}{% else %} {{ 0}} {% endif%}</span>
+                <h2 class="titlecase numbers__title">{{ _('resources') }}</h2>
+            </div>
         </div>
-        <div class="col-md-3 text-center">
-            <h2 class="text-orange text-big">37</h2>
-            <h2 class="text-medgrey titlecase numbers__title">{% trans %}Organizations{% endtrans %}</h2>
+        <div class="col-md-3 col-xs-6 text-center">
+            <div class="stats__card bg-orange">
+                <span class="text-big numbers">37</span>
+                <h2 class="titlecase numbers__title">{% trans %}Organizations{% endtrans %}</h2>
+            </div>
         </div>
-        <div class="col-md-3 text-center">
-            <h2 class="text-purple text-big">299</h2>
-            <h2 class="text-medgrey titlecase numbers__title">{% trans %}Showcase{% endtrans %}</h2>
+        <div class="col-md-3 col-xs-6 text-center">
+            <div class="stats__card bg-purple">
+                <span class="text-big numbers">299</span>
+                <h2 class="titlecase numbers__title">{% trans %}Showcase{% endtrans %}</h2>
+            </div>
         </div>
     </div>
 </div>

@@ -1,17 +1,21 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.47 45.46">
-    <defs>
-        <style>.cls-1{fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px;}</style>
-    </defs>
-    <title>PERSO NOIR</title>
-    <g id="Calque_2" data-name="Calque 2">
-        <g id="Calque_1-2" data-name="Calque 1">
-            <ellipse class="cls-1" cx="7.75" cy="6.25" rx="3.72" ry="3.78"/>
-            <circle class="cls-1" cx="34.72" cy="6.25" r="3.75"/>
-            <circle class="cls-1" cx="21.23" cy="4.75" r="3.75"/>
-            <path class="cls-1" d="M10.79,14.62a2.68,2.68,0,0,0-.8-.13H5.6a3.61,3.61,0,0,0-3.47,3.32L1,27.54a1.58,1.58,0,0,0,1.59,1.93h.64L4,43h7.24l.25-3.75"/>
-            <path class="cls-1" d="M31,39.17,31.22,43h7.25l.86-13.49H40c1.05,0,1.61-.8,1.48-1.93l-1.12-9.73a3.59,3.59,0,0,0-3.46-3.32h-4.4a3.27,3.27,0,0,0-1.16.22"/>
-            <path class="cls-1" d="M29.1,35.47,27.6,27.7a2.07,2.07,0,0,0,1.49-2.26l-1.24-8.78A4,4,0,0,0,24,13H18.46a4,4,0,0,0-3.84,3.67L13,25.44a2.38,2.38,0,0,0,1.86,2.26l-1.5,7.77h4l1.65,9h4.5l1.65-9Z"/>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#010101;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Calque_2_3_">
+	<g id="Calque_1-2_2_">
+		<ellipse class="st0" cx="24.9" cy="21" rx="4.9" ry="4.9"/>
+		<circle class="st0" cx="60.1" cy="21" r="4.9"/>
+		<circle class="st0" cx="42.5" cy="19.1" r="4.9"/>
+		<path class="st0" d="M28.9,31.9c-0.3-0.1-0.7-0.2-1-0.2h-5.7c-2.4,0.1-4.3,1.9-4.5,4.3l-1.5,12.7c-0.3,1.1,0.4,2.2,1.6,2.5
+			c0.2,0,0.3,0.1,0.5,0.1H19l1,17.6h9.4l0.3-4.9"/>
+		<path class="st0" d="M55.3,64l0.3,5H65l1.1-17.6H67c1.4,0,2.1-1,1.9-2.5l-1.5-12.7c-0.2-2.4-2.1-4.3-4.5-4.3h-5.7
+			c-0.5,0-1,0.1-1.5,0.3"/>
+		<path class="st0" d="M52.8,59.1l-2-10.1c1.3-0.4,2.1-1.6,1.9-2.9l-1.6-11.5c-0.2-2.6-2.4-4.7-5-4.8h-7.2c-2.6,0.1-4.8,2.2-5,4.8
+			L31.8,46c0,1.4,1,2.6,2.4,2.9l-2,10.1h5.2l2.2,11.7h5.9l2.2-11.7H52.8z"/>
+	</g>
+</g>
 </svg>

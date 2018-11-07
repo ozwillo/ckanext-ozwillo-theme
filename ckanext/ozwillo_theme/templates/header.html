@@ -2,15 +2,18 @@
 {% set current_page = request.environ.CKAN_CURRENT_URL %}
 
 <div class="header container-fluid text-center">
-    <div class="row">
-        <div class="header__logo col-md-3">
-            <a href="" class="logo">
-                <img src="/img/oz.png" alt="{% trans %}Home{% endtrans %}">
-            </a>
-        </div>
-        <div class="header__title col-md-9">
-            <h1>L'OpenData pour tous</h1>
-            <span>La plateforme de publication de données publiques ouvertes pour tous nos adhérents.</span>
+    <div class="container">
+        <div class="row">
+            <div class="header__logo col-md-3">
+                <a href="/{{current_lang}}" class="logo">
+                    <img src="/img/oz.png" alt="{% trans %}Home{% endtrans %}">
+                </a>
+            </div>
+            <div class="header__title col-md-9">
+                <img class="tagline" src="/img/tagline.png" alt="{% trans %}Vos données ont du sens{% endtrans %}">
+                {#<h1>Vos données ont du sens</h1>
+                <span>Ouvrez et automatisez la publication de vos données, pour faciliter leur réutilisation !</span>#}
+            </div>
         </div>
     </div>
 </div>
@@ -19,14 +22,20 @@
 <div id="toggle-container">
     <ul class="nav">
         <li class="item-119 deeper dropdown parent">
-            <button id="toggle-toc" class="btn btn-pink visible-xs-inline-block" data-toggle="dropdown" type="button">
+             <button id="toggle-toc" class="btn btn-pink visible-xs-inline-block" data-toggle="dropdown" type="button">
                 <i class="fa fa-bars"></i>
             </button>
+            <img src="/img/logo-mobile.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">           
             <ul class="dropdown-menu">
+                <li  {#% if current_page.endswith('') %} class='active' {% endif %#}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
+                <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
+                                {% trans %}The project{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
                         trans %}Datasets{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
                         trans %}Organizations{% endtrans %}</a></li>
+                <li {% if current_page.startswith('/groups') %} class='active' {% endif %}><a href="/{{current_lang}}/groups">{%
+                                            trans %}Thèmes{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a href="/{{current_lang}}/datarequest">{%
                         trans %}Data Request{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a href="/{{current_lang}}/showcase">{%
@@ -44,7 +53,7 @@
 <nav id="off-nav">
     <ul class="nav">
         <li>
-            <a class="logo" href="{{ g.ozwillo_url }}/{{current_lang}}"><img src="/img/logo-h43.png" alt="{% trans %}Home{% endtrans %}"></a>
+            <a class="logo" href="/{{current_lang}}"><img src="/img/logo-h43.png" alt="{% trans %}Home{% endtrans %}"></a>
         </li>
         <li class="divider first"></li>
         <li>
@@ -76,19 +85,20 @@
                 %}Log in{% endtrans %}</a>
             {% endif %}
         </li>
-        <li class="divider"></li>
+        
     </ul>
 </nav>
+
 <nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav">
     <div class="container">
         <div class="t3-navbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2"></div>
-                    <div class="col-xs-7 menu text-center">
+            <!-- <div class="container"> -->
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-xs-2"></div> -->
+                    <div class="col-xs-9 menu text-center">
                         <ul class="nav navbar-nav">
-                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
-                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">
+                            <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
+                            <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
                                 {% trans %}The project{% endtrans %}</a></li>
                             <li class="item-119 deeper dropdown parent">
                                 <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}
@@ -99,41 +109,49 @@
                                     <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
                                             href="/{{current_lang}}/organization">{%
                                             trans %}Organizations{% endtrans %}</a></li>
+                                    <li {% if current_page.startswith('/groups') %} class='active' {% endif %}><a href="/{{current_lang}}/groups">{%
+                                            trans %}Thèmes{% endtrans %}</a></li>
                                     <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
                                             href="/{{current_lang}}/datarequest">
                                             {% trans %}Data Request{% endtrans %}</a></li>
                                     <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a
                                             href="/{{current_lang}}/showcase">{%
                                             trans %}Showcase{% endtrans %}</a></li>
-                                    {% if c.userobj %}
+                                    <!-- {% if c.userobj %}
                                     <li class="divider"></li>
                                     <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
                                             href="/{{current_lang}}/dashboard">{%
                                             trans %}Dashboard{% endtrans %}</a></li>
-                                    {% endif %}
+                                    {% endif %} -->
                                 </ul>
                             </li>
-                            <li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Help{% endtrans %}</a></li>
+                            
+                            {#<li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Help{% endtrans %}</a></li>#}
+                            {% if c.userobj %}
+                            <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
+                                    href="/{{current_lang}}/dashboard">{%
+                                    trans %}Dashboard{% endtrans %}</a></li>
+                            {% endif %}
                         </ul>
                     </div>
-                    <div class="col-xs-3">
-                        <ul class="nav navbar-nav navbar-right navbar-lang">
-                            <li class="dropdown">{% snippet "language_switcher.html" %}</li>
-                        </ul>
+                    <div class="col-xs-3">                        
                         <ul class="nav navbar-nav navbar-right">
                             <li class="item-123">
                                 {% if c.userobj %}
-                                <a class="btn navbar-btn pink-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log
+                                <a class="btn btn-pink navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log
                                     out{% endtrans %}</a>
                                 {% else %}
-                                <a class="btn navbar-btn pink-btn" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans
+                                <a class="btn navbar-btn btn-pink" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans
                                     %}Log in{% endtrans %}</a>
                                 {% endif %}
                             </li>
                         </ul>
+                        <ul class="nav navbar-nav navbar-right navbar-lang">
+                            <li class="dropdown">{% snippet "language_switcher.html" %}</li>
+                        </ul>
                     </div>
-                </div>
-            </div>  <!--NAV BAR CONTAINER-->        
+                <!-- </div> -->
+            <!-- </div>  NAV BAR CONTAINER         -->
         </div>
     </div>
 </nav>
