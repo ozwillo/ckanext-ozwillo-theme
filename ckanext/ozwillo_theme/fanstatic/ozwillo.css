@@ -648,7 +648,7 @@ section#dataset-map.module.module-narrow.module-shallow {
 
 .module.context-info .module-content h1.heading {
     position: relative;
-    color: #666;
+    color: #703e90;
     font-size: 20px;
     text-align: center;
     line-height: 20px;
@@ -802,6 +802,15 @@ button.searchbar__button:hover{
   display: flex;
   align-items: center;
 }
+@media (max-width: 990px) {
+.search__block__input{
+  margin-bottom: 15px
+}
+.searchbar__form{
+  border-radius: 0px!important;
+  margin-top: -60px;
+}
+}
 .justify-content-center {
     -ms-flex-pack: center!important;
     justify-content: center!important;
@@ -939,47 +948,50 @@ div.resource-blocs {
     flex: 1;
     min-height: 210px;
 }
-.dataset-list .col-md-3:nth-child(3n+1) .dataset-resources a,
+.dataset-list .col-md-6:nth-child(3n+1) .dataset-resources a,
 .dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-resources a{
     border: 2px solid #6E428E;
     color: #6E428E;
 }
-.dataset-list .col-md-3:nth-child(3n+1) .dataset-resources a:hover,
+.dataset-list .col-md-6:nth-child(3n+1) .dataset-resources a:hover,
 .dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-resources a:hover{
     background: #6E428E;    
     color: #fff;
 }
-.dataset-list .col-md-3:nth-child(3n+2) .dataset-resources a,
+.dataset-list .col-md-6:nth-child(3n+2) .dataset-resources a,
 .dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-resources a{
     background: transparent;
     border: 2px solid #e51159;
     color: #e51159;
 }
-.dataset-list .col-md-3:nth-child(3n+2) .dataset-resources a:hover,
+.dataset-list .col-md-6:nth-child(3n+2) .dataset-resources a:hover,
 .dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-resources a:hover{
     background: #e51159;    
     color: #fff;
 }
-.dataset-list .col-md-3:nth-child(3n+3) .dataset-resources a,
+.dataset-list .col-md-6:nth-child(3n+3) .dataset-resources a,
 .dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-resources a{
     border: 2px solid #ff9a1d;
     color: #ff9a1d;
 }
-.dataset-list .col-md-3:nth-child(3n+3) .dataset-resources a:hover,
+.dataset-list .col-md-6:nth-child(3n+3) .dataset-resources a:hover,
 .dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-resources a:hover{
     background: #ff9a1d;    
     color: #fff;
 }
-.dataset-list .col-md-3:nth-child(3n+1)  .dataset-item .dataset__block-header h4 a,
-.dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-heading a{
+.dataset-list .col-md-6:nth-child(3n+1)  .dataset-item .dataset__block-header h4 a,
+.dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-heading a,
+#group_list .col-md-4:nth-child(3n+1) .media-item h3{
     color: #6E428E;
 }
-.dataset-list .col-md-3:nth-child(3n+2)  .dataset-item .dataset__block-header h4 a,
-.dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-heading a{
+.dataset-list .col-md-6:nth-child(3n+2)  .dataset-item .dataset__block-header h4 a,
+.dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-heading a,
+#group_list .col-md-4:nth-child(3n+2) .media-item h3{
     color: #e51159;
 }
-.dataset-list .col-md-3:nth-child(3n+3)  .dataset-item .dataset__block-header h4 a,
-.dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-heading a{
+.dataset-list .col-md-6:nth-child(3n+3)  .dataset-item .dataset__block-header h4 a,
+.dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-heading a,
+#group_list .col-md-4:nth-child(3n+3) .media-item h3{
     color: #ff9a1d;
 }
 .dataset__block-header {
@@ -1734,6 +1746,7 @@ body > .homepage {
   width: auto;
   margin: auto;
   display: block;
+  height: 150px;
 }
 .organization-img{
   height: 110px;

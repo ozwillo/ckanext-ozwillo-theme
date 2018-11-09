@@ -4,7 +4,7 @@
 {% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
 {% set date = h.ozwillo_theme_display_date(package.metadata_created) %}
 
-<div class="col-md-3 ">
+<div class="col-md-6 ">
     <div class="dataset-item">
     {#<!-- <ul class="dataset__block-header">
         <li class="dataset__block-header-item">
@@ -22,7 +22,7 @@
         id=package.name)) }}
     </h4> -->#}
     <div class="row dataset__block-header">
-        <img class="col-xs-2 dataset__block-header-icon" src="/images/ui/ENVIRONNEMENT_NOIR.svg" alt="environnement">
+        <img class="col-xs-2 dataset__block-header-icon" src="/images/ui/CITOYEN_NOIR.svg" alt="environnement">
         <!-- <div class="col-xs-2">
              <a href=""><img class="" src="/images/ui/ENVIRONNEMENT_NOIR.svg" alt="environnement"></a>
         </div> -->
@@ -33,10 +33,10 @@
             {% if notes %}
             <!-- <h5>Description:</h5> -->
             <!-- <p> -->
-                <small>
+                <!-- <small> -->
                     <div class="description">{{ notes|urlize }}</div>
                     
-                </small>
+                <!-- </small> -->
             <!-- </p>  -->
             {% endif %}       
         </div>

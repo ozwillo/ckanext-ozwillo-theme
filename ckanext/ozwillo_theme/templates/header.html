@@ -95,7 +95,7 @@
             <!-- <div class="container"> -->
                 <!-- <div class="row"> -->
                     <!-- <div class="col-xs-2"></div> -->
-                    <div class="col-xs-9 menu text-center">
+                    <div class="col-xs-8 menu text-center">
                         <ul class="nav navbar-nav">
                             <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
                             <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
@@ -134,7 +134,7 @@
                             {% endif %}
                         </ul>
                     </div>
-                    <div class="col-xs-3">                        
+                    <div class="col-xs-4">                        
                         <ul class="nav navbar-nav navbar-right">
                             <li class="item-123">
                                 {% if c.userobj %}
