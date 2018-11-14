@@ -4,15 +4,15 @@
 <div class="header container-fluid text-center">
     <div class="container">
         <div class="row">
-            <div class="header__logo col-md-3">
+            <div class="header__logo col-xs-4">
                 <a href="/{{current_lang}}" class="logo">
-                    <img src="/img/oz.png" alt="{% trans %}Home{% endtrans %}">
+                    <img src="/img/logo-sictiam-blue-shadow.svg" alt="{% trans %}Home{% endtrans %}">
                 </a>
             </div>
-            <div class="header__title col-md-9">
-                <img class="tagline" src="/img/tagline.png" alt="{% trans %}Vos données ont du sens{% endtrans %}">
-                {#<h1>Vos données ont du sens</h1>
-                <span>Ouvrez et automatisez la publication de vos données, pour faciliter leur réutilisation !</span>#}
+            <div class="header__title col-xs-8">
+                {#<img class="tagline" src="/img/tagline.png" alt="{% trans %}Vos données ont du sens{% endtrans %}">#}
+                <h1>Open Data pour Tous</h1>
+                <span>La plateforme de publication de données pour nos adhérents </span>
             </div>
         </div>
     </div>
@@ -25,7 +25,9 @@
              <button id="toggle-toc" class="btn btn-pink visible-xs-inline-block" data-toggle="dropdown" type="button">
                 <i class="fa fa-bars"></i>
             </button>
-            <img src="/img/logo-mobile.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">           
+            <a href="/{{current_lang}}">
+                <img src="/img/logo-mobile.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
+            </a>
             <ul class="dropdown-menu">
                 <li  {#% if current_page.endswith('') %} class='active' {% endif %#}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
                 <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
