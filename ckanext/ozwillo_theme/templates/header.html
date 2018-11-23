@@ -1,37 +1,33 @@
 {% set current_lang = request.environ.CKAN_LANG %}
 {% set current_page = request.environ.CKAN_CURRENT_URL %}
 
-<div class="header container-fluid text-center">
+{#<div class="header container-fluid text-center">
     <div class="container">
         <div class="row">
-            <div class="header__logo col-xs-4">
+            <div class="header__logo col-xs-3">
                 <a href="/{{current_lang}}" class="logo">
-                    <img src="/img/logo-sictiam-blue-shadow.svg" alt="{% trans %}Home{% endtrans %}">
+                    <!-- <img src="/img/logo-sictiam-blue-shadow.svg" alt="{% trans %}Home{% endtrans %}"> -->
+                    <img src="/img/logo-opendata.svg" alt="{% trans %}Home{% endtrans %}">
                 </a>
             </div>
-            <div class="header__title col-xs-8">
-                {#<img class="tagline" src="/img/tagline.png" alt="{% trans %}Vos données ont du sens{% endtrans %}">#}
+            <div class="header__title col-xs-9">
+                <img class="tagline" src="/img/tagline.png" alt="{% trans %}Vos données ont du sens{% endtrans %}">
                 <h1>Open Data pour Tous</h1>
                 <span>La plateforme de publication de données pour nos adhérents </span>
             </div>
         </div>
     </div>
 </div>
+#}
 
-
-<div id="toggle-container">
-    <ul class="nav">
-        <li class="item-119 deeper dropdown parent">
-             <button id="toggle-toc" class="btn btn-pink visible-xs-inline-block" data-toggle="dropdown" type="button">
+<div id="toggle-container" class="">
+            <button id="toggle-toc" class="btn btn-pink visible-xs-inline-block" data-toggle="dropdown" type="button">
                 <i class="fa fa-bars"></i>
-            </button>
-            <a href="/{{current_lang}}">
-                <img src="/img/logo-mobile.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
-            </a>
+            </button>            
             <ul class="dropdown-menu">
                 <li  {#% if current_page.endswith('') %} class='active' {% endif %#}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
                 <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
-                                {% trans %}The project{% endtrans %}</a></li>
+                                {% trans %}Le projet{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
                         trans %}Datasets{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
@@ -48,8 +44,14 @@
                         trans %}Dashboard{% endtrans %}</a></li>
                 {% endif %}
             </ul>
-        </li>
-    </ul>
+            <a href="/{{current_lang}}">
+                <img src="/img/logo-mobile.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
+            </a>
+            {% if c.userobj %}
+            <a class="btn visible-xs-inline-block pull-right" href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i></a>
+            {% else %}
+            <a class="btn visible-xs-inline-block pull-right" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}"><i class="fa fa-sign-in"></i></a>
+            {% endif %}
 </div>
 
 <nav id="off-nav">
@@ -91,17 +93,23 @@
     </ul>
 </nav>
 
-<nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav">
+<nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav navbar-fixed-top">
     <div class="container">
         <div class="t3-navbar">
             <!-- <div class="container"> -->
                 <!-- <div class="row"> -->
                     <!-- <div class="col-xs-2"></div> -->
-                    <div class="col-xs-8 menu text-center">
+                    <div class="col-xs-8 menu text-center">                        
                         <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/{{current_lang}}" class="logo">
+                                    <!-- <img src="/img/logo-sictiam-blue-shadow.svg" alt="{% trans %}Home{% endtrans %}"> -->
+                                    <img src="/img/logo-sictiam-blue.svg" alt="{% trans %}Home{% endtrans %}">
+                                </a>
+                            </li>
                             <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
                             <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
-                                {% trans %}The project{% endtrans %}</a></li>
+                                {% trans %}Le projet{% endtrans %}</a></li>
                             <li class="item-119 deeper dropdown parent">
                                 <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}
                                     <b class="caret"></b></a>
@@ -148,9 +156,9 @@
                                 {% endif %}
                             </li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right navbar-lang">
+                        {#<ul class="nav navbar-nav navbar-right navbar-lang">
                             <li class="dropdown">{% snippet "language_switcher.html" %}</li>
-                        </ul>
+                        </ul>#}
                     </div>
                 <!-- </div> -->
             <!-- </div>  NAV BAR CONTAINER         -->

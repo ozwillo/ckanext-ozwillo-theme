@@ -1,8 +1,8 @@
 {% set tags = h.get_facet_items_dict('tags', limit=3) %} {% set placeholder = _('eg. Gold Prices') %}
 {% set current_lang = request.environ.CKAN_LANG %}
 
-<div class="searchbar container">
-    <div class=" col-md-offset-1 col-md-10 search__block">
+<div class="searchbar">
+    <div class="search__block container">
         <!-- <div class="col-md-8 col-sm-10 col-xs-12"> -->
             <form class="searchbar__form" action="/{{current_lang}}/dataset" method="get">
                 <div class="row align-items-center">
