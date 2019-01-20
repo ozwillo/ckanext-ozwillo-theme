@@ -7,7 +7,7 @@
             <div class="header__logo col-xs-3">
                 <a href="/{{current_lang}}" class="logo">
                     <!-- <img src="/img/logo-sictiam-blue-shadow.svg" alt="{% trans %}Home{% endtrans %}"> -->
-                    <img src="/img/logo-opendata.svg" alt="{% trans %}Home{% endtrans %}">
+                    <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
                 </a>
             </div>
             <div class="header__title col-xs-9">
@@ -45,7 +45,7 @@
                 {% endif %}
             </ul>
             <a href="/{{current_lang}}">
-                <img src="/img/logo-mobile.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
+                <img src="/img/logo.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
             </a>
             {% if c.userobj %}
             <a class="btn visible-xs-inline-block pull-right" href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i></a>
@@ -104,7 +104,7 @@
                             <li>
                                 <a href="/{{current_lang}}" class="logo">
                                     <!-- <img src="/img/logo-sictiam-blue-shadow.svg" alt="{% trans %}Home{% endtrans %}"> -->
-                                    <img src="/img/logo-sictiam-blue.svg" alt="{% trans %}Home{% endtrans %}">
+                                    <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
                                 </a>
                             </li>
                             <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
@@ -119,7 +119,7 @@
                                     <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
                                             href="/{{current_lang}}/organization">{%
                                             trans %}Organizations{% endtrans %}</a></li>
-                                    <li {% if current_page.startswith('/groups') %} class='active' {% endif %}><a href="/{{current_lang}}/groups">{%
+                                    <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/groups">{%
                                             trans %}Thèmes{% endtrans %}</a></li>
                                     <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
                                             href="/{{current_lang}}/datarequest">
@@ -156,9 +156,9 @@
                                 {% endif %}
                             </li>
                         </ul>
-                        {#<ul class="nav navbar-nav navbar-right navbar-lang">
+                        <ul class="nav navbar-nav navbar-right navbar-lang">
                             <li class="dropdown">{% snippet "language_switcher.html" %}</li>
-                        </ul>#}
+                        </ul>
                     </div>
                 <!-- </div> -->
             <!-- </div>  NAV BAR CONTAINER         -->
