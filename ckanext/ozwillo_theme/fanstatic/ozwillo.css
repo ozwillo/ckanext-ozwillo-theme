@@ -1709,6 +1709,7 @@ h1, h2, h3, h4, h5, h6,
     position: absolute;
 }
 
+
 .search-form .search-input-group input {
   padding: 0.5em 1em;
 }
@@ -1943,6 +1944,19 @@ li.media-item {
 .particles-js-canvas-el{
       margin-top: -165px;
 }
+
+/* Bugfixes */
+.wrapper:before {
+  border:0 !important;
+}
+
+[role=main] .secondary {
+  padding-right:15px;
+}
+.toolbar .breadcrumb li:after {
+  content: " / " !important;
+}
+
 /*
 @media (min-width: 980px) {
   
