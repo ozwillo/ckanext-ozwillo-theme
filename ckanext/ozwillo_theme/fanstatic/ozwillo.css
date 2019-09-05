@@ -1460,7 +1460,8 @@ header .content_action a.btn {
 
 .media-view:hover, .media-view.hovered {
   /*border: 1.5px solid #ccc;*/
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border:0;
+  box-shadow: none;
 }
 
 #t3-mainnav .nav>li>.dropdown-menu:before,
@@ -1961,6 +1962,17 @@ li.media-item {
   padding:0;
 }
 
+.media-custom-item {
+  background-color: rgb(255, 255, 255);
+  border-radius:2px;
+  height:300px;
+  padding:10px 15px;
+  border: 1px solid #ccc;
+  margin-bottom:40px;
+  border-radius: 5px;
+  box-shadow: none!important;
+}
+
 /*
 @media (min-width: 980px) {
   
@@ -2037,8 +2049,8 @@ li.media-item {
   color: #e61f82;
   font-weight: 800;
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 60px;
+  left: 10%;
 }
 .media-heading {
     margin-top: 15px;
