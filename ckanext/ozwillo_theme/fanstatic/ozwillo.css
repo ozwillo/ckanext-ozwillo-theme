@@ -385,6 +385,15 @@ section.social .nav-simple{
   border: 1px solid #999;
   /*width: 87%;*/
 }
+
+.module-content .search-input-group input[type=text] {
+  height: 40px;
+  margin: auto 0px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  /*width: 87%;*/
+}
+
 .module-content .pagination {
     margin: 30px auto 0;
     display: block;
@@ -1681,20 +1690,26 @@ h1, h2, h3, h4, h5, h6,
     margin-right: -5px;
     margin-left: -5px;
 }
-.search-form .search-input.search-giant button, .search-form .search-input.search-giant button {
+
+.module-content .input-group.search-input-group {
+  width:100%;
+}
+.search-form .search-input-group .input-group-btn button, .search-form .search-input-group button {
     margin: 0;
-    top: 3px;
-    right: 3px;
+    top: 1px;
+    right: 7px;
     height: 32px;
     padding: 0 0.75em;
-    background: #ffffffa3;
+    background: transparent;
     color: #505050;
     font-weight: 800;
     border-radius: 0 4rem 4rem 0;
     padding: 5px 15px;
+    z-index: 99;
+    position: absolute;
 }
 
-.search-form .search-input.search-giant input {
+.search-form .search-input-group input {
   padding: 0.5em 1em;
 }
 
