@@ -14,8 +14,8 @@ Example:
 {% set type = group.type or 'group' %}
 {% set url = h.url_for(type ~ '_read', action='read', id=group.name) %}
 {% block item %}
-<li class="col-md-4">
-  <div class="media-item">
+<div class="col-md-4 col-sm-6">
+  <div class="single-item media-custom-item">
   {% block item_inner %}
   {% block image %}
     <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image">
@@ -45,7 +45,7 @@ Example:
   {% endif %}
   {% endblock %}
 </div>
-</li>
+</div>
 {% endblock %}
 {% if position is divisibleby 3 %}
   <li class="clearfix js-hide"></li>

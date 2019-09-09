@@ -15,6 +15,7 @@ Example:
 
 #}
 {% block package_list %}
+  <p class="clearfix"></p>
   {% if packages %}
     <ul class="{{ list_class or 'dataset-list' }} row">
     	{% block package_list_inner %}
