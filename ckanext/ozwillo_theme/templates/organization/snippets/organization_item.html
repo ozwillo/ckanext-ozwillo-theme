@@ -17,7 +17,7 @@
     <li class="single-item media-custom-item">
       {% block item_inner %}
       {% block image %}
-        <img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" alt="{{ organization.name }}" class="img-responsive media-image">
+        <img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" alt="{{ organization.name }}" class="media-image center-block">
       {% endblock %}
       {% block title %}
         <h3 class="media-heading">{{ organization.display_name }}</h3>

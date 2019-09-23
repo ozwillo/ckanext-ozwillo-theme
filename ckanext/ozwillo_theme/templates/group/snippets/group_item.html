@@ -14,11 +14,11 @@ Example:
 {% set type = group.type or 'group' %}
 {% set url = h.url_for(type ~ '_read', action='read', id=group.name) %}
 {% block item %}
-<div class="col-md-4 col-sm-6">
+<div class="col-md-4 col-sm-6 group-items">
   <div class="single-item media-custom-item">
   {% block item_inner %}
   {% block image %}
-    <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image">
+    <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image center-block">
   {% endblock %}
   {% block title %}
     <h3 class="media-heading">{{ h.get_translated(group, 'title') or group.display_name }}</h3>
