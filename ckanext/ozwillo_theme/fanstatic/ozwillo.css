@@ -1973,6 +1973,35 @@ li.media-item {
   box-shadow: none!important;
 }
 
+
+.media-custom-item .media-image{
+  width: auto;
+  max-width: 100%;
+  height: 104px;
+}
+
+.media-custom-item .media-heading {
+  font-size: 16px;
+}
+
+.media-custom-item p{
+  font-size:12px;
+}
+
+.group-items:nth-child(3n+1) .media-heading{
+    color: #6e428e;
+}
+.group-items:nth-child(3n+2) .media-heading{
+    color: #e41a5b;
+}
+.group-items:nth-child(3n+3) .media-heading {
+    color: #ff9933;
+}
+.media-grid_ {
+  list-style: none;
+  padding-left:0;
+}
+
 /*
 @media (min-width: 980px) {
   
