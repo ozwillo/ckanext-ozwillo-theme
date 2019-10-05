@@ -140,6 +140,10 @@ do::
 Translations
 ------------
 
+Install the `gettext` package:
+
+    sudo apt install gettext
+    
 To generate .mo files after having added a new translation, do :
 
     python setup.py compile_catalog
