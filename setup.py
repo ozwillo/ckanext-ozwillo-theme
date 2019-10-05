@@ -14,17 +14,17 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='0.0.1',
+    version='1.0.0',
 
     description='''Ozwillo theme for CKAN''',
     long_description=long_description,
 
     # The project's main homepage.
-    url='http://repos.entrouvert.com/ckanext-ozwillo-theme.git',
+    url='https://github.com/ozwillo/ckanext-ozwillo-theme',
 
     # Author details
-    author='''Serghei Mihai''',
-    author_email='''smihai@entrouvert.com''',
+    author='''Ozwillo''',
+    author_email='''contact@ozwillo.org''',
 
     # Choose your license
     license='AGPL',
@@ -35,7 +35,7 @@ setup(
         # 3 - Alpha
         # 4 - Beta
         # 5 - Production/Stable
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
@@ -48,7 +48,7 @@ setup(
 
 
     # What does your project relate to?
-    keywords='''CKAN oasis ozwillo''',
+    keywords='''CKAN Ozwillo''',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
