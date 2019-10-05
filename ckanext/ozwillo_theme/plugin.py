@@ -61,6 +61,7 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
         return {
             'ozwillo_theme_get_last_datasets': lambda: logic.get_action('package_search')({}, {"rows": 8})['results'],
             'ozwillo_theme_get_resource_number': ozwillo_theme_get_resource_number,
+            'ozwillo_theme_get_showcase_number': ozwillo_theme_get_showcase_number,
             'ozwillo_theme_get_popular_datasets': lambda: logic.get_action('package_search')({}, {"rows": 4, 'sort': 'views_total desc'})['results'],
             'ozwillo_theme_display_date': ozwillo_theme_display_date,
             'ozwillo_theme_get_map': ozwillo_theme_get_map,
@@ -76,6 +77,10 @@ def ozwillo_theme_display_date(strDate):
 
 def ozwillo_theme_get_resource_number():
     return logic.get_action('resource_search')({}, {'query': {'name:': ''}})['count']
+
+
+def ozwillo_theme_get_showcase_number():
+    return len(logic.get_action('ckanext_showcase_list')({}, {}))
 
 
 def ozwillo_theme_get_map(view_id, resource_id, package_id):

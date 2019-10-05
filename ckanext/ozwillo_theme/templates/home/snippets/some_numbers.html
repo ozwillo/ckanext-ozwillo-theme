@@ -1,5 +1,6 @@
 {% set stats = h.get_site_statistics() %}
 {% set resource_number = h.ozwillo_theme_get_resource_number() %}
+{% set showcase_number = h.ozwillo_theme_get_showcase_number() %}
 
 <div class="stats container-fluid">
     <div class="container stats__row">
@@ -23,7 +24,7 @@
         </div>
         <div class="col-md-3 col-xs-6 text-center">
             <div class="stats__card bg-purple">
-                <span class="text-big numbers">1</span>
+                <span class="text-big numbers">{% if showcase_number %}{{ showcase_number }}{% else %} {{ 0}} {% endif%}</span>
                 <h2 class="titlecase numbers__title">{% trans %}Showcase{% endtrans %}</h2>
             </div>
         </div>
