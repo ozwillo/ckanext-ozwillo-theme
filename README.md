@@ -67,9 +67,8 @@ Install the `gettext` package:
 
     sudo apt install gettext
 
-To generate .mo files after having added a new translation, do :
-
-    python setup.py compile_catalog
+Follow instructions here: <https://docs.ckan.org/en/2.8/extensions/translating-extensions.html> 
+(you need a working installation of CKAN and an active virtualenv for it to work).
 
 Running the Tests
 =================

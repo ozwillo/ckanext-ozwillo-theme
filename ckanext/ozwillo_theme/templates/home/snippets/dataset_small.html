@@ -1,9 +1,0 @@
-{% set truncate = truncate or 180 %}
-{% set truncate_title = truncate_title or 80 %}
-{% set title = package.title or package.name %}
-{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
-{% set date = h.ozwillo_theme_display_date(package.metadata_created) %}
-
-<p>
-  <strong>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read', id=package.name)) }}</strong><br/>
-</p>

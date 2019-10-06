@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-ozwillo-theme 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-09-28 11:10+0200\n"
+"POT-Creation-Date: 2019-10-06 08:31+0200\n"
 "PO-Revision-Date: 2015-02-03 14:30+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: tr\n"
@@ -19,275 +19,356 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ckanext/ozwillo_theme/templates/footerv1.html:9
-msgid "Common goods factory"
-msgstr "Ortak fayda üretim merkezi"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:22
-msgid "Association"
-msgstr "Association"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:23
-msgid "Governance"
-msgstr "Governance"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:24
-msgid "Community"
-msgstr "Community"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:25
-msgid "Team"
-msgstr "Team"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:29
-#: ckanext/ozwillo_theme/templates/header.html:56
-#: ckanext/ozwillo_theme/templates/header.html:67
-#: ckanext/ozwillo_theme/templates/header.html:96
-msgid "Data"
-msgstr "Veri"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:30
-msgid "Portal"
-msgstr "Portal"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:31
-msgid "Projects"
-msgstr "Projects"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:36
-msgid "Genesis"
-msgstr "Genesis"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:37
-msgid "Contributions"
-msgstr "Contributions"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:38
-msgid "Developers"
-msgstr "Developers"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:44
-msgid "News"
-msgstr "News"
-
-#: ckanext/ozwillo_theme/templates/footerv1.html:45
-#: ckanext/ozwillo_theme/templates/footerv2.html:9
+#: ckanext/ozwillo_theme/templates/footer.html:9
 msgid "Contact"
 msgstr "Contact"
 
-#: ckanext/ozwillo_theme/templates/footerv1.html:46
-#: ckanext/ozwillo_theme/templates/footerv2.html:10
+#: ckanext/ozwillo_theme/templates/footer.html:10
 #, fuzzy
 msgid "Legal Notices"
 msgstr "Legal notices"
 
-#: ckanext/ozwillo_theme/templates/footerv2.html:19
+#: ckanext/ozwillo_theme/templates/footer.html:18
 msgid "Created by Ozwillo with"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:8
+#: ckanext/ozwillo_theme/templates/header.html:27
 #: ckanext/ozwillo_theme/templates/header.html:47
-#: ckanext/ozwillo_theme/templates/header.html:91
+#: ckanext/ozwillo_theme/templates/header.html:59
+#: ckanext/ozwillo_theme/templates/header.html:105
+#: ckanext/ozwillo_theme/templates/header.html:108
 msgid "Home"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:27
-#: ckanext/ozwillo_theme/templates/header.html:59
-#: ckanext/ozwillo_theme/templates/header.html:101
+#: ckanext/ozwillo_theme/templates/header.html:29
+#: ckanext/ozwillo_theme/templates/header.html:110
+#, fuzzy
+#| msgid "The project"
+msgid "Le projet"
+msgstr "Projects"
+
+#: ckanext/ozwillo_theme/templates/header.html:31
+#: ckanext/ozwillo_theme/templates/header.html:71
+#: ckanext/ozwillo_theme/templates/header.html:116
 #: ckanext/ozwillo_theme/templates/user/read_base.html:19
 #: ckanext/ozwillo_theme/templates/user/read_base.html:53
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:29
-#: ckanext/ozwillo_theme/templates/header.html:61
-#: ckanext/ozwillo_theme/templates/header.html:104
-#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:16
+#: ckanext/ozwillo_theme/templates/header.html:33
+#: ckanext/ozwillo_theme/templates/header.html:73
+#: ckanext/ozwillo_theme/templates/header.html:119
+#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:22
 msgid "Organizations"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:31
-#: ckanext/ozwillo_theme/templates/header.html:107
-msgid "Data Request"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/header.html:33
-#: ckanext/ozwillo_theme/templates/header.html:110
-#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:20
-msgid "Showcase"
+#: ckanext/ozwillo_theme/templates/header.html:35
+#: ckanext/ozwillo_theme/templates/header.html:121
+msgid "Thèmes"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/header.html:37
-#: ckanext/ozwillo_theme/templates/header.html:63
-#: ckanext/ozwillo_theme/templates/header.html:115
+#: ckanext/ozwillo_theme/templates/header.html:124
+msgid "Data Request"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/header.html:39
+#: ckanext/ozwillo_theme/templates/header.html:127
+#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:28
+msgid "Showcase"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/header.html:43
+#: ckanext/ozwillo_theme/templates/header.html:75
+#: ckanext/ozwillo_theme/templates/header.html:132
+#: ckanext/ozwillo_theme/templates/header.html:141
 msgid "Dashboard"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:52
+#: ckanext/ozwillo_theme/templates/header.html:64
 msgid "Catalog"
 msgstr "Katalog"
 
-#: ckanext/ozwillo_theme/templates/header.html:73
+#: ckanext/ozwillo_theme/templates/header.html:68
+#: ckanext/ozwillo_theme/templates/header.html:79
+#: ckanext/ozwillo_theme/templates/header.html:112
+msgid "Data"
+msgstr "Veri"
+
+#: ckanext/ozwillo_theme/templates/header.html:85
 msgid "Log out"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/header.html:75
-#: ckanext/ozwillo_theme/templates/header.html:134
+#: ckanext/ozwillo_theme/templates/header.html:87
+#: ckanext/ozwillo_theme/templates/header.html:152
 msgid "Log in"
 msgstr "Giriş"
 
-#: ckanext/ozwillo_theme/templates/header.html:94
-#, fuzzy
-msgid "The project"
-msgstr "Projects"
-
-#: ckanext/ozwillo_theme/templates/header.html:120
-msgid "Help"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/header.html:131
+#: ckanext/ozwillo_theme/templates/header.html:149
 msgid ""
 "Log\n"
 "                                    out"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/page.html:6
+#: ckanext/ozwillo_theme/templates/page.html:7
 msgid "Skip to content"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/bloc_some_numbers.html:8
-#: ckanext/ozwillo_theme/templates/home/old/bloc_some_numbers.html:18
-#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:8
-msgid "dataset"
+#: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:33
+#: ckanext/ozwillo_theme/templates/organization/snippets/organization_item.html:32
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] ""
+
+#: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:35
+#: ckanext/ozwillo_theme/templates/organization/snippets/organization_item.html:34
+msgid "0 Datasets"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/bloc_some_numbers.html:8
-#: ckanext/ozwillo_theme/templates/home/old/bloc_some_numbers.html:18
-#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:8
-msgid "datasets"
+#: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:39
+#: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:40
+msgid "View {name}"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/bloc_some_numbers.html:12
-#: ckanext/ozwillo_theme/templates/home/old/bloc_some_numbers.html:22
-#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:12
-msgid "resources"
+#: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:44
+msgid "Remove"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/searchv1.html:1
-msgid "eg. Gold Prices"
+#: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:44
+msgid "Remove dataset from this group"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/searchv1.html:6
-msgid "WHAT DATA ARE YOU LOOKING FOR ?"
+#: ckanext/ozwillo_theme/templates/home/about.html:3
+#: ckanext/ozwillo_theme/templates/home/about.html:6
+#: ckanext/ozwillo_theme/templates/home/about.html:16
+msgid "About"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/searchv1.html:9
-#: ckanext/ozwillo_theme/templates/home/snippets/search.html:8
-msgid "Search Your Data"
+#: ckanext/ozwillo_theme/templates/home/index.html:4
+msgid "Welcome"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/old/searchv1.html:12
-#: ckanext/ozwillo_theme/templates/home/snippets/search.html:10
-msgid "Search"
+#: ckanext/ozwillo_theme/templates/home/index.html:17
+msgid "Vos données ont du sens..."
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/snippets/blocs.html:9
-msgid "Most viewed"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/blocs.html:19
-msgid "Some numbers"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/blocs.html:24
-msgid "The data producers"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:6
-msgid "Administration"
+#: ckanext/ozwillo_theme/templates/home/index.html:18
+msgid ""
+"Automatisez l'ouverture et la publication de vos données pour faciliter "
+"leur réutilisation !"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/home/snippets/categories.html:12
-msgid "Agriculture<br />& Food"
+msgid "Administration"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/home/snippets/categories.html:18
-msgid "Citizenship<br /> & Solidarity"
+msgid "Agriculture<br />& Food"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/home/snippets/categories.html:24
-msgid "Culture<br />& Tourism"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:30
-msgid "Economy<br />& Employment"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:36
-msgid "Childhood<br />Education<br />& Formation"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:42
-msgid "Environment"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:48
-msgid "Healthcare"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:54
-msgid "Sport"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:60
-msgid "Territory"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:66
-msgid "Transport<br />& Mobility"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:72
 msgid "Town&nbsp;Planning<br />Housing<br />Equipment"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/snippets/datasets.html:4
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:30
+msgid "Culture<br />& Tourism"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:36
+msgid "Economy<br />& Employment"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:42
+msgid "Childhood<br />Education<br />& Formation"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:50
+msgid "Environment"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:56
+msgid "Healthcare"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:62
+msgid "Sport"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:68
+msgid "Territory"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:74
+msgid "Transport<br />& Mobility"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:80
+msgid "Citizenship<br /> & Solidarity"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/datasets.html:6
 msgid "Data news"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:5
-msgid "Open Data"
-msgstr "Açık Veri"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:7
-msgid "Searching for data?"
-msgstr "Veri mi arıyorsunuz?"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:10
-msgid "Explore"
-msgstr "Keşfetmek,"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:10
-msgid "datasets published on Ozwillo by local authorities and public bodies."
+#: ckanext/ozwillo_theme/templates/home/snippets/search.html:1
+msgid "eg. Gold Prices"
 msgstr ""
-"Yerel Yönetimler ve Kamu Kurumları tarafından Ozwillo'da yayınlanmış olan"
-" veri setlerini keşfet."
 
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:13
-msgid "You have data to share?"
-msgstr "Aylaşıma açacak verileriniz mi var?"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
-msgid "If you search a place to host them, subscribe to our service"
+#: ckanext/ozwillo_theme/templates/home/snippets/search.html:10
+msgid "Search Your Data"
 msgstr ""
-"Eğer onları bir sunucuda barındırmak istiyorsanız, servislerimize abone "
-"olun"
 
-#: ckanext/ozwillo_theme/templates/home/snippets/promoted.html:16
-msgid ": click Install and steer by it. An Ozwillo account is required."
+#: ckanext/ozwillo_theme/templates/home/snippets/search.html:14
+msgid "Search"
 msgstr ""
-": Kur butonuna tıklayın ve oradan yönlendirme yapın. Bir Ozwillo hesabı "
-"gerektirmektedir."
+
+#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:10
+msgid "dataset"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:10
+msgid "datasets"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:16
+msgid "resources"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/organization/snippets/organization_item.html:43
+#: ckanext/ozwillo_theme/templates/organization/snippets/organization_item.html:44
+msgid "View {organization_name}"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "Title"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "eg. A descriptive title"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "URL"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "eg. my-dataset"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:19
+#, fuzzy
+#| msgid "Association"
+msgid "Description"
+msgstr "Association"
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:19
+msgid "eg. Some useful notes about the data"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "Tags"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "eg. economy, mental health, government"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:30
+msgid "License"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:41
+msgid ""
+"\n"
+"        License definitions and additional information can be found\n"
+"        at <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a>\n"
+"      "
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:70
+#, fuzzy
+#| msgid "Association"
+msgid "Organization"
+msgstr "Association"
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:74
+msgid "No organization"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:89
+msgid "Visibility"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:92
+#: ckanext/ozwillo_theme/templates/snippets/package_item.html:32
+#: ckanext/ozwillo_theme/templates/user/read_base.html:82
+#: ckanext/ozwillo_theme/templates/user/read_base.html:96
+msgid "Private"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:92
+msgid "Public"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:108
+#: ckanext/ozwillo_theme/templates/user/read_base.html:91
+msgid "State"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:111
+msgid "Active"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:112
+#: ckanext/ozwillo_theme/templates/snippets/package_item.html:43
+msgid "Deleted"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_form.html:28
+msgid ""
+"The <i>data license</i> you select above only applies to the contents\n"
+"          of any resource files that you add to this dataset. By "
+"submitting\n"
+"          this form, you agree to release the <i>metadata</i> values that"
+" you\n"
+"          enter into the form under the\n"
+"          <a href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open "
+"Database License</a>."
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_form.html:39
+msgid "Are you sure you want to delete this dataset?"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_form.html:39
+msgid "Delete"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_form.html:43
+msgid "Next: Add Data"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/snippets/custom_form_fields.html:20
+#: ckanext/ozwillo_theme/templates/snippets/custom_form_fields.html:37
+msgid "Custom Field"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/snippets/package_item.html:41
+msgid "Draft"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/snippets/package_item.html:51
+msgid "Popular"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/snippets/package_item.html:58
+msgid "This dataset has no description"
+msgstr ""
+
+#: ckanext/ozwillo_theme/templates/snippets/social.html:5
+msgid "Social"
+msgstr ""
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:5
 #: ckanext/ozwillo_theme/templates/user/read_base.html:8
@@ -335,17 +416,8 @@ msgstr ""
 msgid "This means only you can see this"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/user/read_base.html:82
-#: ckanext/ozwillo_theme/templates/user/read_base.html:96
-msgid "Private"
-msgstr ""
-
 #: ckanext/ozwillo_theme/templates/user/read_base.html:87
 msgid "Member Since"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/user/read_base.html:91
-msgid "State"
 msgstr ""
 
 #: ckanext/ozwillo_theme/templates/user/read_base.html:96
@@ -372,4 +444,78 @@ msgstr ""
 
 #~ msgid "Reuses"
 #~ msgstr ""
+
+#~ msgid "Common goods factory"
+#~ msgstr "Ortak fayda üretim merkezi"
+
+#~ msgid "Governance"
+#~ msgstr "Governance"
+
+#~ msgid "Community"
+#~ msgstr "Community"
+
+#~ msgid "Team"
+#~ msgstr "Team"
+
+#~ msgid "Portal"
+#~ msgstr "Portal"
+
+#~ msgid "Projects"
+#~ msgstr "Projects"
+
+#~ msgid "Genesis"
+#~ msgstr "Genesis"
+
+#~ msgid "Contributions"
+#~ msgstr "Contributions"
+
+#~ msgid "Developers"
+#~ msgstr "Developers"
+
+#~ msgid "News"
+#~ msgstr "News"
+
+#~ msgid "Help"
+#~ msgstr ""
+
+#~ msgid "WHAT DATA ARE YOU LOOKING FOR ?"
+#~ msgstr ""
+
+#~ msgid "Most viewed"
+#~ msgstr ""
+
+#~ msgid "Some numbers"
+#~ msgstr ""
+
+#~ msgid "The data producers"
+#~ msgstr ""
+
+#~ msgid "Open Data"
+#~ msgstr "Açık Veri"
+
+#~ msgid "Searching for data?"
+#~ msgstr "Veri mi arıyorsunuz?"
+
+#~ msgid "Explore"
+#~ msgstr "Keşfetmek,"
+
+#~ msgid "datasets published on Ozwillo by local authorities and public bodies."
+#~ msgstr ""
+#~ "Yerel Yönetimler ve Kamu Kurumları "
+#~ "tarafından Ozwillo'da yayınlanmış olan veri"
+#~ " setlerini keşfet."
+
+#~ msgid "You have data to share?"
+#~ msgstr "Aylaşıma açacak verileriniz mi var?"
+
+#~ msgid "If you search a place to host them, subscribe to our service"
+#~ msgstr ""
+#~ "Eğer onları bir sunucuda barındırmak "
+#~ "istiyorsanız, servislerimize abone olun"
+
+#~ msgid ": click Install and steer by it. An Ozwillo account is required."
+#~ msgstr ""
+#~ ": Kur butonuna tıklayın ve oradan "
+#~ "yönlendirme yapın. Bir Ozwillo hesabı "
+#~ "gerektirmektedir."
 

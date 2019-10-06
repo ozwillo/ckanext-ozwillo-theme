@@ -6,39 +6,16 @@
 
 <div class="col-md-6 ">
     <div class="dataset-item">
-    {#<!-- <ul class="dataset__block-header">
-        <li class="dataset__block-header-item">
-            <a href=""><img class="dataset__block-header-icon" src="/images/ui/ENVIRONNEMENT_NOIR.svg" alt="environnement"></a>
-        </li>
-        <li class="dataset__block-header-item">
-            <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read',
-                id=package.name)) }}
-            </h4>
-        </li>
-    </ul> -->
-
-    <!-- <a href=""><img src="/images/ui/ENVIRONNEMENT_NOIR.svg" width="50px" height="50px" alt=""></a>
-    <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read',
-        id=package.name)) }}
-    </h4> -->#}
     <div class="row dataset__block-header">
-        <!-- <img class="col-xs-2 dataset__block-header-icon" src="/images/ui/CITOYEN_NOIR.svg" alt="environnement"> -->
         <div class="col-xs-12">
             <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read',
                 id=package.name)) }}
             </h4>
             {% if notes %}
-            <!-- <h5>Description:</h5> -->
-            <!-- <p> -->
-                <!-- <small> -->
-                    <div class="description">{{ notes|urlize }}</div>
-                    
-                <!-- </small> -->
-            <!-- </p>  -->
-            {% endif %}       
+                <div class="description">{{ notes|urlize }}</div>
+            {% endif %}
         </div>
     </div>
-    
     
     <div class="bottom">
         <div class="resource-type">
