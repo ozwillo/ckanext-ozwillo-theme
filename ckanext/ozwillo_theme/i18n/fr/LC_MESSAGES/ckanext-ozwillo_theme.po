@@ -132,25 +132,25 @@ msgstr "Jeux de données"
 #: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:39
 #: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:40
 msgid "View {name}"
-msgstr ""
+msgstr "Voir {name}"
 
 #: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:44
 msgid "Remove"
-msgstr ""
+msgstr "Retirer"
 
 #: ckanext/ozwillo_theme/templates/group/snippets/group_item.html:44
 msgid "Remove dataset from this group"
-msgstr ""
+msgstr "Retirer le jeu de données du groupe"
 
 #: ckanext/ozwillo_theme/templates/home/about.html:3
 #: ckanext/ozwillo_theme/templates/home/about.html:6
 #: ckanext/ozwillo_theme/templates/home/about.html:16
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: ckanext/ozwillo_theme/templates/home/index.html:4
 msgid "Welcome"
-msgstr ""
+msgstr "Bienvenue"
 
 #: ckanext/ozwillo_theme/templates/home/index.html:17
 msgid "Vos données ont du sens..."
