@@ -154,13 +154,13 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/home/index.html:17
 msgid "Vos données ont du sens..."
-msgstr ""
+msgstr "Une plateforme. L’Open data. Pour vous."
 
 #: ckanext/ozwillo_theme/templates/home/index.html:18
 msgid ""
 "Automatisez l'ouverture et la publication de vos données pour faciliter "
 "leur réutilisation !"
-msgstr ""
+msgstr "La plateforme de publication de données pour nos adhérents."
 
 #: ckanext/ozwillo_theme/templates/home/snippets/categories.html:12
 msgid "Administration"
