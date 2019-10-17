@@ -1392,10 +1392,10 @@ h1, h2, h3, h4, h5, h6,
 }
 #particles-js{
   height: 340px;
-   background: rgb(255,153,51); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgb(255,153,51) 0%, rgb(228,26,91) 48%, rgb(110,66,142) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgb(255,153,51) 0%,rgb(228,26,91) 48%,rgb(110,66,142) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-45deg, rgb(255,153,51) 0%,rgb(228,26,91) 48%,rgb(110,66,142) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   background: rgb(245,159,14); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgb(245,159,14) 0%, rgb(97,189,235) 48%, rgb(0,114,180) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgb(245,159,14) 0%,rgb(97,189,235) 48%,rgb(0,114,180) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-45deg, rgb(245,159,14) 0%,rgb(97,189,235) 48%,rgb(0,114,180) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59f0e', endColorstr='#0072b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .searchbar__form{
