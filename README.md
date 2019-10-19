@@ -63,11 +63,11 @@ virtualenv and do:
 Translations
 ============
 
-Install the `gettext` package:
+In development mode, just do
 
-    sudo apt install gettext
+    python setup.py compile_catalog
 
-Follow instructions here: <https://docs.ckan.org/en/2.8/extensions/translating-extensions.html> 
+For more setup, just follow instructions here: <https://docs.ckan.org/en/2.8/extensions/translating-extensions.html> 
 (you need a working installation of CKAN and an active virtualenv for it to work).
 
 Running the Tests
