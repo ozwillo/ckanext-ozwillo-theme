@@ -29,7 +29,7 @@ msgstr "Mentions légales"
 
 #: ckanext/ozwillo_theme/templates/footer.html:18
 msgid "Created by Ozwillo with"
-msgstr "Créée par Ozwillo avec"
+msgstr "Créée par l'Adico avec"
 
 #: ckanext/ozwillo_theme/templates/header.html:27
 #: ckanext/ozwillo_theme/templates/header.html:47
