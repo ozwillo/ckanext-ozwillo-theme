@@ -66,8 +66,7 @@
             {% if c.userobj %}
             <a href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i> {% trans %}Log out{% endtrans %}</a>
             {% else %}
-            <a href="/user/login"><i class="fa fa-sign-in"></i> {% trans
-                %}Log in{% endtrans %}</a>
+            <a href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}"><i class="fa fa-sign-in"></i> {% trans %}Log in{% endtrans %}</a>
             {% endif %}
         </li>
         
@@ -77,70 +76,57 @@
 <nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav navbar-fixed-top">
     <div class="container">
         <div class="t3-navbar">
-            <!-- <div class="container"> -->
-                <!-- <div class="row"> -->
-                    <!-- <div class="col-xs-2"></div> -->
-                    <div class="col-xs-8 menu text-center">                        
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="/{{current_lang}}" class="logo">
-                                    <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
-                                </a>
-                            </li>
-                            <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
-                            <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
-                                {% trans %}Le projet{% endtrans %}</a></li>
-                            <li class="item-119 deeper dropdown parent">
-                                <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}
-                                    <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
-                                            trans %}Datasets{% endtrans %}</a></li>
-                                    <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
-                                            href="/{{current_lang}}/organization">{%
-                                            trans %}Organizations{% endtrans %}</a></li>
-                                    <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/groups">{%
-                                            trans %}Thèmes{% endtrans %}</a></li>
-                                    <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
-                                            href="/{{current_lang}}/datarequest">
-                                            {% trans %}Data Request{% endtrans %}</a></li>
-                                    <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a
-                                            href="/{{current_lang}}/showcase">{%
-                                            trans %}Showcase{% endtrans %}</a></li>
-                                    <!-- {% if c.userobj %}
-                                    <li class="divider"></li>
-                                    <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
-                                            href="/{{current_lang}}/dashboard">{%
-                                            trans %}Dashboard{% endtrans %}</a></li>
-                                    {% endif %} -->
-                                </ul>
-                            </li>
-                            
-                            {#<li class="item-117" {% if current_page=='/' %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Help{% endtrans %}</a></li>#}
-                            {% if c.userobj %}
-                            <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
-                                    href="/{{current_lang}}/dashboard">{%
-                                    trans %}Dashboard{% endtrans %}</a></li>
-                            {% endif %}
+            <div class="col-xs-8 menu text-center">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/{{current_lang}}" class="logo">
+                            <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
+                        </a>
+                    </li>
+                    <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
+                    <li  {% if current_page.startswith('/about') %} class='active' {% endif %}><a href="/{{current_lang}}/about">
+                        {% trans %}Le projet{% endtrans %}</a></li>
+                    <li class="item-119 deeper dropdown parent">
+                        <a class="dropdown-toggle nav-data" href="#" data-toggle="dropdown">{% trans %}Data{% endtrans %}
+                            <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li {% if current_page.startswith('/dataset') %} class='active' {% endif %}><a href="/{{current_lang}}/dataset">{%
+                                    trans %}Datasets{% endtrans %}</a></li>
+                            <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a
+                                    href="/{{current_lang}}/organization">{%
+                                    trans %}Organizations{% endtrans %}</a></li>
+                            <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/groups">{%
+                                    trans %}Thèmes{% endtrans %}</a></li>
+                            <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
+                                    href="/{{current_lang}}/datarequest">
+                                    {% trans %}Data Request{% endtrans %}</a></li>
+                            <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a
+                                    href="/{{current_lang}}/showcase">{%
+                                    trans %}Showcase{% endtrans %}</a></li>
                         </ul>
-                    </div>
-                    <div class="col-xs-4">                        
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="item-123">
-                                {% if c.userobj %}
-                                <a class="btn btn-pink navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
-                                {% else %}
-                                <a class="btn navbar-btn btn-pink" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">{% trans
-                                    %}Log in{% endtrans %}</a>
-                                {% endif %}
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right navbar-lang">
-                            <li class="dropdown">{% snippet "language_switcher.html" %}</li>
-                        </ul>
-                    </div>
-                <!-- </div> -->
-            <!-- </div>  NAV BAR CONTAINER         -->
+                    </li>
+
+                    {% if c.userobj %}
+                    <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
+                            href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="col-xs-4">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="item-123">
+                        {% if c.userobj %}
+                        <a class="btn btn-pink navbar-btn" href="{{ h.url_for('/user/slo') }}">{% trans %}Log out{% endtrans %}</a>
+                        {% else %}
+                        <a class="btn navbar-btn btn-pink" href="{{ g.ozwillo_portal_url }}/my?ui_locales={{current_lang}}">
+                            {% trans %}Log in{% endtrans %}</a>
+                        {% endif %}
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-lang">
+                    <li class="dropdown">{% snippet "language_switcher.html" %}</li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
