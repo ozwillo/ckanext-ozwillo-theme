@@ -1,7 +1,3 @@
-import requests
-import xml.etree.ElementTree as ET
-from slugify import slugify
-
 from pylons import config as pconfig
 
 import ckan.plugins as plugins
@@ -12,29 +8,6 @@ from ckan.lib.plugins import DefaultTranslation
 import ckan.logic as logic
 import ckan.lib.helpers as h
 from datetime import datetime
-
-
-def footer_links():
-    url = 'https://www.ozwillo.com/footer.xml'
-    langs = {}
-
-    response = requests.get(url)
-    menuset = ET.fromstring(response.text.encode('utf-8'))
-
-    items = ('Association', 'Governance', 'Community', 'Team',
-             'Data', 'Portal', 'Projects',
-             'Genesis', 'Contributions', 'Developers',
-             'News', 'Contact', 'Legal Notices', 'Terms')
-
-    for menu in menuset.findall('menu'):
-        locale = menu.find('locale').text
-        c = 0
-        langs[locale] = {}
-        for item in menu.findall('item'):
-            if 'href' in item.attrib:
-                langs[locale][slugify(items[c])] = item.get('href')
-                c += 1
-    return langs
 
 
 class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
@@ -49,8 +22,6 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
                    pconfig.get('%s.ozwillo_portal_url' % __name__))
         set_app_global('ckan.ozwillo_ckan_app_id',
                    pconfig.get('%s.ozwillo_ckan_app_id' % __name__))
-
-        set_app_global('ckan.localized_links', footer_links())
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
