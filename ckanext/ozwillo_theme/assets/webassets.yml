@@ -1,0 +1,19 @@
+ozwillo-css:
+  output: ckanext-ozwillo-theme/%(version)s_ozwillo.css
+  contents:
+    - ozwillo.css
+
+ozwillo:
+  output: ckanext-ozwillo-theme/%(version)s_ozwillo.js
+  extra:
+    preload:
+      - base/main
+      - base/ckan
+      - ckanext-ozwillo-theme/ozwillo-css
+  contents:
+    - ozwillo.js
+    - particles-loading.js
+
+# unused :
+#jquery-ui.js theme_location.js off-canvas.js responsive.css
+
