@@ -2,7 +2,7 @@
 
 {% block styles %}
   {{ super() }}
-  {% asset 'theme/ozwillo-css' %}
+  {% resource 'theme/ozwillo.css' %}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800">
 {% endblock %}
 

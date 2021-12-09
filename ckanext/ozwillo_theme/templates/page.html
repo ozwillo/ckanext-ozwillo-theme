@@ -132,12 +132,11 @@
 
 {%- block scripts %}
     <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    {% resource 'theme/ozwillo.js' %}
-    {% resource 'theme/particles-loading.js' %}
-    {% resource 'base/main' %}
-    {% resource 'base/ckan' %}
+    {% asset 'theme/ozwillo' %}
+    {# % asset 'base/main' % rather in webassets.yml #}
+    {# % asset 'base/ckan' % rather in webassets.yml #}
     {% if g.tracking_enabled %}
-      {% resource 'base/tracking.js' %}
+      {% asset 'base/tracking' %}
     {% endif %}
   {{ super() }}
 {% endblock -%}

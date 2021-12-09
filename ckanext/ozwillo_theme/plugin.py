@@ -1,7 +1,6 @@
-from pylons import config as pconfig
-
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
+pconfig = toolkit.config
 from ckan.common import config
 from ckan.lib.app_globals import set_app_global
 from ckan.lib.plugins import DefaultTranslation
@@ -25,7 +24,7 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('fanstatic', 'theme')
+        toolkit.add_resource('assets', 'theme')
 
     # ITemplateHelpers
     def get_helpers(self):
