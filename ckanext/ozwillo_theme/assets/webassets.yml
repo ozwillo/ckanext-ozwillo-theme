@@ -7,8 +7,6 @@ ozwillo:
   output: ckanext-ozwillo-theme/%(version)s_ozwillo.js
   extra:
     preload:
-      - base/main
-      - base/ckan
       - ckanext-ozwillo-theme/ozwillo-css
   contents:
     - ozwillo.js
