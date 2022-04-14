@@ -1,13 +1,22 @@
 
 {% block search %} {% snippet 'home/snippets/search.html' %} {% endblock %}
+
+{% block project_orgs %} {% snippet 'home/snippets/project_orgs.html' %} {% endblock %}
   
 {% block categories %} {% snippet 'home/snippets/categories.html' %} {% endblock %}
   
+{# FDR
 {% block some_numbers %} {% snippet 'home/snippets/some_numbers.html' %} {% endblock %}
   
 {% block datasets %} {% snippet 'home/snippets/datasets.html' %} {% endblock %}
-	
+#}
 
+{% block showcases %} {% snippet 'home/snippets/showcases.html' %} {% endblock %}
+
+{% block organizations %} {% snippet 'home/snippets/organizations.html' %} {% endblock %}
+	
+{# FDRœ
 <div class="container-fluid">
- {% block map %} {% snippet 'home/snippets/map.html' %} {% endblock %}
+	{% block map %} {% snippet 'home/snippets/map.html' %} {% endblock %}
 </div>
+#}

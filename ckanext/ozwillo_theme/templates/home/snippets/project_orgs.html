@@ -1,0 +1,18 @@
+{% set project_orgs = h.ozwillo_theme_get_project_orgs() %}
+
+<div class="content-bloc">
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Projets') }}</h3>
+      <div class="dataset-list">
+        {% for project_org in project_orgs %}
+         
+          {% if loop.index <= 4 %}
+            {% snippet 'home/snippets/project_org_bloc.html', project_org=project_org %}
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>  
+</div>

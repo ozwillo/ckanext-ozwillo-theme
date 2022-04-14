@@ -15,18 +15,21 @@
                         trans %}Organizations{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
                                             trans %}Thèmes{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a href="/{{current_lang}}/datarequest">{%
-                        trans %}Data Request{% endtrans %}</a></li>
+                <!-- [FDR] li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a href="/{{current_lang}}/datarequest">{%
+                        trans %}Data Request{% endtrans %}</a></li-->
                 <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a href="/{{current_lang}}/showcase">{%
                         trans %}Showcase{% endtrans %}</a></li>
+		<!-- [FDR]
                 {% if c.userobj %}
                 <li class="divider"></li>
                 <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
                         trans %}Dashboard{% endtrans %}</a></li>
                 {% endif %}
+		-->
             </ul>
             <a href="/{{current_lang}}">
-                <img src="/img/logo.svg" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
+		{# FDR #}
+                <img src="/img/fdr_logo_couleur_simplifie.png" class="logo-mobile" alt="{% trans %}Home{% endtrans %}">
             </a>
             {% if c.userobj %}
             <a class="btn visible-xs-inline-block pull-right" href="{{ h.url_for('/user/slo') }}"><i class="fa fa-sign-out"></i></a>
@@ -45,7 +48,8 @@
 <nav id="off-nav">
     <ul class="nav">
         <li>
-            <a class="logo" href="/{{current_lang}}"><img src="/img/logo-h43.png" alt="{% trans %}Home{% endtrans %}"></a>
+            {# FDR #}
+            <a class="logo" href="/{{current_lang}}"><img src="/img/fdr_logo_couleur_ligne.png" alt="{% trans %}Home{% endtrans %}"></a>
         </li>
         <li class="divider first"></li>
         <li>
@@ -60,8 +64,8 @@
                         trans %}Datasets{% endtrans %}</a></li>
                 <li {% if current_page.startswith('/organization') %} class='active' {% endif %}><a href="/{{current_lang}}/organization">{%
                         trans %}Organizations{% endtrans %}</a></li>
-                <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
-                        trans %}Dashboard{% endtrans %}</a></li>
+                <!-- [FDR] li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a href="/{{current_lang}}/dashboard">{%
+                        trans %}Dashboard{% endtrans %}</a></li -->
             </ul>
             {% else %}
         <li class="active deeper dropdown parent">
@@ -107,7 +111,8 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/{{current_lang}}" class="logo">
-                            <img src="/img/logo.svg" alt="{% trans %}Home{% endtrans %}">
+                            {# FDR #}
+                            <img src="/img/fdr_logo_couleur_simplifie.png" alt="{% trans %}Home{% endtrans %}">
                         </a>
                     </li>
                     <li  {% if current_page.endswith('') %} class='active' {% endif %}><a href="/{{current_lang}}">{% trans %}Home{% endtrans %}</a></li>
@@ -124,19 +129,21 @@
                                     trans %}Organizations{% endtrans %}</a></li>
                             <li {% if current_page.startswith('/group') %} class='active' {% endif %}><a href="/{{current_lang}}/group">{%
                                     trans %}Thèmes{% endtrans %}</a></li>
-                            <li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
+                            <!-- [FDR] li {% if current_page.startswith('/datarequest') %} class='active' {% endif %}><a
                                     href="/{{current_lang}}/datarequest">
-                                    {% trans %}Data Request{% endtrans %}</a></li>
+                                    {% trans %}Data Request{% endtrans %}</a></li -->
                             <li {% if current_page.startswith('/showcase') %} class='active' {% endif %}><a
                                     href="/{{current_lang}}/showcase">{%
                                     trans %}Showcase{% endtrans %}</a></li>
                         </ul>
                     </li>
 
+		    <!-- [FDR]
                     {% if c.userobj %}
                     <li {% if current_page.startswith('/dashboard') %} class='active' {% endif %}><a
                             href="/{{current_lang}}/dashboard">{% trans %}Dashboard{% endtrans %}</a></li>
                     {% endif %}
+		    -->
                 </ul>
             </div>
             <div class="col-xs-6"><!-- [Ozwillo] xs-6 for admin -->
@@ -182,7 +189,7 @@
                         {% endif %}
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right navbar-lang">
+		<ul class="nav navbar-nav navbar-right navbar-lang hidden"><!-- [FDR] hidden -->
                     <li class="dropdown">{% snippet "language_switcher.html" %}</li>
                 </ul>
             </div>

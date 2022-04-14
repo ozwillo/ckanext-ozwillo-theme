@@ -1,0 +1,18 @@
+{% set organizations = h.ozwillo_theme_get_non_project_organizations() %}
+
+<div class="content-bloc">
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Organisations') }}</h3>
+      <div class="dataset-list">
+        {% for organization in organizations %}
+         
+          {% if loop.index <= 4 %}
+            {% snippet 'home/snippets/organization_bloc.html', organization=organization %}
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>  
+</div>

@@ -6,12 +6,17 @@
         <div class="container ">
             <div class="row ">
 
+                {# FDR #}
+
+                <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Données') }}</h3>
+
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/administration">
+                    <a class="categories__card" href="/{{current_lang}}/dataset?tags=Eclairage public">
                         <img src="/images/ui/ADMINISTRATION_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-orange">{% trans %}Administration{% endtrans %}</span>
+                        <span class="categories__card-title text-orange">{% trans %}Eclairage public{% endtrans %}</span>
                     </a>
                 </div>
+                
                 <div class="col-md-2 col-sm-4 col-xs-6">
                     <a class="categories__card" href="/{{current_lang}}/group/agriculture">
                         <img src="/images/ui/AGRICULTURE_NOIR.svg" alt="" class="responsive categories__card-img">

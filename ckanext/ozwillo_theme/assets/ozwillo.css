@@ -622,6 +622,13 @@ section#dataset-map.module.module-narrow.module-shallow {
     line-height: 20px;
     margin-bottom: 30px;
 }
+/* [FDR] hide dataset followers numbers & button */
+.context-info .nums {
+    display: none;
+}
+.context-info .follow_button {
+    display: none;
+}
 .context-info .nums dl {
     float: left;
     width: 50%;
@@ -673,6 +680,10 @@ section.module.module-narrow.module-shallow:last-child {
   margin: 0px 0 0 -25px;
   padding: 2px 0 0 25px;
   transition: .15s;
+}
+/* [FDR] hide social in dataset */
+.social {
+  display:none;
 }
 .social .nav-item>a {
   top: -2px;
@@ -1094,7 +1105,7 @@ footer.footer > a {
   height: 30px;    
   width: 100px;
   display: block;
-  background: url('/images/ui/Social_Media/logo-blanc.svg') no-repeat;
+  /* FDR background: url('/images/ui/Social_Media/logo-blanc.svg') no-repeat; */
   margin: 0px!important;
 }
 

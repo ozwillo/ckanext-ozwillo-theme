@@ -39,7 +39,11 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
             'ozwillo_theme_get_map': ozwillo_theme_get_map,
             'ozwillo_theme_get_groups': lambda: logic.get_action('group_list')({}, {"all_fields": True}),
             'ozwillo_theme_spatial_installed': lambda: config.get('ckanext.ozwillo_theme.spatial_installed', 'False'),
-            'ozwillo_theme_osmnames_key': lambda: config.get('ckanext.ozwillo_theme.osmnames_key', '')
+            'ozwillo_theme_osmnames_key': lambda: config.get('ckanext.ozwillo_theme.osmnames_key', ''),
+            # [FDR]
+            'ozwillo_theme_get_project_orgs': lambda: logic.get_action('organization_autocomplete')({}, {"q": "usage-"}),
+            'ozwillo_theme_get_non_project_organizations': lambda: logic.get_action('organization_list')({}, {"limit": 4, 'all_fields': True, 'sort': 'name asc'}),
+            'ozwillo_theme_get_showcases': lambda: logic.get_action('ckanext_showcase_list')({}, {})
         }
 
 
