@@ -21,6 +21,8 @@ class OzwilloThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
                    pconfig.get('%s.ozwillo_portal_url' % __name__))
         set_app_global('ckan.ozwillo_ckan_app_id',
                    pconfig.get('%s.ozwillo_ckan_app_id' % __name__))
+        set_app_global('ckan.ozwillo_global_login_organization_name',
+                   pconfig.get('%s.ozwillo_global_login_organization_name' % __name__))
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
