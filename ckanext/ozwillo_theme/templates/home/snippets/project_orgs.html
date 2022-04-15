@@ -8,7 +8,7 @@
         {% for project_org in project_orgs %}
          
           {% if loop.index <= 4 %}
-            {% snippet 'home/snippets/project_org_bloc.html', project_org=project_org %}
+            {% snippet 'home/snippets/organization_bloc.html', organization=project_org %}
           {% endif %}
 
         {% endfor %}

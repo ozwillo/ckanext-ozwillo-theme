@@ -3,38 +3,46 @@
 {% set title = organization.title or organization.name %}
 
 {% set current_lang = request.environ.CKAN_LANG %}
-{# [FDR] TODO
-{% set notes = h.markdown_extract(project_org.notes, extract_length=truncate) %}
-{% set date = h.ozwillo_theme_display_date(package.metadata_created) %}
-#}
+{# % set description = h.markdown_extract(organization.description, extract_length=truncate) | urlize % #}
+{% set description = h.render_markdown(organization.description) %}
+{% set date = h.ozwillo_theme_display_date(organization.created) %}
 
 {# [FDR] #}
 <div class="col-md-6 ">
     <div class="dataset-item">
-    <div class="row dataset__block-header">
-        <div class="col-xs-12">
-            <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for('%s.read' % 'organization',
-                id=organization.name)) }}
-            </h4>
-            {% if notes %}
-                <div class="description">{{ notes|urlize }}</div>
-            {% endif %}
+        <div class="row dataset__block-header">
+            <div class="col-xs-12">
+                <div class="object_card_left_icon_wrapper">
+                <img class="object_card_left_icon" src="{{ organization.image_display_url }}"/>
+                </div>
+                <div>
+                <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for('%s.read' % 'organization',
+                    id=organization.name)) }}
+                </h4>
+                {# [FDR] - case of project org : don't list datasets ; QUESTION but then where, probably in about / description ?
+                <a href="/{{current_lang}}/dataset?q=FDR_CAS_USAGE:*">{% trans %}Datasets{% endtrans %}</a>
+                #}
+                <div></div>
+                {% if description %}
+                <div class="description">{{ description }}</div>
+                {% endif %}
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div class="bottom">
-        <div class="resource-type">
-        {# [FDR] TODO
-        <ul class="dataset-resources unstyled">
-            {% for resource in h.dict_list_reduce(package.resources, 'format') %}
-            <li>
-                <a href="{{ h.url_for('%s.read' % package.type, id=package.name) }}" class="label"
-                    data-format="{{ resource.lower() }}">{{ resource }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        #}
-    </div>
-    </div>
+
+        <div class="bottom">
+            <div class="resource-type">
+                {# [FDR] TODO
+                <ul class="dataset-resources unstyled">
+                    {% for resource in h.dict_list_reduce(package.resources, 'format') %}
+                    <li>
+                        <a href="{{ h.url_for('%s.read' % package.type, id=package.name) }}" class="label"
+                           data-format="{{ resource.lower() }}">{{ resource }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                #}
+            </div>
+        </div>
     </div>
 </div>

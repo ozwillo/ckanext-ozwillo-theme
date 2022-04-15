@@ -2119,3 +2119,12 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
     padding: 15px 20px;
   }
 }
+
+.object_card_left_icon_wrapper {
+  float: left;
+  margin: 5px;
+  width: 20%;
+}
+.object_card_left_icon {
+  width: 70%;
+}

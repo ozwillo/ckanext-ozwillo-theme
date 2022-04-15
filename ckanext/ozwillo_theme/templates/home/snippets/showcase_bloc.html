@@ -3,22 +3,29 @@
 {% set title = showcase.title or showcase.name %}
 
 {% set current_lang = request.environ.CKAN_LANG %}
-{# [FDR] TODO
-{% set notes = h.markdown_extract(project_org.notes, extract_length=truncate) %}
-{% set date = h.ozwillo_theme_display_date(package.metadata_created) %}
-#}
+{# % set notes = h.markdown_extract(showcase.notes, extract_length=truncate)|urlize % #}
+{% set notes = h.render_markdown(showcase.notes) %}
+{% set date = h.ozwillo_theme_display_date(showcase.metadata_created) %}
+{% set image_url = showcase.extras |selectattr("key", "image_url") |attr("value")  %}
 
 {# [FDR] #}
 <div class="col-md-6 ">
     <div class="dataset-item">
     <div class="row dataset__block-header">
         <div class="col-xs-12">
+            {% if image_url %}
+            <div class="object_card_left_icon_wrapper">
+                <img class="object_card_left_icon" src="{{ image_url }}"/>
+            </div>
+            {% endif %}
+            <div>
             <h4>{{ h.link_to(h.truncate(title, truncate_title), h.url_for('%s.read' % 'showcase',
                 id=showcase.name)) }}
             </h4>
             {% if notes %}
-                <div class="description">{{ notes|urlize }}</div>
+                <div class="description">{{ notes }}</div>
             {% endif %}
+            </div>
         </div>
     </div>
     
