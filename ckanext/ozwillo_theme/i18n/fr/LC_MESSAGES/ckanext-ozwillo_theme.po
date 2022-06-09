@@ -162,53 +162,13 @@ msgid ""
 "leur réutilisation !"
 msgstr ""
 
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:12
-msgid "Administration"
-msgstr ""
+#: ckanext/ozwillo_theme/templates/home/snippets/map.html:3
+msgid "Pilot territories"
+msgstr "Territoires pilotes"
 
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:18
-msgid "Agriculture<br />& Food"
-msgstr "Agriculture<br />& Alimentation"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:24
-msgid "Town&nbsp;Planning<br />Housing<br />Equipment"
-msgstr "Urbanisme<br />Logement<br />& Equipment"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:30
-msgid "Culture<br />& Tourism"
-msgstr "Culture<br />& Tourisme"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:36
-msgid "Economy<br />& Employment"
-msgstr "Economie<br />& Emploi"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:42
-msgid "Childhood<br />Education<br />& Formation"
-msgstr "Enfance<br />Education<br />& Formation"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:50
-msgid "Environment"
-msgstr "Environnement"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:56
-msgid "Healthcare"
-msgstr "Santé<br/>& Social"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:62
-msgid "Sport"
-msgstr ""
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:68
-msgid "Territory"
-msgstr "Territoire"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:74
-msgid "Transport<br />& Mobility"
-msgstr "Transport<br />& Mobilité"
-
-#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:80
-msgid "Citizenship<br /> & Solidarity"
-msgstr "Citoyenneté<br />& Solidarité"
+#: ckanext/ozwillo_theme/templates/home/snippets/map.html:6
+msgid "Map of pilot territories involved in the realization of FDR use cases (uMap embed)"
+msgstr "Carte des territoires pilotes engagés dans la réalisation des cas d’usage FDR (uMap embed)"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/datasets.html:6
 msgid "Data news"
@@ -244,6 +204,14 @@ msgstr "ressources"
 #: ckanext/ozwillo_theme/templates/organization/snippets/organization_item.html:44
 msgid "View {organization_name}"
 msgstr ""
+
+#: ckanext/ozwillo_theme/templates/home/snippets/project_orgs.html:6
+msgid "Projects - Use cases"
+msgstr "Projets - Cas d\'usage"
+
+#: ckanext/ozwillo_theme/templates/home/snippets/categories.html:7
+msgid "Data"
+msgstr "Données"
 
 #: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:4
 #, fuzzy

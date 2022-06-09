@@ -1,94 +1,35 @@
 {% set current_lang = request.environ.CKAN_LANG %}
 {% set current_page = request.environ.CKAN_CURRENT_URL %}
-{# % set categories = h.ozwillo_theme_get_groups() % #}
+{% set categories = h.ozwillo_theme_get_groups() %}
 
 <div class="categories container-fluid categories__row">
         <div class="container ">
+            <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Data') }}</h3>
             <div class="row ">
+                {% for categorie in categories %}
 
-                {# FDR #}
+                    {% if loop.index %2 == 0 %}
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
+                                <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
+                                <span class="categories__card-title text-green">{{categorie.display_name}}</span>
+                            </a>
+                        </div>
+                    {% endif %}
 
-                <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Données') }}</h3>
+                    {% if loop.index %2 != 0 %}
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
+                                <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
+                                <span class="categories__card-title text-purple">{{categorie.display_name}}</span>
+                            </a>
+                        </div>
+                    {% endif %}
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/dataset?tags=Eclairage public">
-                        <img src="/images/ui/ADMINISTRATION_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-orange">{% trans %}Eclairage public{% endtrans %}</span>
-                    </a>
-                </div>
-                
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/agriculture">
-                        <img src="/images/ui/AGRICULTURE_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-pink">{% trans %}Agriculture<br />& Food{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/amenagement-du-territoire">
-                        <img src="/images/ui/URBANISME_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-purple">{% trans %}Town&nbsp;Planning<br />Housing<br />Equipment{% endtrans %}</span>
-                    </a>
-                </div> 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/culture-et-tourisme">
-                        <img src="/images/ui/CULTURE_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-orange">{% trans %}Culture<br />& Tourism{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/economie-et-emploi">
-                        <img src="/images/ui/ECONOMIE_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-pink">{% trans %}Economy<br />& Employment{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/enfance-education-et-formation">
-                        <img src="/images/ui/EDUCATION_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-purple">{% trans %}Childhood<br />Education<br />& Formation{% endtrans %}</span>
-                    </a>
-                </div>
-            </div>
+                    
 
-            {# FDR hide second line
-            <div class="row ">
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/environnement">
-                        <img src="/images/ui/ENVIRONNEMENT_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-orange">{% trans %}Environment{% endtrans%}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/sante-et-social">
-                        <img src="/images/ui/SANTE_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-pink">{% trans%}Healthcare{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/sport">
-                        <img src="/images/ui/SPORT_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-purple">{% trans %}Sport{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="{{current_lang}}/group/urbanisme-logement-et-equipement">
-                        <img src="/images/ui/TERRITOIRE_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-orange">{% trans%}Territory{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/transport-et-mobilite">
-                        <img src="/images/ui/TRANSPORT_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-pink">{% trans %}Transport<br />& Mobility{% endtrans %}</span>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <a class="categories__card" href="/{{current_lang}}/group/citoyennete-et-solidarite">
-                        <img src="/images/ui/CITOYEN_NOIR.svg" alt="" class="responsive categories__card-img">
-                        <span class="categories__card-title text-purple">{% trans %}Citizenship<br /> & Solidarity{% endtrans %}</span>
-                    </a>
-                </div>
-            </div>
-            #}
+                {% endfor %}
+             </div>
         </div>
     </div>
     
