@@ -31,32 +31,25 @@ msgstr "Mentions légales"
 msgid "Created by Ozwillo with"
 msgstr "Créée par Ozwillo avec"
 
-#: ckanext/ozwillo_theme/templates/header.html:27
-#: ckanext/ozwillo_theme/templates/header.html:47
-#: ckanext/ozwillo_theme/templates/header.html:59
-#: ckanext/ozwillo_theme/templates/header.html:105
-#: ckanext/ozwillo_theme/templates/header.html:108
+#: ckanext/ozwillo_theme/templates/header.html:9
+#: ckanext/ozwillo_theme/templates/header.html:32
+#: ckanext/ozwillo_theme/templates/header.html:52
+#: ckanext/ozwillo_theme/templates/header.html:114
+#: ckanext/ozwillo_theme/templates/header.html:118
 msgid "Home"
 msgstr "Accueil"
 
-#: ckanext/ozwillo_theme/templates/header.html:29
-#: ckanext/ozwillo_theme/templates/header.html:110
-#, fuzzy
-#| msgid "The project"
-msgid "Le projet"
-msgstr "Le projet"
-
-#: ckanext/ozwillo_theme/templates/header.html:31
-#: ckanext/ozwillo_theme/templates/header.html:71
-#: ckanext/ozwillo_theme/templates/header.html:116
+#: ckanext/ozwillo_theme/templates/header.html:11
+#: ckanext/ozwillo_theme/templates/header.html:15
+#: ckanext/ozwillo_theme/templates/header.html:66
 #: ckanext/ozwillo_theme/templates/user/read_base.html:19
 #: ckanext/ozwillo_theme/templates/user/read_base.html:53
 msgid "Datasets"
 msgstr "Jeux de données"
 
-#: ckanext/ozwillo_theme/templates/header.html:33
-#: ckanext/ozwillo_theme/templates/header.html:73
-#: ckanext/ozwillo_theme/templates/header.html:119
+#: ckanext/ozwillo_theme/templates/header.html:15
+#: ckanext/ozwillo_theme/templates/header.html:66
+#: ckanext/ozwillo_theme/templates/header.html:130
 #: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:22
 msgid "Organizations"
 msgstr "Organisations"
@@ -71,11 +64,11 @@ msgstr ""
 msgid "Data Request"
 msgstr "Demande de données"
 
-#: ckanext/ozwillo_theme/templates/header.html:39
-#: ckanext/ozwillo_theme/templates/header.html:127
+#: ckanext/ozwillo_theme/templates/header.html:21
+#: ckanext/ozwillo_theme/templates/header.html:136
 #: ckanext/ozwillo_theme/templates/home/snippets/some_numbers.html:28
 msgid "Showcase"
-msgstr "Réutilisations"
+msgstr "Applications"
 
 #: ckanext/ozwillo_theme/templates/header.html:43
 #: ckanext/ozwillo_theme/templates/header.html:75
@@ -90,7 +83,7 @@ msgstr "Catalogue"
 
 #: ckanext/ozwillo_theme/templates/header.html:68
 #: ckanext/ozwillo_theme/templates/header.html:79
-#: ckanext/ozwillo_theme/templates/header.html:112
+#: ckanext/ozwillo_theme/templates/header.html:124
 msgid "Data"
 msgstr "Données"
 

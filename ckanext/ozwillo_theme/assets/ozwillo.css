@@ -1235,9 +1235,9 @@ footer.footer > a {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   #t3-mainnav .container {
-    width: 1170px;
+    width: 1400px;
   }
 }
 
