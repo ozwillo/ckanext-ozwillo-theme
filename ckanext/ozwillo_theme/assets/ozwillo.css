@@ -1071,52 +1071,45 @@ ul.dataset-list.unstyled > li {
 /* FOOTER */
 
 footer.footer {
-  background-color: #2db9c7;
-  color: #FFF;
-  width: 100%;
-  line-height: 40px;
-  display: block;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: #f2f2f2;
+}
+
+footer .container{
+  margin-left: 40px;
+  width: 95%;
 }
 
 .footer a{
-  color: #FFF;
-  text-decoration: none;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-top: 5px;
+  color: #000000;
+  padding-right: 20px;
 }
-.footer-links,  .footer-link{
-  margin-top:3px;
+
+.footer img{
+  margin-right: 20px;
 }
+
+.footer-links, .footer-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 footer a:hover {
   transition: 0.3s;
-  color: #FFF;
   opacity: 0.8;
-  text-decoration: none;
 }
+
 .footer-links {
-  font-weight: 100;
+  text-decoration: underline;
 }
 
-
-footer.footer > a {
-  color: #FFF;
-  text-decoration: none;
-  margin-left: 10px; 
-     margin-right: 10px; 
+.footer-link {
+  float: right;
+  margin-top: -25px;
 }
 
-.footer-brand {
-  height: 30px;    
-  width: 100px;
-  display: block;
-  /* FDR background: url('/images/ui/Social_Media/logo-blanc.svg') no-repeat; */
-  margin: 0px!important;
+.footer-title{
+  font-weight: bold;
+  padding-top: 15px;
 }
 
 .social-media-box {

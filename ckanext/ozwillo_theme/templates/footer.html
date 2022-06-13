@@ -1,21 +1,49 @@
 {% set current_lang = request.environ.CKAN_LANG %}
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                <a href="/" class="footer-brand"></a>
-            </div>
-            <div class="col-md-4 col-sm-4 footer-links">
+
+        <div class="">
+            <div class=" footer-links">
+                <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">{% trans %}Logbook{% endtrans %}</a>
+                <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">Forum</a>
                 <a href="https://www.ozwillo.com/fr/contact"  target="_blank">{% trans %}Contact{% endtrans %}</a>
                 <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">{% trans %}Legal Notices{% endtrans %}</a>
-                <a href="https://ckan.org" target="_blank">Open Source.</a>
             </div>
-            <div class="col-md-3 col-sm-3 social-media-box">
-                <a href="https://twitter.com/ozwillo" class="social-media-logo twitter-logo" target="_blank"></a>
-                <a href="https://www.linkedin.com/company/ozwillo" class="social-media-logo linkedin-logo" target="_blank"></a>
-            </div>
-            <div class="col-md-3 col-sm-5 footer-link">
+
+            <div class="footer-link">
                 <a href="https://www.ozwillo.com">{% trans %}Created by Ozwillo with{% endtrans %} <i class="fa fa-heart"></i></a>
+            </div>
+        </div>
+
+        <div class="">
+            <a href="https://ckan.francedatareseau.fr/">
+                <img alt="FDR" src="/img/fdr_logo_couleur_ligne.png" width="250" height="60">
+             </a>
+             <a href="https://www.fnccr.asso.fr/">
+                <img alt="FNCCR" src="/img/logo-FNCCR.jpg" width="100" height="50">
+             </a>
+            <img alt="France-relance" src="/img/logo_france_relance.png" width="70" height="70">
+            <img alt="EU-flag" src="/img/EU-flag-and-text.png" width="200" height="45">
+        </div>
+
+        <div class=" footer-title">
+            RESSOURCES
+        </div>
+        <div class="">
+            <div class="footer-links">
+                <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">{% trans %}Data{% endtrans %}</a>
+                <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">Applications</a>
+                <a href="https://www.ozwillo.com/fr/contact"  target="_blank">{% trans %}APLI services{% endtrans %}</a>
+            </div>
+        </div>
+        <div class="footer-title">
+            OUTILS
+        </div>
+        <div class="">
+            <div class="footer-links">
+                <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">{% trans %}Logbook{% endtrans %}</a>
+                <a href="https://www.ozwillo.com/fr/mentions-legales"  target="_blank">Collaborative space</a>
+                <a href="https://www.ozwillo.com/fr/contact"  target="_blank">{% trans %}Source code repository{% endtrans %}</a>
             </div>
         </div>
     </div>

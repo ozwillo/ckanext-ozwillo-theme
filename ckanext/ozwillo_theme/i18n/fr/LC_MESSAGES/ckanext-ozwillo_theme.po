@@ -19,17 +19,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ckanext/ozwillo_theme/templates/footer.html:9
-msgid "Contact"
-msgstr "Contact"
+#: ckanext/ozwillo_theme/templates/footer.html:7
+#: ckanext/ozwillo_theme/templates/footer.html:44
+msgid "Logbook"
+msgstr "Journal de bord"
 
 #: ckanext/ozwillo_theme/templates/footer.html:10
 msgid "Legal Notices"
-msgstr "Mentions légales"
+msgstr "Mentions Légales"
 
-#: ckanext/ozwillo_theme/templates/footer.html:18
+#: ckanext/ozwillo_theme/templates/footer.html:14
 msgid "Created by Ozwillo with"
 msgstr "Créée par Ozwillo avec"
+
+#: ckanext/ozwillo_theme/templates/footer.html:34
+msgid "Data"
+msgstr "Données"
+
+#: ckanext/ozwillo_theme/templates/footer.html:36
+msgid "APLI services"
+msgstr "Services d'APLI"
+
+#: ckanext/ozwillo_theme/templates/footer.html:45
+msgid "Collaborative space"
+msgstr "Espace collaboratif"
+
+#: ckanext/ozwillo_theme/templates/footer.html:46
+msgid "Source code repository"
+msgstr "Dépôt des codes sources"
 
 #: ckanext/ozwillo_theme/templates/header.html:9
 #: ckanext/ozwillo_theme/templates/header.html:32
