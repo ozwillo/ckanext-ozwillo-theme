@@ -80,18 +80,18 @@ def ozwillo_theme_get_project_orgs():
 def ozwillo_theme_get_showcases():
     showcases = logic.get_action('ckanext_showcase_list')({}, {})
     # take 4 at random :
-    random_start_index = randrange(len(showcases))
+    random_start_index = randrange(max(len(showcases) - 4, 1))
     return showcases[random_start_index:random_start_index + 4]
 
 def ozwillo_theme_get_territory_organizations():
     all_org_names = logic.get_action('organization_list')({}, {"limit": 1000, 'sort': 'name asc'})
     # take 50 at random :
-    random_start_index = randrange(len(all_org_names))
+    random_start_index = randrange(max(len(all_org_names) - 4, 1))
     org_names = all_org_names[random_start_index:random_start_index + 50]
 
     # filter :
-    usage_prefixed_org_names = logic.get_action('organization_autocomplete')({}, {"q": "usage-"})
-    helper_org_names = ['france-data-reseau','federation-nationale-des-collectivites-concedantes-et-regies', 'datactivist' 'altereo', 'darkskylab']
+    usage_prefixed_org_names = [ org['name'] for org in logic.get_action('organization_autocomplete')({}, {"q": "usage-"})]
+    helper_org_names = ['france-data-reseau','federation-nationale-des-collectivites-concedantes-et-regies', 'datactivist', 'altereo', 'darkskylab']
     non_territory_org_names = helper_org_names + usage_prefixed_org_names
     territory_org_names = [org_name for org_name in org_names if org_name not in non_territory_org_names][0:4]
 

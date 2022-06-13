@@ -1,0 +1,9 @@
+{% ckan_extends %}
+
+{% block basic_fields %}
+    {{ super() }}
+
+    {% block fields_siren %}
+    {{ form.input('siren', id='field-siren', label=_('SIREN'), placeholder=_('SIREN'), value=data.siren) }}
+    {% endblock %}
+{% endblock %}
