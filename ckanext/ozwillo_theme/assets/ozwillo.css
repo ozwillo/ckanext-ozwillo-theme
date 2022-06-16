@@ -1311,12 +1311,12 @@ header .content_action a.btn {
     overflow: hidden;
     background-color: #f2f2f2;
     box-shadow: 5px 5px 5px 0px rgba(122,122,122,0.4);
-    padding: 45px;
+    padding: 35px;
     margin-bottom: 15px;
     margin: 20px;
     border: 1px solid #d6d6d6!important;
     overflow:hidden;
-    height: 250px;
+    height: 300px;
     position: relative;
 }
 
