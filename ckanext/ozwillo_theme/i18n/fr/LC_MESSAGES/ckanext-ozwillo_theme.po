@@ -217,7 +217,7 @@ msgstr ""
 
 #: ckanext/ozwillo_theme/templates/home/snippets/project_orgs.html:6
 msgid "Projects - Use cases"
-msgstr "Projets - Cas d\'usage"
+msgstr "Projets - Cas d'usage"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/categories.html:7
 msgid "Data"
@@ -338,6 +338,10 @@ msgstr ""
 #: ckanext/ozwillo_theme/templates/package/snippets/package_form.html:43
 msgid "Next: Add Data"
 msgstr ""
+
+#: ckanext/ozwillo_theme/templates/package/snippets/package_form.html:43
+~ msgid "Update Dataset"
+~ msgstr "Mettre à jour"
 
 #: ckanext/ozwillo_theme/templates/snippets/custom_form_fields.html:20
 #: ckanext/ozwillo_theme/templates/snippets/custom_form_fields.html:37

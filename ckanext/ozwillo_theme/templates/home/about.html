@@ -19,6 +19,10 @@
       {% endblock %}
     </div>
   </article>
+
+  <div class="container-fluid">
+    {% block map %} {% snippet 'home/snippets/map.html' %} {% endblock %}
+  </div>
 {% endblock %}
 
 {% block secondary %}{% endblock %}

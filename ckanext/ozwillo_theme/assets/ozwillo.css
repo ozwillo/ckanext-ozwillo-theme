@@ -333,6 +333,11 @@ section.social .nav-simple{
 .map{
   padding-bottom: 30px;
 }
+
+.map h3{
+  font-weight: 800;
+}
+
 .module
 .module-content:first-child {
   margin-top: 0;
@@ -1065,6 +1070,12 @@ ul.dataset-list.unstyled > li {
     transition: .1s;
     background: #fff;
 }
+
+.dataset-resources li{
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
 /* DATASET BLOCK END */
 
 
@@ -1082,15 +1093,13 @@ footer .container{
 .footer a{
   color: #000000;
   padding-right: 20px;
+  text-decoration: none;
 }
 
 .footer img{
   margin-right: 20px;
-}
-
-.footer-links, .footer-title{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 footer a:hover {
@@ -1098,18 +1107,13 @@ footer a:hover {
   opacity: 0.8;
 }
 
-.footer-links {
-  text-decoration: underline;
-}
-
 .footer-link {
   float: right;
-  margin-top: -25px;
+  margin-top: 20px;
 }
 
-.footer-title{
-  font-weight: bold;
-  padding-top: 15px;
+.footer-link :hover{
+  text-decoration: underline;
 }
 
 .social-media-box {
@@ -1133,7 +1137,7 @@ footer a:hover {
 .dataset-resources {
     margin-top: 8px;
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     right: 15px;
 }
 .dataset-heading .label {
