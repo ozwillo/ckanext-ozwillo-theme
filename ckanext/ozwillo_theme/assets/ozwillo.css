@@ -1311,7 +1311,7 @@ header .content_action a.btn {
     overflow: hidden;
     background-color: #f2f2f2;
     box-shadow: 5px 5px 5px 0px rgba(122,122,122,0.4);
-    padding: 35px;
+    padding: 15px;
     margin-bottom: 15px;
     margin: 20px;
     border: 1px solid #d6d6d6!important;
@@ -1759,6 +1759,10 @@ li.media-item {
   padding:0;
 }
 
+.dataset-list p{
+  font-size: 15px;
+}
+
 .media-custom-item {
   background-color: rgb(255, 255, 255);
   border-radius:2px;
@@ -2143,9 +2147,10 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
 
 .object_card_left_icon_wrapper {
   float: left;
-  margin: 5px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   width: 20%;
 }
 .object_card_left_icon {
-  width: 70%;
+  width: 110%;
 }
