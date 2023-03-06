@@ -953,6 +953,15 @@ div.resource-blocs {
 #group_list .col-md-4 .media-item h3 {
     color: #2db9c7;
 }
+
+/* override geo-resources styles */
+
+.label[data-format="shp"], 
+.label[data-format="kml"],
+.label[data-format="geojson"] {
+  color: #2db9c7;
+}
+
 .dataset__block-header {
   list-style: none;
   display: block;
