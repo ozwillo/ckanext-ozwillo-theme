@@ -2051,6 +2051,9 @@ body.toc-open #toggle-container, body.toc-open #off-nav {
     display: flex;
     flex-direction: column;
   }
+  .homepage .dataset-list .dataset-item {
+    height: auto;
+  }
   .header{
     display: none;
   }
