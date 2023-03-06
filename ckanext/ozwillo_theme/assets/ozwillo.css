@@ -841,15 +841,16 @@ div.categories__row {
   display: block;
   padding-top: 20px;
   padding-bottom: 35px;
+  margin: 20px;
   transition: 0.4s;
   background-color: #f2f2f2;
   box-shadow: 3px 5px 5px 0px rgba(122,122,122,0.4);
   margin-bottom: 25px;
-    transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
 }
 
 .categories__card-img {
