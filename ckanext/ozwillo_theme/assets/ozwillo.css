@@ -239,6 +239,9 @@ body > .main {
 .module-narrow .nav-item.active a span:before {
     color: #ff9b00;
 }
+.context-info .description {
+  word-break: normal;
+}
 .context-info .image img{
     margin-bottom: 10px;
     background: transparent;
