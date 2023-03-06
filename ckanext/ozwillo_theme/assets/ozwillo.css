@@ -942,6 +942,7 @@ div.resource-blocs {
 .dataset-list .col-md-6 .dataset-item .dataset-resources a {
     border: 2px solid #2db9c7;
     color: #2db9c7;
+    background-color: #fff;
 }
 .dataset-list .col-md-6 .dataset-resources a:hover,
 .dataset-list .col-md-6 .dataset-item .dataset-resources a:hover {
@@ -952,15 +953,6 @@ div.resource-blocs {
 .dataset-list .col-md-6 .dataset-item .dataset-heading a,
 #group_list .col-md-4 .media-item h3 {
     color: #2db9c7;
-}
-
-/* override geo-resources styles */
-
-.label[data-format="shp"], 
-.label[data-format="kml"],
-.label[data-format="geojson"] {
-  color: #2db9c7;
-  background-color: #fff;
 }
 
 .dataset__block-header {
