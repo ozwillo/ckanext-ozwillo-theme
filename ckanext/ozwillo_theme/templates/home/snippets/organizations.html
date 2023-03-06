@@ -1,18 +1,22 @@
 {% set organizations = h.ozwillo_theme_get_territory_organizations() %}
+{% set current_lang = request.environ.CKAN_LANG %}
 
-<div class="content-bloc">
-  <div class="container">
-    <div class="row">
+<div class="categories container-fluid categories__row">
+  <div class="container ">
+    <div class="row ">
       <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Organisations') }}</h3>
-      <div class="dataset-list">
-        {% for organization in organizations %}
-         
-          {% if loop.index <= 4 %}
-            {% snippet 'home/snippets/organization_bloc.html', organization=organization %}
-          {% endif %}
+      {% for organization in organizations %}
 
-        {% endfor %}
+        {% if loop.index <= 4 %}
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <a class="organizations__card" href="/{{current_lang}}/group/{{organization.name}}">
+          <img src={{ organization.image_display_url }} alt="" class="responsive categories__card-img">
+          <span class="categories__card-title">{{organization.display_name}}</span>
+        </a>
       </div>
+        {% endif %}
+
+      {% endfor %}
     </div>
-  </div>  
+  </div>
 </div>

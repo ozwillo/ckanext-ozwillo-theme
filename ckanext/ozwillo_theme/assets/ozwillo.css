@@ -490,6 +490,7 @@ div.header__logo {
     background-color: transparent;
     color: #FFF;
     position: relative;
+    font-size: 21.4px; /* FDR subtitle the same length as the title */
 }
 .header__title h1{
     margin-bottom: 0px;
@@ -835,7 +836,7 @@ div.categories__row {
   padding: 30px 0 30px 0;
 }
 
-.categories__card {
+.categories__card,.organizations__card {
   height: 150px;
   width: 200px;
   display: block;
@@ -876,6 +877,12 @@ div.categories__row {
   text-decoration: none;
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.1);
+}
+
+/* FDR organizations like groups / categories but white background */
+.organizations__card {
+  background-color: #ffffff;
+  box-shadow: 3px 5px 5px 3px rgba(122,122,122,0.4);
 }
 
 /* CATEGORIES CONTAINER END */
@@ -1362,11 +1369,12 @@ h1, h2, h3, h4, h5, h6,
 }
 #particles-js{
   height: 340px;
-  background: rgb(40,184,198); /* Old browsers */
-    background: -moz-linear-gradient(90deg, rgba(40,184,198,1) 0%, rgba(106,189,148,1) 50%, rgba(158,196,33,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(90deg, rgba(40,184,198,1) 0%, rgba(106,189,148,1) 50%, rgba(158,196,33,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(90deg, rgba(40,184,198,1) 0%, rgba(106,189,148,1) 50%, rgba(158,196,33,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ec421', endColorstr='#2db9c7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(40,184,198); /* FDR : only blue like the showcase website */
+  /*background: rgb(40,184,198);*/ /* Old browsers */
+    /*background: -moz-linear-gradient(90deg, rgba(40,184,198,1) 0%, rgba(106,189,148,1) 50%, rgba(158,196,33,1) 100%);*/ /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(90deg, rgba(40,184,198,1) 0%, rgba(106,189,148,1) 50%, rgba(158,196,33,1) 100%);*/ /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(90deg, rgba(40,184,198,1) 0%, rgba(106,189,148,1) 50%, rgba(158,196,33,1) 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ec421', endColorstr='#2db9c7',GradientType=1 );*/ /* IE6-9 fallback on horizontal gradient */
 }
 .searchbar__form{
     background: #00000033;
