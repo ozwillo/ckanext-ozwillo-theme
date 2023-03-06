@@ -220,8 +220,8 @@ msgid "Projects - Use cases"
 msgstr "Projets - Cas d'usage"
 
 #: ckanext/ozwillo_theme/templates/home/snippets/categories.html:7
-msgid "Data"
-msgstr "Données"
+msgid "Data Catalog"
+msgstr "Catalogue de données"
 
 #: ckanext/ozwillo_theme/templates/package/snippets/package_basic_fields.html:4
 #, fuzzy
