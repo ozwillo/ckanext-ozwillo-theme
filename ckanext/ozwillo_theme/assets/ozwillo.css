@@ -960,6 +960,7 @@ div.resource-blocs {
 .label[data-format="kml"],
 .label[data-format="geojson"] {
   color: #2db9c7;
+  background-color: #fff;
 }
 
 .dataset__block-header {
