@@ -1787,11 +1787,8 @@ li.media-item {
     border: none;
 }
 .media-item span.count, .count {
-  color: #e61f82;
   font-weight: 800;
   position: absolute;
-  /* bottom: 60px; */
-  left: 10%;
 }
 .media-heading {
     margin-top: 15px;
