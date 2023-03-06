@@ -9,10 +9,12 @@
             {% for categorie in categories %}
                 <div class="dataset-list">
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
-                            <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
-                            <span class="categories__card-title">{{categorie.display_name}}</span>
-                        </a>
+                        <div class="dataset-item">
+                            <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
+                                <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
+                                <span class="categories__card-title">{{categorie.display_name}}</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
