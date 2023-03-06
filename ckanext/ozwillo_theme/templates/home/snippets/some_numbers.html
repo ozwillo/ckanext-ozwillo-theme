@@ -5,25 +5,25 @@
 <div class="stats container-fluid">
     <div class="container stats__row">
         <div class="col-md-3 col-xs-6 text-center">
-            <div class="stats__card bg-purple">
+            <div class="stats__card bg-main-color">
                 <span class="text-big numbers">{{ h.SI_number_span(stats.dataset_count) }}</span>
                 <h2 class="titlecase numbers__title">{{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}</h2>
             </div>
         </div>
         <div class="col-md-3 col-xs-6 text-center">
-            <div class="stats__card bg-pink">
+            <div class="stats__card bg-main-color">
                 <span class="text-big numbers">{% if resource_number %}{{ resource_number }}{% else %} {{ 0}} {% endif%}</span>
                 <h2 class="titlecase numbers__title">{{ _('resources') }}</h2>
             </div>
         </div>
         <div class="col-md-3 col-xs-6 text-center">
-            <div class="stats__card bg-orange">
+            <div class="stats__card bg-main-color">
                 <span class="text-big numbers">{{ h.SI_number_span(stats.organization_count) }}</span>
                 <h2 class="titlecase numbers__title">{% trans %}Organizations{% endtrans %}</h2>
             </div>
         </div>
         <div class="col-md-3 col-xs-6 text-center">
-            <div class="stats__card bg-purple">
+            <div class="stats__card bg-main-color">
                 <span class="text-big numbers">{% if showcase_number %}{{ showcase_number }}{% else %} {{ 0}} {% endif%}</span>
                 <h2 class="titlecase numbers__title">{% trans %}Showcase{% endtrans %}</h2>
             </div>

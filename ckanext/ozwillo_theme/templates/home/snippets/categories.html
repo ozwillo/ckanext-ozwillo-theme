@@ -7,27 +7,12 @@
             <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Data Catalog') }}</h3>
             <div class="row ">
                 {% for categorie in categories %}
-
-                    {% if loop.index %2 == 0 %}
-                        <div class="col-md-3 col-sm-3 col-xs-3">
-                            <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
-                                <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
-                                <span class="categories__card-title text-green">{{categorie.display_name}}</span>
-                            </a>
-                        </div>
-                    {% endif %}
-
-                    {% if loop.index %2 != 0 %}
-                        <div class="col-md-3 col-sm-3 col-xs-3">
-                            <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
-                                <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
-                                <span class="categories__card-title text-purple">{{categorie.display_name}}</span>
-                            </a>
-                        </div>
-                    {% endif %}
-
-                    
-
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
+                            <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
+                            <span class="categories__card-title">{{categorie.display_name}}</span>
+                        </a>
+                    </div>
                 {% endfor %}
              </div>
         </div>

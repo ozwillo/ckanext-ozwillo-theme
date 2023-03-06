@@ -125,7 +125,7 @@ section.tags ul {
 }
 
 section.tags a.tag {
-  background-color: #ff9933;
+  background-color: #2db9c7;
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -133,7 +133,7 @@ section.tags a.tag {
 }
 
 section.tags a.tag:hover {
-  background-color: #ff9933;
+  background-color: #2db9c7;
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -145,7 +145,7 @@ section.tags a.tag:hover {
 @media (max-width: 768px){
   .js .show-filters.btn {
       display: inline-block;
-      background: #ff9933;
+      background: #2db9c7;
       color: #fff;
       margin: 0;
   }
@@ -160,42 +160,10 @@ section.tags a.tag:hover {
   font-size: 60px;
 }
 
-.text-pink {
-  color: #2db9c7;
-}
-
-.text-orange {
-  color: #ff9933;
-}
-
-.text-purple {
-  color: #2db9c7;
-}
-
-.text-medgrey {
-  color: #666;
-}
-
-.text-lightgrey {
-  color: #999;
-}
-
-.text-green {
-  color: #9fc51c;
-}
-
 .titlecase::first-letter {
   text-transform: uppercase;
 }
-.bg-pink {
-  background: #2db9c7;
-}
-
-.bg-orange {
-  background: #ff9933;
-}
-
-.bg-purple {
+.bg-main-color {
   background: #2db9c7;
 }
 
@@ -484,7 +452,7 @@ header.module-content.page-header li.active {
 }
 
 .nav-item.active>a:hover, .nav-aside li.active a:hover {
-  background-color: #ff9933;
+  background-color: #2db9c7;
   font-weight: 700;
 }
 
@@ -966,51 +934,20 @@ div.resource-blocs {
     flex: 1;
     min-height: 210px;
 }
-.dataset-list .col-md-6:nth-child(3n+1) .dataset-resources a,
-.dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-resources a{
+.dataset-list .col-md-6 .dataset-resources a,
+.dataset-list .col-md-6 .dataset-item .dataset-resources a {
     border: 2px solid #2db9c7;
     color: #2db9c7;
 }
-.dataset-list .col-md-6:nth-child(3n+1) .dataset-resources a:hover,
-.dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-resources a:hover{
+.dataset-list .col-md-6 .dataset-resources a:hover,
+.dataset-list .col-md-6 .dataset-item .dataset-resources a:hover {
     background: #2db9c7;    
     color: #fff;
 }
-.dataset-list .col-md-6:nth-child(3n+2) .dataset-resources a,
-.dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-resources a{
-    background: transparent;
-    border: 2px solid #2db9c7;
+.dataset-list .col-md-6  .dataset-item .dataset__block-header h4 a,
+.dataset-list .col-md-6 .dataset-item .dataset-heading a,
+#group_list .col-md-4 .media-item h3 {
     color: #2db9c7;
-}
-.dataset-list .col-md-6:nth-child(3n+2) .dataset-resources a:hover,
-.dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-resources a:hover{
-    background: #2db9c7;    
-    color: #fff;
-}
-.dataset-list .col-md-6:nth-child(3n+3) .dataset-resources a,
-.dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-resources a{
-    border: 2px solid #ff9933;
-    color: #ff9933;
-}
-.dataset-list .col-md-6:nth-child(3n+3) .dataset-resources a:hover,
-.dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-resources a:hover{
-    background: #ff9933;    
-    color: #fff;
-}
-.dataset-list .col-md-6:nth-child(3n+1)  .dataset-item .dataset__block-header h4 a,
-.dataset-list .col-md-6:nth-child(3n+1) .dataset-item .dataset-heading a,
-#group_list .col-md-4:nth-child(3n+1) .media-item h3{
-    color: #2db9c7;
-}
-.dataset-list .col-md-6:nth-child(3n+2)  .dataset-item .dataset__block-header h4 a,
-.dataset-list .col-md-6:nth-child(3n+2) .dataset-item .dataset-heading a,
-#group_list .col-md-4:nth-child(3n+2) .media-item h3{
-    color: #2db9c7;
-}
-.dataset-list .col-md-6:nth-child(3n+3)  .dataset-item .dataset__block-header h4 a,
-.dataset-list .col-md-6:nth-child(3n+3) .dataset-item .dataset-heading a,
-#group_list .col-md-4:nth-child(3n+3) .media-item h3{
-    color: #ff9933;
 }
 .dataset__block-header {
   list-style: none;
@@ -1795,14 +1732,8 @@ li.media-item {
   font-size:12px;
 }
 
-.group-items:nth-child(3n+1) .media-heading{
+.group-items .media-heading{
     color: #2db9c7;
-}
-.group-items:nth-child(3n+2) .media-heading{
-    color: #2db9c7;
-}
-.group-items:nth-child(3n+3) .media-heading {
-    color: #ff9933;
 }
 .media-grid_ {
   list-style: none;
@@ -1823,7 +1754,7 @@ li.media-item {
     overflow: hidden;
     background-color: #fff;
     height: 300px;
-        padding-bottom: 25px;
+    padding-bottom: 25px;
     width: 100%;
     margin: 10px 0;
     border: 1px solid #d6d6d6!important;
