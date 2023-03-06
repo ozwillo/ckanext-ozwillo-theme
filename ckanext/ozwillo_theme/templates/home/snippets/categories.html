@@ -7,7 +7,7 @@
         <div class="row ">
             <h3 class="text-center section__title"><i class="icon-chevron-right"></i> {{ _('Data Catalog') }}</h3>
             {% for categorie in categories %}
-                <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <a class="categories__card" href="/{{current_lang}}/group/{{categorie.name}}">
                         <img src={{ categorie.image_display_url }} alt="" class="responsive categories__card-img">
                         <span class="categories__card-title">{{categorie.display_name}}</span>
