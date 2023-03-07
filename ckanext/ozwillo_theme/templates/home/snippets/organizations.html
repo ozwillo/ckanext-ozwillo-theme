@@ -8,12 +8,12 @@
       {% for organization in organizations %}
 
         {% if loop.index <= 4 %}
-      <div class="col-md-3 col-sm-3 col-xs-3">
-        <a class="organizations__card" href="/{{current_lang}}/group/{{organization.name}}">
-          <img src={{ organization.image_display_url }} alt="" class="responsive categories__card-img">
-          <span class="categories__card-title">{{organization.display_name}}</span>
-        </a>
-      </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <a class="organizations__card" href="/{{current_lang}}/group/{{organization.name}}">
+            <img src={{ organization.image_display_url }} alt="" class="responsive categories__card-img">
+            <span class="categories__card-title">{{organization.display_name}}</span>
+          </a>
+        </div>
         {% endif %}
 
       {% endfor %}

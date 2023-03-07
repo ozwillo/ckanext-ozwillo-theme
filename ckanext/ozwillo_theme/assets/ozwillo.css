@@ -860,8 +860,7 @@ div.categories__row {
   margin-right: auto;
   margin-left:auto;
   margin-bottom: 4px;
-  height: 90%;
-  width: 47%;
+  height: 75%;
 }
 
 .categories__card-title {
@@ -869,7 +868,7 @@ div.categories__row {
     text-align: center;
     text-decoration: underline;
     height: 40%;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 16px;
 }
 
