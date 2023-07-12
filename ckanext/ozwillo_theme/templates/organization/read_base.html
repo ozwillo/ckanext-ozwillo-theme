@@ -1,0 +1,16 @@
+{% ckan_extends %}
+
+{% block content_action %}
+
+  {# [FDR] onboarding - "Log in to organization" button #}
+  {% if not h.check_access('organization_update', {'id': group_dict.id}) %}
+    <a href="https://ckan.francedatareseau.fr/organization/{{ group_dict.name }}/login_to_org"
+       title="{{_('Evite d\'avoir à pousser l\'icône sur le Bureau du Portal et cliquer dessus') }}" class="btn btn-default">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      {{ _('Connexion à cette organisation') }}
+    </a>
+  {% endif %}
+
+  {{ super() }}
+
+{% endblock %}

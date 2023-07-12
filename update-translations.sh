@@ -1,6 +1,6 @@
 #! /bin/sh
 
-CKAN_INSTALL_DIR=../ckan/
+CKAN_INSTALL_DIR=/usr/lib/ckan/venv/src/ckan/
 
 python setup.py extract_messages --mapping-file babel.cfg --output i18n/ckanext.pot
 

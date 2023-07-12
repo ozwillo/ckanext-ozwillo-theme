@@ -1,0 +1,32 @@
+{% extends "organization/edit_base.html" %}
+
+{% block subtitle %}{{ _('Members') }} - {{ super() }}{% endblock %}
+
+{% block page_primary_action %}
+
+{% endblock %}
+
+{% block primary_content_inner %}
+{{ super() }}
+  <h3 class="page-heading">{{ _('{0} members'.format(c.members|length)) }}</h3>
+  <table class="table table-header table-hover table-bordered">
+    <col width="70" />
+    <col width="40" />
+    <thead>
+      <tr>
+        <th scope="col">{{ _('User') }}</th>
+        <th scope="col">{{ _('Role') }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user_id, user, role in c.members %}
+        <tr>
+          <td class="media">
+            {{ h.linked_user(user_id, maxlength=20) }}
+          </td>
+          <td>{{ role }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
